@@ -2217,7 +2217,7 @@ In&nbsp;[7]:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>On page 38 of the Supplement, under the 2&quot; - 4&quot; Size classifiaction, we find that,</p>
+<p>On page 38 of the Supplement, under the 2&quot; - 4&quot; Size classification, we find that,</p>
 </div>
 </div>
 </div>
@@ -2357,7 +2357,7 @@ $$E_{min} = 580000 psi\text{ - the unadjusted Young's modulus used in column loa
 <p>I am not saying that $L_e=L$ all the time because we need to account for bracing.</p>
 <p>In the column shown to the left (similar to Figure 3F in the 2005 Timber NDS) you will see that the effective length values of the column are measured from midpoint of brace to midpoint of brace.  In this case if there were no top and bottom braces it would be measured from end to end for $L_x$ and from end to midpoint of the brace for $L_y$.  </p>
 <p>Only if no braces are present then $L_e = L$ for both $L_x$ and $L_y$.</p>
-<p>Also you should note that the variable for effective length in section 3.7.1.2 is $l_e$ not $L_e$. I&#39;m using $L$ to avoid confusion in hand written assingments where $l$ may look too much like the number $1$.  That being said if I inadvertantly show lower a lower case $l$ instead of an $L$ you will know why and what it means.</p>
+<p>Also you should note that the variable for effective length in section 3.7.1.2 is $l_e$ not $L_e$. I&#39;m using $L$ to avoid confusion in hand written assignments where $l$ may look too much like the number $1$.  That being said if I inadvertently show lower a lower case $l$ instead of an $L$ you will know why and what it means.</p>
 </div>
 </div>
 </div></section>
@@ -2445,7 +2445,7 @@ $$E_{min} = 580000 psi\text{ - the unadjusted Young's modulus used in column loa
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>$F_c^* $ is found just like $F_c'$ except you don&#39;t include the Column Stability Factor $(C_P)$ in the cacluation.  It is used to take into account that the column could crush rather than buckle.  The adjustment values we need to find $F_c'$ are listed in Table 4.3.1 of the Timber NDS.  Because the problem statement did not indicate otherwise $C_D = 1.25$ and because there are &quot;normal temperature and moisture conditions&quot;, $C_t=1$ and $C_M = 1$.  Since the column is Southern Pine, $C_F= 1$.  Finally, the column is not incised so $C_i=1$.</p>
+<p>$F_c^* $ is found just like $F_c'$ except you don&#39;t include the Column Stability Factor $(C_P)$ in the calculation.  It is used to take into account that the column could crush rather than buckle.  The adjustment values we need to find $F_c'$ are listed in Table 4.3.1 of the Timber NDS.  Because the problem statement did not indicate otherwise $C_D = 1.25$ and because there are &quot;normal temperature and moisture conditions&quot;, $C_t=1$ and $C_M = 1$.  Since the column is Southern Pine, $C_F= 1$.  Finally, the column is not incised so $C_i=1$.</p>
 <p>$$F_c^* = F_c \times C_D \times C_M \times C_t \times C_F \times C_i $$ </p>
 <p>$$F_c^* = 1650 psi \times 1.25 \times 1 \times 1 \times 1 \times 1$$ </p>
 <p>$$F_c^* = 2062.50 psi$$ </p>
@@ -2483,7 +2483,7 @@ $$E_{min} = 580000 psi\text{ - the unadjusted Young's modulus used in column loa
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We also  need to know the allowable value for $E_{min}'$ becuase it is used in the elastic buckling stress equation, $(F_{cE})$.</p>
+<p>We also  need to know the allowable value for $E_{min}'$ because it is used in the elastic buckling stress equation, $(F_{cE})$.</p>
 <p>From Table 4.3.1 we see that we need to know $C_M$, $C_t$, $C_i$, and $C_T$.</p>
 <ul>
 <li>$C_M = 1$ as we just stated.</li>
@@ -2601,12 +2601,12 @@ $${}$$
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The value for $c$ is listed in section 3.7.1.5 of the Timber NDS and it depends on the shape and type of the material the column is made out of.  For a sawn lumber column, like a 4x4, $c=0.8$.  I&#39;ll leave it to you to read about the other possible values.</p>
 <p>$$C_P = \frac{1+F_{cE}/F_c^*}{2 \times c} -\sqrt{\left(\frac{1+F_{cE}/F_c^*}{2 \times c}\right)^2-\frac{F_{cE}/F_c^*}{c}}$$ </p>
-<p>Let&#39;s find the components of $C_P$ seperately.</p>
+<p>Let&#39;s find the components of $C_P$ separately.</p>
 <p>$$\frac{F_{cE}}{F_c^*} = 0.137$$ </p>
 <p>$$\frac{1+F_{cE}/F_c^*}{2 \times c}=\frac{1+0.137}{2 \times 0.8}=0.710$$ </p>
 <p>$$\frac{F_{cE}/F_c^*}{c}=\frac{0.137}{0.8}=0.171$$ </p>
 <p>so </p>
-<p>$$C_P = 0.710 -\sqrt{0.710^2-0.171} =0.1325$$ </p>
+<p>$$C_P = 0.710 -\sqrt{0.710^2-0.171} =0.1325$$</p>
 </div>
 </div>
 </div><div style=display:none>
@@ -2733,7 +2733,7 @@ ${}$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Allowable-Compresive-Stress-Parallel-to-Grain-$(F_c)$">Allowable Compresive Stress Parallel to Grain $(F_c)$<a class="anchor-link" href="#Allowable-Compresive-Stress-Parallel-to-Grain-$(F_c)$">&#182;</a></h2>
+<h2 id="Allowable-Compressive-Stress-Parallel-to-Grain-$(F_c)$">Allowable Compressive Stress Parallel to Grain $(F_c)$<a class="anchor-link" href="#Allowable-Compressive-Stress-Parallel-to-Grain-$(F_c)$">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -3037,7 +3037,7 @@ $${}$$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://elearning2.courses.ufl.edu/portal/site/UFL-BCN4423C-40908-52014">Class website</a> <em>(Use this link to if you are taking the course on e-learning.)</em></p>
+<p><a href="https://ufl.instructure.com/courses/308516">Class website</a> <em>(Use this link to if you are taking the course on e-learning.)</em></p>
 <p><a href="http://damontallen.github.io/Construction-Lectures/">Github.io version of course website</a> <em>(Do not use this link if you are taking this course in Summer A or B.)</em></p>
 <p><a href="http://ipython.org/">IPython.org</a> <em>(IPython is the opensource software used in the development of much of this course.)</em></p>
 <p><a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Resources.ipynb">Complete Software List</a></p>

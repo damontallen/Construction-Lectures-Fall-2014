@@ -1775,7 +1775,7 @@ div.output_prompt {
 <p>In most problems, we want to limit the deflection of a beam (or member acting like a beam) to either some fraction of the length of the beam, or some fixed value.  To do this we can either pick the support spacing, and design the member to satisfy these limits over that span, or we can pick a member size, species, and grade, and solve for the support spacing.  This second alternative is the most common approach used in concrete formwork.</p>
 <p>To determine the support spacing of a beam, based deflection limits, we&#39;ll start with the deflection equation for a uniformly distributed load, and solve for $L$.</p>
 <p>$$\Delta = \frac{5 w L^4}{384 E' I} \Rightarrow L^4 = \Delta \frac{ 384 E' I}{5 w}$$</p>
-<p>However, this is for a simply supported beam, and it is more efficient for structural members, in forms of any useful size, to be have intermetiate supports rather than just be simply supported.  Typically, you will see a beam supported over three or more spans.  </p>
+<p>However, this is for a simply supported beam, and it is more efficient for structural members, in forms of any useful size, to be have intermediate supports rather than just be simply supported.  Typically, you will see a beam supported over three or more spans.  </p>
 <p>For that reason we need to start with the maximum defection equation for a beam that is supported over three or more spans.  This found in Table 6-1 of the Formwork text.</p>
 <p>$$\Delta_{max} = \frac{w L^4}{145 E' I}\frac{1 ft}{12 in}$$</p>
 <p>Where:</p>
@@ -1909,7 +1909,7 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>With a fixed diflection limit, like $1/16"$ for example, we need to start with out original solution and solve for $L$.</p>
+<p>With a fixed deflection limit, like $1/16"$ for example, we need to start with out original solution and solve for $L$.</p>
 <p>$$ L^4 = \Delta_{max} \frac{(1,740 in/ft) E' I}{w}$$</p>
 <p>$$ L = \sqrt[4]{\Delta_{max} \frac{(1,740 in/ft) E' I}{w}}$$</p>
 <p>$$ L = \sqrt[4]{\Delta_{max} \times 1,740 \frac{in}{ft}} \times \sqrt[4]{ \frac{ E' I}{w}}$$</p>
@@ -1947,7 +1947,7 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>If we pick a fixed deflection like $1/16"$ we just need to substitue it for $\Delta_{max}$ in our equation.</p>
+<p>If we pick a fixed deflection like $1/16"$ we just need to substitute it for $\Delta_{max}$ in our equation.</p>
 <p>$$ L = \sqrt[4]{\Delta_{max} \times 1,740 \frac{in}{ft}} \times \sqrt[4]{ \frac{ E' I}{w}} \Rightarrow L = \sqrt[4]{\frac{1}{16}" \times 1,740 \frac{in}{ft}} \times \sqrt[4]{ \frac{ E' I}{w}}$$</p>
 <p>$$ L = \sqrt[4]{\frac{1,740 in^2}{16 ft}}\times \sqrt[4]{ \frac{ E' I}{w}}$$</p>
 <p>$$ L = \sqrt[4]{108.75} \left(\frac{in^2}{ft} \right)^{1/4}\times \sqrt[4]{ \frac{ E' I}{w}}$$</p>
@@ -1960,7 +1960,7 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Like before, we have some unusual units associated with the constant in our soulution.  If we want to leave out those units, we just need to remember what all the variables&#39; units are supposed to be.</p>
+<p>Like before, we have some unusual units associated with the constant in our solution.  If we want to leave out those units, we just need to remember what all the variables&#39; units are supposed to be.</p>
 <p>$$ L = 3.23 \sqrt[4]{ \frac{ E' I}{w}}$$</p>
 <p>Where:</p>
 <ul>
@@ -2359,7 +2359,7 @@ $$L = 3.23 \sqrt[4]{ \frac{ E' I}{w}} \text{ (For limiting deflections to 1/16")
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a href="http://www.apawood.org/pdfs/download_pdf.cfm?PDFFilename=managed/D510.pdf">APA Panel Design Specification</a></p>
-<p><a href="https://elearning2.courses.ufl.edu/portal/site/UFL-BCN4423C-40908-52014">Class website</a> <em>(Use this link to if you are taking the course on e-learning.)</em></p>
+<p><a href="https://ufl.instructure.com/courses/308516">Class website</a> <em>(Use this link to if you are taking the course on e-learning.)</em></p>
 <p><a href="http://damontallen.github.io/Construction-Lectures/">Github.io version of course website</a> <em>(Do not use this link if you are taking this course in Summer A or B.)</em></p>
 <p><a href="http://ipython.org/">IPython.org</a> <em>(IPython is the opensource software used in the development of much of this course.)</em></p>
 <p><a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Resources.ipynb">Complete Software List</a></p>

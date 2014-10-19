@@ -47,6 +47,7 @@ Week 7
 
 * <a href="http://nbviewer.ipython.org/urls/raw.githubusercontent.com/damontallen/Construction-Lectures-Fall-2014/master/Week%207%20-%20Wall%20Forms.ipynb">Wall Forms</a>
 * <a href="http://nbviewer.ipython.org/urls/raw.githubusercontent.com/damontallen/Construction-Lectures-Fall-2014/master/Week%207%20-%20Wall%20Forms%20-%20Using%20Tables.ipynb">Wall Forms - Using Formwork Tables</a>
+* <a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%207%20-%20Wall%20Form%20Lab%20Supplement.ipynb">Wall Form Lab Supplement</a>
 
 Week 8
 

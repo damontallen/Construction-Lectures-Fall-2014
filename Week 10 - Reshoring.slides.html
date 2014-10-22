@@ -2209,8 +2209,7 @@ built.</p>
     </tr>
   </thead>
   <tbody>
-    <tr></tr>
-
+  <tr></tr>
     <tr><th colspan = '2' style="text-align: right;">Variables $\Rightarrow$</th>
         <th><center>$P_0$</center></th>
         <th><center>$\Delta P$</center></th>
@@ -2219,7 +2218,6 @@ built.</p>
         <th><center>$P_1$</center></th>
         <th><center></center></th>
     </tr>
-
     <tr>
       <th rowspan="2" valign="top">3</th>
       <th>Slab</th>
@@ -2309,7 +2307,7 @@ built.</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Load%20to%20be%20Distributed.mp3"
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Table%20Variables.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
@@ -2427,7 +2425,7 @@ built.</p>
 <li>$\Delta P$ - The load change in the structure that needs to be distributed to other supporting elements</li>
 <li>$P_{0,sh}$ - The starting load of the shore or reshore at the level of action</li>
 </ul>
-<p>In this table we can see that three slabs have been poured and we are now removing the shores at level 2.  This means the level of action is level 2, and the change in $P$ at level 2 is just the starting load if the shores of level 2.</p>
+<p>In this table we can see that three slabs have been poured and we are now removing the shores at level 2.  This means the level of action is level 2, and the change in $P$ at level 2 is just the starting load of the shores of level 2.</p>
 <p>$$\Delta P = 0.3333 D$$</p>
 <p>Note, in order to obtain the correct values, there must only be one level of action at a time.  This means only one value should appear in the $\Delta P$ column at a time and it should be written next to the item where the load is changing.</p>
 </div>
@@ -2452,7 +2450,7 @@ built.</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Load%20to%20be%20Distributed.mp3"
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Table%20Variables%20-%20Part%202.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
@@ -2569,8 +2567,8 @@ built.</p>
 <p>$$R_{s,L}  = \left\{\begin{array}{rl} P_{0,L} + \Delta P_{L} &amp; \text{if }L&gt; L_n,\\ 1 &amp; \text{if }L\leq L_n, \\P_{0,L} &amp; \text{if } L_n=0. \end{array} \right. \tag{3}$$</p>
 <p>Where:</p>
 <ul>
-<li>$\Delta P_{L}$ - The change in the load at level $L$</li>
-<li>$L$ - The level of the building for the current calculation</li>
+<li>$\Delta P_{L}$ - The fractional change in the load at level $L$</li>
+<li>$L$ - The level of the building being considered in the current calculation</li>
 <li>$L_{max}$ - Current maximum level in the building</li>
 <li>$L_n$ - The highest level that contains no shoring or reshoring by the end of the action.</li>
 <li>$P_{0,L}$ - Starting slab load at level $L$</li>
@@ -2584,7 +2582,7 @@ built.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>$L_n = 0$ if all levels have either shores or reshores.  This means, if all levels have either shores or reshores, then the ending loads on the slabs will be the same as when they started.</p>
+<p>$L_n = 0$ if all levels have either shores or reshores.  Since all levels either have shores or reshores, then the ending loads on the slabs will be the same as when they started.</p>
 <p>In our case $L_n = 1$ and $L_{max} = 3$ so equation 2 becomes,</p>
 <p>$\Delta P_{L} = \frac{0.3333 D}{3 - 1} = \frac{0.3333 D}{2}$</p>
 <p>$\Delta P_{L} = 0.16667 D$</p>
@@ -2593,7 +2591,7 @@ built.</p>
 <p>for level 2,</p>
 <p>$R_{s,2} = 1.3333 D + 0.16667 D = 1.5 D$</p>
 <p>and since $L_n$ is at level 1 we use the second case in equation 3,</p>
-<p>$R_{s,3} = 1 D$</p>
+<p>$R_{s,1} = 1 D$</p>
 </div>
 </div>
 </div></section>
@@ -2616,7 +2614,7 @@ built.</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Load%20to%20be%20Distributed.mp3"
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Table%20Variables%20-%20Part%203.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
@@ -2733,11 +2731,11 @@ built.</p>
 <p>Where:</p>
 <ul>
 <li>$P_{sh,L}$ - Shore load on level L</li>
-<li>$L$ - The level of the building for the current calculation</li>
+<li>$L$ - The level of the building being considered in the current calculation</li>
 <li>$L_{max}$ - Current maximum level in the building</li>
 <li>$R_{s,i}$ - Reaction of slab on level i</li>
 </ul>
-<p>I this example the only shoring is at level 3.  Since $L = 3$, and $L_{max} = 3$,</p>
+<p>In this example the only shoring is at level 3.  Since $L = 3$, and $L_{max} = 3$,</p>
 <p>$P_{sh,3} = (3 - 3 + 1) \times 1 D - \sum_{i=3}^{3} R_{s,i}$ </p>
 <p>$P_{sh,3} = 1 \times 1 D - 0.5 D $ </p>
 <p>$P_{sh,3} = 1 D - 0.5 D = 0.5 D$ </p>
@@ -2768,7 +2766,7 @@ built.</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Load%20to%20be%20Distributed.mp3"
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Table%20Variables%20-%20Part%204.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
@@ -2910,7 +2908,7 @@ built.</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Load%20to%20be%20Distributed.mp3"
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/In%20Summary.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
@@ -2979,7 +2977,7 @@ built.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Note, in order to obtain the correct values, there must only be one level of action at a time.  This means only one value should appear in the $\Delta P$ column at a time and it should be written next to the item at the level of action.</p>
+<p>Note, in order to obtain the correct values, there must only be one level of action at a time.  This means that only one value should appear in the $\Delta P$ column for any given action, and it should be written next to the item changing at the level of action.</p>
 <p>$$\Delta P = \left\{\begin{array}{rl}1 &amp; \text{if pouring a new slab},\\P_{0,sh} &amp; \text{if a shore or reshore is removed}.\end{array} \right.\tag{1}$$</p>
 <p>$$\Delta P_{L} = \frac{\Delta P}{L_{max} - L_{n}}\tag{2}$$</p>
 <p>$$R_{s,L}  = \left\{\begin{array}{rl} P_{0,L} + \Delta P_{L} &amp; \text{if }L&gt; L_n,\\ 1 &amp; \text{if }L\leq L_n, \\P_{0,L} &amp; \text{if } L_n=0. \end{array} \right. \tag{3}$$</p>
@@ -2996,19 +2994,19 @@ built.</p>
 <p>Where:</p>
 <ul>
 <li>$\Delta P$ - The load change in the structure that needs to be distributed to other supporting elements</li>
-<li>$\Delta P_{L}$ - The change in the load at level $L$</li>
-<li>$L$ - The level of the building for the current calculation</li>
+<li>$\Delta P_{L}$ - The fractional change in the load at level $L$</li>
+<li>$L$ - The level of the building in the current calculation</li>
 <li>$L_{max}$ - Current maximum level in the building</li>
-<li>$L_n$ - The highest level that contains no shoring or reshoring by the end of the action.</li>
+<li>$L_n$ - The highest level that contains no shoring or reshoring at the end of the action.</li>
 <li>$P_{0,L}$ - Starting slab load at level $L$</li>
 <li>$P_{0,sh}$ - The starting load of the shore or reshore at the level of action</li>
-<li>$P_{1,L,I}$ - The final load for item I on level L</li>
-<li>$P_{sh,L}$ - Shore load on level L</li>
-<li>$R_{s,i}$ - Reaction of slab on level i</li>
+<li>$P_{1,L,I}$ - The final load for item $I$ on level $L$</li>
+<li>$P_{sh,L}$ - Shore load on level $L$</li>
+<li>$R_{s,i}$ - Reaction of slab on level $i$</li>
 <li>$R_{s,L}$ - The slab reaction at level $L$</li>
 </ul>
-<p>Recall that the values listed under $P_1$ will be used for $P_0$ when calculating the results of the next action.</p>
-<p>One last thing, it will be easier to follow along later slides if you have these equations written down where you can reference them.  I will will be talking about filling out the table from here on, and most of the time I will not be explicitly referencing particular equations.</p>
+<p>Remember that the values listed under $P_1$ will be used for $P_0$ when calculating the results for the next action.</p>
+<p>One last thing, it will be easier to follow along later slides if you have these equations written down where you can reference them.  I will be talking about filling out the table from here on, and most of the time I will not explicitly be referencing to a particular equation.</p>
 </div>
 </div>
 </div><div style=display:none>
@@ -3390,7 +3388,7 @@ In&nbsp;[1]:
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Filling%20out%20the%20Table%20-%20Number%20of%20Slabs%20Above%20minus%20Slab%20Reactions.mp3"
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Filling%20out%20the%20Table%20-%20New%20Shore%20Reactions.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>

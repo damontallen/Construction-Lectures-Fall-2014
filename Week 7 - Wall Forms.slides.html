@@ -1757,11 +1757,12 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Concrete%20Pressure.mp3"
+<audio controls data-autoplay preload> <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Concrete%20Pressure.mp3"
          type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
+<p>
+Your user agent does not support the HTML5 Audio element or the files are missing.
+</p>
+<p></audio></p>
 </div>
 </div>
 </div>
@@ -1770,17 +1771,17 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>By this point in your education you should be aware that concrete does not dry, but rather it cures.  This curing occurs at a specific rate based on the chemistry of the concrete, and the temperature at which it is cast.  Because, concrete starts as a liquid but then cures over time, it is possible that if you pour for long enough, or slow enough, then at some time, the first concrete you poured will have solidified.  This has an effect on the amount of force necessary to contain the concrete in the form work.  Specifically ACI has put out empirical equations, for wall forms, that are allowed to be used to find this lower pressure.</p>
-<p>The maximum pressure in a form is just hydrostatic pressure.  Normal weight concrete is 150 pcf in both solid and liquid states.  So the maximum pressure on a concrete form, containing normal weight concrete, is just,</p>
-<p>$P = 150 pcf \times h$</p>
+<p>By this point in your education you should be aware that concrete does not dry, but rather it cures. This curing occurs at a specific rate based on the chemistry of the concrete, and the temperature at which it is cast. Because, concrete starts as a liquid but then cures over time, it is possible that if you pour for long enough, or slow enough, then at some time, the first concrete you poured will have solidified. This has an effect on the amount of force necessary to contain the concrete in the form work. Specifically ACI has put out empirical equations, for wall forms, that are allowed to be used to find this lower pressure.</p>
+<p>The maximum pressure in a form is just hydrostatic pressure. Normal weight concrete is 150 pcf in both solid and liquid states. So the maximum pressure on a concrete form, containing normal weight concrete, is just,</p>
+<p><span class="math">\(P = 150 pcf \times h\)</span></p>
 <p>but this can be modified by the chemistry or the density of the concrete so the full equation is,</p>
-<p>$P = C_W \times C_C \times 150 pcf \times h$</p>
+<p><span class="math">\(P = C_W \times C_C \times 150 pcf \times h\)</span></p>
 <p>Where:</p>
 <ul>
-<li>$C_W$ is the unit weight coefficient (Table 10 of <a href="http://www.apawood.org/pdfs/download_pdf.cfm?PDFFilename=managed/V345.pdf">APA&#39;s Design/Construction Guide: Concrete Forming</a>)</li>
-<li>$C_C$ is the chemistry coefficient (Table 11 of <a href="http://www.apawood.org/pdfs/download_pdf.cfm?PDFFilename=managed/V345.pdf">APA&#39;s Design/Construction Guide: Concrete Forming</a>)</li>
-<li>$150 pcf$ is the unit weight of the normal weight concrete.</li>
-<li>$h$ is the height of the pour.</li>
+<li><span class="math">\(C_W\)</span> is the unit weight coefficient (Table 10 of <a href="http://www.apawood.org/pdfs/download_pdf.cfm?PDFFilename=managed/V345.pdf">APA's Design/Construction Guide: Concrete Forming</a>)</li>
+<li><span class="math">\(C_C\)</span> is the chemistry coefficient (Table 11 of <a href="http://www.apawood.org/pdfs/download_pdf.cfm?PDFFilename=managed/V345.pdf">APA's Design/Construction Guide: Concrete Forming</a>)</li>
+<li><span class="math">\(150 pcf\)</span> is the unit weight of the normal weight concrete.</li>
+<li><span class="math">\(h\)</span> is the height of the pour.</li>
 </ul>
 <p>(Note that the <a href="http://www.apawood.org/pdfs/download_pdf.cfm?PDFFilename=managed/V345.pdf">Design/Construction Guide: Concrete Forming</a> is a free pdf download, but you <em>are</em> required to sign up for a free membership to the American Plywood Association.)</p>
 <p><em>(Continued on the next slide.)</em></p>
@@ -1795,11 +1796,12 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Concrete%20Pressure%20continued.mp3"
+<audio controls data-autoplay preload> <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Concrete%20Pressure%20continued.mp3"
          type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
+<p>
+Your user agent does not support the HTML5 Audio element or the files are missing.
+</p>
+<p></audio></p>
 </div>
 </div>
 </div>
@@ -1808,20 +1810,20 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>To account for the effect of curing, ACI replaces the, relatively fixed, height term, with terms that affect the rate of change in the concrete pressure.  Specifically, they replace $h$ with functions based on temperature, and pour rate.</p>
-<p>For pour rates of less than $7 \frac{ft}{hr}$, </p>
-<p>$P = C_W \times C_C \times \left(150 +\frac{9000 \times R}{T}\right)$</p>
+<p>To account for the effect of curing, ACI replaces the, relatively fixed, height term, with terms that affect the rate of change in the concrete pressure. Specifically, they replace <span class="math">\(h\)</span> with functions based on temperature, and pour rate.</p>
+<p>For pour rates of less than <span class="math">\(7 \frac{ft}{hr}\)</span>,</p>
+<p><span class="math">\(P = C_W \times C_C \times \left(150 +\frac{9000 \times R}{T}\right)\)</span></p>
 <p>Where:</p>
 <ul>
-<li>R is the pour rate in $\frac{ft}{hr}$</li>
-<li>T is the ambient temperature in $^oF$</li>
+<li>R is the pour rate in <span class="math">\(\frac{ft}{hr}\)</span></li>
+<li>T is the ambient temperature in <span class="math">\(^oF\)</span></li>
 </ul>
-<p>For pour rates in the range of $ 7 \frac{ft}{hr}&lt; R \le 10 \frac{ft}{hr}$</p>
-<p>$P = C_W \times C_C \times \left(150 +\frac{43,400}{T} +\frac{2800 \times R}{T}\right)$</p>
-<p>and for pour rates $R&gt; 10 \frac{ft}{hr}$</p>
-<p>$ P = C_W \times C_C \times \left(150 pcf \times h\right) \text{ (Maximum Pressure)}$</p>
-<p>This last equation is just the hydrostatic pressure again.  I&#39;ve listed it again because it is not physically possible to have a pressure due to pouring concrete that is greater than the hydrostatic pressure.  That being said, you will alway need to calculate the hydrostatic pressure, and verify that the allowed concrete pressure is not greater.  If it is, you will just use the hydrostatic pressure.</p>
-<p>Additionally, you should note that through out the rest of the course I will be assuming that we are using normal weight concrete ($C_W = 1.0$), and Types I, II, or III concrete, without retarders ($C_C = 1.0$).  As such, these equations will mostly be written without the $C_W$ or $C_C$ multipliers out front.  That should not be taken as an indication that these are correct for all cases, but just for the conditions that I&#39;ve just outlined.</p>
+<p>For pour rates in the range of $ 7 &lt; R 10 $</p>
+<p><span class="math">\(P = C_W \times C_C \times \left(150 +\frac{43,400}{T} +\frac{2800 \times R}{T}\right)\)</span></p>
+<p>and for pour rates <span class="math">\(R&gt; 10 \frac{ft}{hr}\)</span></p>
+<p>$ P = C_W C_C (150 pcf h) $</p>
+<p>This last equation is just the hydrostatic pressure again. I've listed it again because it is not physically possible to have a pressure due to pouring concrete that is greater than the hydrostatic pressure. That being said, you will alway need to calculate the hydrostatic pressure, and verify that the allowed concrete pressure is not greater. If it is, you will just use the hydrostatic pressure.</p>
+<p>Additionally, you should note that through out the rest of the course I will be assuming that we are using normal weight concrete (<span class="math">\(C_W = 1.0\)</span>), and Types I, II, or III concrete, without retarders (<span class="math">\(C_C = 1.0\)</span>). As such, these equations will mostly be written without the <span class="math">\(C_W\)</span> or <span class="math">\(C_C\)</span> multipliers out front. That should not be taken as an indication that these are correct for all cases, but just for the conditions that I've just outlined.</p>
 </div>
 </div>
 </div></section>
@@ -1843,11 +1845,12 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Wall%20Form.mp3"
+<audio controls data-autoplay preload> <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Wall%20Form.mp3"
          type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
+<p>
+Your user agent does not support the HTML5 Audio element or the files are missing.
+</p>
+<p></audio></p>
 </div>
 </div>
 </div>
@@ -1857,9 +1860,8 @@ div.output_prompt {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a href = "http://i.imgur.com/HTuUtPz.png"><img src="http://i.imgur.com/HTuUtPz.png" alt = "Wall Form Image (without braces or ties)"style="max-width:300px; max-height:300px; border:1px solid blue; float:right; margin-left:10px;"/></a></p>
-<p>A typically wall form begins with a sheathing material, usually plywood or plyform, which is used to contain, and shape the liquid concrete.  This sheathing is supported by studs which, in turn, are supported by wales.  The wales are commonly made from the same lumber as the studs, but just arranged in a doubled up configuration.  The wales are supported by ties, and ties typically consist of a deformed metal rod that passes through, and remains in, the concrete.  I&#39;ve shown a couple examples of ties below, but many <a href="https://www.google.com/search?q=concrete+wall+form+ties&amp;client=ubuntu&amp;channel=fs&amp;tbm=isch&amp;tbo=u&amp;source=univ&amp;sa=X&amp;ei=m6k1U6q9DKmw2gXJ1oGADA&amp;ved=0CDEQsAQ&amp;biw=1280&amp;bih=665">other versions are available</a>.</p>
-<p><a></a>
-<a href = "http://www.sweethaven02.com/BldgConst/Bldg02/fig0611.jpg"><img src="http://www.sweethaven02.com/BldgConst/Bldg02/fig0611.jpg" alt = "Snap Tie" Title = "Snap Tie"style="max-width:300px; max-height:300px; border:1px solid blue; float:left; margin-right:3px;"/></a></p>
+<p>A typically wall form begins with a sheathing material, usually plywood or plyform, which is used to contain, and shape the liquid concrete. This sheathing is supported by studs which, in turn, are supported by wales. The wales are commonly made from the same lumber as the studs, but just arranged in a doubled up configuration. The wales are supported by ties, and ties typically consist of a deformed metal rod that passes through, and remains in, the concrete. I've shown a couple examples of ties below, but many <a href="https://www.google.com/search?q=concrete+wall+form+ties&amp;client=ubuntu&amp;channel=fs&amp;tbm=isch&amp;tbo=u&amp;source=univ&amp;sa=X&amp;ei=m6k1U6q9DKmw2gXJ1oGADA&amp;ved=0CDEQsAQ&amp;biw=1280&amp;bih=665">other versions are available</a>.</p>
+<p><a></a> <a href = "http://www.sweethaven02.com/BldgConst/Bldg02/fig0611.jpg"><img src="http://www.sweethaven02.com/BldgConst/Bldg02/fig0611.jpg" alt = "Snap Tie" Title = "Snap Tie"style="max-width:300px; max-height:300px; border:1px solid blue; float:left; margin-right:3px;"/></a></p>
 <p><a href = "http://www.sweethaven02.com/BldgConst/Bldg02/fig0612.jpg"><img src="http://www.sweethaven02.com/BldgConst/Bldg02/fig0612.jpg" alt = "Wall Form Image (without braces or ties)"style="max-width:300px; max-height:300px; border:1px solid blue; float:left; margin-left:3px;"/></a></p>
 </div>
 </div>
@@ -1870,7 +1872,7 @@ div.output_prompt {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a href="http://free-ed.net/free-ed/Resources/Trades/carpentry/Building01/?iNum=0601">(<em>Tie image source</em>)</a></p>
-<p>Perhaps a better image of wall forms can be seen in Figure 1 of <a href="http://www.apawood.org/pdfs/download_pdf.cfm?PDFFilename=managed/V345.pdf">APA&#39;s Design/Construction Guide: Concrete Forming</a> (page 18).  This shows a cutaway along with a pressure profile.</p>
+<p>Perhaps a better image of wall forms can be seen in Figure 1 of <a href="http://www.apawood.org/pdfs/download_pdf.cfm?PDFFilename=managed/V345.pdf">APA's Design/Construction Guide: Concrete Forming</a> (page 18). This shows a cutaway along with a pressure profile.</p>
 </div>
 </div>
 </div></section>
@@ -1892,11 +1894,12 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Plywood%20and%20Plyform%20Specifications.mp3"
+<audio controls data-autoplay preload> <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Plywood%20and%20Plyform%20Specifications.mp3"
          type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
+<p>
+Your user agent does not support the HTML5 Audio element or the files are missing.
+</p>
+<p></audio></p>
 </div>
 </div>
 </div>
@@ -1907,20 +1910,20 @@ div.output_prompt {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>At this point I need to mention that you should download the following two files since we <em>may</em> be using values in them in some calculations:</p>
 <ul>
-<li><a href="http://www.apawood.org/pdfs/download_pdf.cfm?PDFFilename=managed/V345.pdf">APA&#39;s Design/Construction Guide: Concrete Forming</a></li>
+<li><a href="http://www.apawood.org/pdfs/download_pdf.cfm?PDFFilename=managed/V345.pdf">APA's Design/Construction Guide: Concrete Forming</a></li>
 <li><a href="http://www.apawood.org/pdfs/download_pdf.cfm?PDFFilename=managed/D510.pdf">Panel Design Specification</a></li>
 </ul>
 <p>and you <strong>will</strong> need to download the file below since we <strong>will</strong> be using values from it.</p>
 <ul>
 <li><a href="http://www.apawood.org/pdfs/download_pdf.cfm?PDFFilename=managed/Y510.pdf">Plywood Design Specification</a></li>
 </ul>
-<p>Specifically, we will be using Table 1 (Effective Section Properties for Plywood) and Table 3 (Allowable Stresses for Plywood).  </p>
-<p>You might wonder why the Plywood Design Specifications is more important than the Design/Construction Guide: Concrete Forming.  Even though the Design/Construction Guide: Concrete Forming is specifically about formwork, it mainly has information on Plyform, and many forms are not built using Plyform.  Sanded plywood is more commonly used in concrete form work than Plyform.  Thus the properties found in the Plywood Design Specifications are typically more important than the values in the Design/Construction Guide: Concrete Forming.  </p>
-<p>Obviously plywood and Plyform are not the only forming material used in form work.  Steel is also a common form material, but if you are using steel forms, then they will have been prefabricated, and it is unlikely that you were involved in the design process.  For this reason, we will be studying designing forms using plywood.  One of the reasons it is so common, is that plywood is relatively inexpensive, versicle, and readily available.  Because of this, almost every structure of any size has had plywood forms used, at some stage, in its construction.</p>
-<p>We <em>will</em> use Plyform for <em>some</em> formwork designs.  The properties of Plyform can be found in <a href="http://www.apawood.org/pdfs/download_pdf.cfm?PDFFilename=managed/V345.pdf">APA&#39;s Design/Construction Guide: Concrete Forming</a>, specifically in Table 12 (Section Properties for Plyform Class I and Class II, and Structural I Plyform) and Table 13 (Allowable Stresses).  However, in this class, we will most likely be using the pre-calculated values in Table 7-2 in our Formwork for Concrete text.</p>
-<p>While reading you may notice that the <a href="http://www.apawood.org/pdfs/download_pdf.cfm?PDFFilename=managed/Y510.pdf">Plywood Design Specification</a> I&#39;m having you download was published in 1998, while the <a href="http://www.apawood.org/pdfs/download_pdf.cfm?PDFFilename=managed/D510.pdf">Panel Design Specification</a> was published in 2012.  Both of these files contain the same information, but it is arranged in them in very different formats.  For our purposes the <a href="http://www.apawood.org/pdfs/download_pdf.cfm?PDFFilename=managed/Y510.pdf">Plywood Design Specification</a> is arranged in the most compact fashion.  It will be easier to use the two tables in the 1998 publication than the six tables on the 2012 publication.  </p>
-<p>That being said, the 2012 publication does have some clear writing describing the properties of plywood so I would encourage you to download the <a href="http://www.apawood.org/pdfs/download_pdf.cfm?PDFFilename=managed/D510.pdf">Panel Design Specification</a>, and read sections 1.1 Plywood, 2.2.2 Grades, 2.3.3 Sanded, 4.1 Strength axis, and 4.4.4 Shear in the plane of the panel.  </p>
-<p>Finally, when looking up any values for plywood, keep in mind that you should always use the <strong>sanded plywood</strong> values.  When non-sanded plywood is used in concrete form work, it will adhere to the concrete, and both be damaged, and damage the concrete during its removal.</p>
+<p>Specifically, we will be using Table 1 (Effective Section Properties for Plywood) and Table 3 (Allowable Stresses for Plywood).</p>
+<p>You might wonder why the Plywood Design Specifications is more important than the Design/Construction Guide: Concrete Forming. Even though the Design/Construction Guide: Concrete Forming is specifically about formwork, it mainly has information on Plyform, and many forms are not built using Plyform. Sanded plywood is more commonly used in concrete form work than Plyform. Thus the properties found in the Plywood Design Specifications are typically more important than the values in the Design/Construction Guide: Concrete Forming.</p>
+<p>Obviously plywood and Plyform are not the only forming material used in form work. Steel is also a common form material, but if you are using steel forms, then they will have been prefabricated, and it is unlikely that you were involved in the design process. For this reason, we will be studying designing forms using plywood. One of the reasons it is so common, is that plywood is relatively inexpensive, versicle, and readily available. Because of this, almost every structure of any size has had plywood forms used, at some stage, in its construction.</p>
+<p>We <em>will</em> use Plyform for <em>some</em> formwork designs. The properties of Plyform can be found in <a href="http://www.apawood.org/pdfs/download_pdf.cfm?PDFFilename=managed/V345.pdf">APA's Design/Construction Guide: Concrete Forming</a>, specifically in Table 12 (Section Properties for Plyform Class I and Class II, and Structural I Plyform) and Table 13 (Allowable Stresses). However, in this class, we will most likely be using the pre-calculated values in Table 7-2 in our Formwork for Concrete text.</p>
+<p>While reading you may notice that the <a href="http://www.apawood.org/pdfs/download_pdf.cfm?PDFFilename=managed/Y510.pdf">Plywood Design Specification</a> I'm having you download was published in 1998, while the <a href="http://www.apawood.org/pdfs/download_pdf.cfm?PDFFilename=managed/D510.pdf">Panel Design Specification</a> was published in 2012. Both of these files contain the same information, but it is arranged in them in very different formats. For our purposes the <a href="http://www.apawood.org/pdfs/download_pdf.cfm?PDFFilename=managed/Y510.pdf">Plywood Design Specification</a> is arranged in the most compact fashion. It will be easier to use the two tables in the 1998 publication than the six tables on the 2012 publication.</p>
+<p>That being said, the 2012 publication does have some clear writing describing the properties of plywood so I would encourage you to download the <a href="http://www.apawood.org/pdfs/download_pdf.cfm?PDFFilename=managed/D510.pdf">Panel Design Specification</a>, and read sections 1.1 Plywood, 2.2.2 Grades, 2.3.3 Sanded, 4.1 Strength axis, and 4.4.4 Shear in the plane of the panel.</p>
+<p>Finally, when looking up any values for plywood, keep in mind that you should always use the <strong>sanded plywood</strong> values. When non-sanded plywood is used in concrete form work, it will adhere to the concrete, and both be damaged, and damage the concrete during its removal.</p>
 </div>
 </div>
 </div></section>
@@ -1942,11 +1945,12 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Example%20Problem.mp3"
+<audio controls data-autoplay preload> <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Example%20Problem.mp3"
          type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
+<p>
+Your user agent does not support the HTML5 Audio element or the files are missing.
+</p>
+<p></audio></p>
 </div>
 </div>
 </div>
@@ -1955,7 +1959,7 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let&#39;s look at an example to see how the design process works.</p>
+<p>Let's look at an example to see how the design process works.</p>
 </div>
 </div>
 </div>
@@ -1974,13 +1978,13 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Lateral Pressure from concrete, Max $P = 150 pcf \times h$</p>
-<p>Pour Rate: $R\le 7 \frac{ft}{hr}$</p>
-<p>$\hspace{4 cm} P = 150 +\frac{9000 R}{T} \le 150 pcf \times h$</p>
-<p>Pour Rate: $ 7 \frac{ft}{hr}&lt; R \le 10 \frac{ft}{hr}$</p>
-<p>$\hspace{4 cm} P = 150 +\frac{43,400}{T} +\frac{2800 R}{T} \le 150 pcf \times h$</p>
-<p>Pour Rate: $R&gt; 10 \frac{ft}{hr}$</p>
-<p>$\hspace{4 cm} P = 150 pcf \times h \text{ (Maximum Pressure)}$</p>
+<p>Lateral Pressure from concrete, Max <span class="math">\(P = 150 pcf \times h\)</span></p>
+<p>Pour Rate: <span class="math">\(R\le 7 \frac{ft}{hr}\)</span></p>
+<p><span class="math">\(\hspace{4 cm} P = 150 +\frac{9000 R}{T} \le 150 pcf \times h\)</span></p>
+<p>Pour Rate: $ 7 &lt; R 10 $</p>
+<p><span class="math">\(\hspace{4 cm} P = 150 +\frac{43,400}{T} +\frac{2800 R}{T} \le 150 pcf \times h\)</span></p>
+<p>Pour Rate: <span class="math">\(R&gt; 10 \frac{ft}{hr}\)</span></p>
+<p><span class="math">\(\hspace{4 cm} P = 150 pcf \times h \text{ (Maximum Pressure)}\)</span></p>
 </div>
 </div>
 </div>
@@ -1999,11 +2003,11 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>For Bending, span, $L = 10.95 \sqrt{\frac{F_b' S}{w}}$</p>
-<p>For Rolling shear, span, $L = \frac{20 \times F_s'}{w}\times \frac{I b }{Q}$ (for sheathing like plywood only)</p>
-<p>For Shear, span, $L = 13.33 \times \frac{F_v' b d}{w} + 2 d$ (for dimensional lumber only)</p>
-<p>For deflection where $\Delta = {}^L/_{360}$,  span, $L = 1.69 \sqrt[3]{\frac{E' I}{w}}$</p>
-<p>For deflection where $\Delta = {}^1/_{16}\text{"}$,  span, $L = 3.23 \sqrt[4]{\frac{E' I}{w}}$</p>
+<p>For Bending, span, <span class="math">\(L = 10.95 \sqrt{\frac{F_b&#39; S}{w}}\)</span></p>
+<p>For Rolling shear, span, <span class="math">\(L = \frac{20 \times F_s&#39;}{w}\times \frac{I b }{Q}\)</span> (for sheathing like plywood only)</p>
+<p>For Shear, span, <span class="math">\(L = 13.33 \times \frac{F_v&#39; b d}{w} + 2 d\)</span> (for dimensional lumber only)</p>
+<p>For deflection where <span class="math">\(\Delta = {}^L/_{360}\)</span>, span, <span class="math">\(L = 1.69 \sqrt[3]{\frac{E&#39; I}{w}}\)</span></p>
+<p>For deflection where <span class="math">\(\Delta = {}^1/_{16}\text{&quot;}\)</span>, span, <span class="math">\(L = 3.23 \sqrt[4]{\frac{E&#39; I}{w}}\)</span></p>
 <p>Stress = Load/Area</p>
 <p><em>(See the slide below for variable definitions.)</em></p>
 </div>
@@ -2017,21 +2021,17 @@ div.output_prompt {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In the span length equations:</p>
 <ul>
-<li>$L$ is the spacing between supports, in units of $inches (in)$</li>
-<li><p>$w$ is the uniformly distributed line load on the beam, in units of $plf$</p>
-</li>
-<li><p>$d$ is the width of the beam, in units of $in$</p>
-</li>
-<li>$A$ is the cross sectional area of the beam, in units of $in^2$ </li>
-<li>$S$ is the section modulus of the beam, in units of $in^3$ (or $in^3/ft$ for plywood)</li>
-<li><p>$I$ is the moment of inertia of the beam, in units of $in^4$ (or $in^4/ft$ for plywood)</p>
-</li>
-<li><p>$F_b'$ is the maximum allowable bending stress of the beam, in units of $psi$</p>
-</li>
-<li>$F_v'$ is the maximum allowable shear stress in the beam, in units of $psi$</li>
-<li>$F_s'$ is the maximum allowable rolling shear stress in the panel, in units of $psi$</li>
-<li>$E'$ is the adjusted Young&#39;s modulus of the beam&#39;s material, in units of $psi$</li>
-<li>$Ib/Q$ is the rolling shear constant of the panel, in units of $in^2/ft$</li>
+<li><span class="math">\(L\)</span> is the spacing between supports, in units of <span class="math">\(inches (in)\)</span></li>
+<li><p><span class="math">\(w\)</span> is the uniformly distributed line load on the beam, in units of <span class="math">\(plf\)</span></p></li>
+<li><span class="math">\(d\)</span> is the width of the beam, in units of <span class="math">\(in\)</span></li>
+<li><span class="math">\(A\)</span> is the cross sectional area of the beam, in units of <span class="math">\(in^2\)</span></li>
+<li><span class="math">\(S\)</span> is the section modulus of the beam, in units of <span class="math">\(in^3\)</span> (or <span class="math">\(in^3/ft\)</span> for plywood)</li>
+<li><p><span class="math">\(I\)</span> is the moment of inertia of the beam, in units of <span class="math">\(in^4\)</span> (or <span class="math">\(in^4/ft\)</span> for plywood)</p></li>
+<li><span class="math">\(F_b&#39;\)</span> is the maximum allowable bending stress of the beam, in units of <span class="math">\(psi\)</span></li>
+<li><span class="math">\(F_v&#39;\)</span> is the maximum allowable shear stress in the beam, in units of <span class="math">\(psi\)</span></li>
+<li><span class="math">\(F_s&#39;\)</span> is the maximum allowable rolling shear stress in the panel, in units of <span class="math">\(psi\)</span></li>
+<li><span class="math">\(E&#39;\)</span> is the adjusted Young's modulus of the beam's material, in units of <span class="math">\(psi\)</span></li>
+<li><p><span class="math">\(Ib/Q\)</span> is the rolling shear constant of the panel, in units of <span class="math">\(in^2/ft\)</span></p></li>
 </ul>
 </div>
 </div>
@@ -2054,11 +2054,12 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Determine%20the%20Following.mp3"
+<audio controls data-autoplay preload> <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Determine%20the%20Following.mp3"
          type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
+<p>
+Your user agent does not support the HTML5 Audio element or the files are missing.
+</p>
+<p></audio></p>
 </div>
 </div>
 </div>
@@ -2067,7 +2068,7 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol>
+<ol style="list-style-type: decimal">
 <li>Concrete Pressure</li>
 <li>Stud spacing</li>
 <li>Wale spacing</li>
@@ -2096,8 +2097,8 @@ div.output_prompt {
 <ul>
 <li>Height of wall = 15 ft</li>
 <li>Rate of filling = 10 ft/hr</li>
-<li>Temperature = 80$^o$ F</li>
-<li>Concrete unit weight = 150 lb/ft$^3$</li>
+<li>Temperature = 80<span class="math">\(^o\)</span> F</li>
+<li>Concrete unit weight = 150 lb/ft<span class="math">\(^3\)</span></li>
 <li>Wet conditions prevail</li>
 <li>Limit deflection to L/360 but not greater than 1/16&quot;</li>
 <li>All lumber will be 2x4 S4S lumber, No.2 Douglas Fir-Larch with no splits</li>
@@ -2145,11 +2146,12 @@ In&nbsp;[24]:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Pressure.mp3"
+<audio controls data-autoplay preload> <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Pressure.mp3"
          type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
+<p>
+Your user agent does not support the HTML5 Audio element or the files are missing.
+</p>
+<p></audio></p>
 </div>
 </div>
 </div><div style=display:none>
@@ -2235,11 +2237,12 @@ ${}$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Load%20duration%20factor.mp3"
+<audio controls data-autoplay preload> <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Load%20duration%20factor.mp3"
          type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
+<p>
+Your user agent does not support the HTML5 Audio element or the files are missing.
+</p>
+<p></audio></p>
 </div>
 </div>
 </div>
@@ -2248,7 +2251,7 @@ ${}$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Since the problem statement did not indicate otherwise, the load duration factor $C_D = 1.25$.  What would indicate that it was not $1.25$ would be a reference to reuse of the form work.  If a form, or element of a form, is going to be  reused, we will assume that it will see the maximum allowed load for more than seven days.  That means, if you are reusing forms then $C_D = 1.0$.</p>
+<p>Since the problem statement did not indicate otherwise, the load duration factor <span class="math">\(C_D = 1.25\)</span>. What would indicate that it was not <span class="math">\(1.25\)</span> would be a reference to reuse of the form work. If a form, or element of a form, is going to be reused, we will assume that it will see the maximum allowed load for more than seven days. That means, if you are reusing forms then <span class="math">\(C_D = 1.0\)</span>.</p>
 </div>
 </div>
 </div></section>
@@ -2270,11 +2273,12 @@ ${}$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Plywood%20Analysis%20(Stud%20Spacing).mp3"
+<audio controls data-autoplay preload> <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Plywood%20Analysis%20(Stud%20Spacing).mp3"
          type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
+<p>
+Your user agent does not support the HTML5 Audio element or the files are missing.
+</p>
+<p></audio></p>
 </div>
 </div>
 </div><div style=display:none>
@@ -2370,10 +2374,10 @@ $$\text{From the Plywood Properties Tables:}$$ $$t_{nom} = 3/4"$$ $$A = 2.884 (i
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The units of area (A), moment of inertia (I), and section modulus (S) all are per ft, as was mentioned in the <a href="http://damontallen.github.io/Construction-Lectures/Week%206%20-%20(Optional)%20Span%20Length%20Derivations.slides.html">(Optional) Span Length Derivation presentation</a>.  This is because plywood is designed on a per unit width basis.</p>
-<p>Since the line load ($w$), used in the span length equations, should be in plf we will find it by multiplying the pressure by 1 ft.  We will also need to multiple the area, moment of inertia, and section modulus by 1 ft to get the units to work out correctly.</p>
+<p>The units of area (A), moment of inertia (I), and section modulus (S) all are per ft, as was mentioned in the <a href="http://damontallen.github.io/Construction-Lectures-Fall-2014/Week%206%20-%20(Optional)%20Span%20Length%20Derivations.slides.html">(Optional) Span Length Derivation presentation</a>. This is because plywood is designed on a per unit width basis.</p>
+<p>Since the line load (<span class="math">\(w\)</span>), used in the span length equations, should be in plf we will find it by multiplying the pressure by 1 ft. We will also need to multiple the area, moment of inertia, and section modulus by 1 ft to get the units to work out correctly.</p>
 <p>So for the plywood support spacing calculations,</p>
-<p>$w = P \times 1 ft = 1042 plf$</p>
+<p><span class="math">\(w = P \times 1 ft = 1042 plf\)</span></p>
 </div>
 </div>
 </div></section>
@@ -2395,11 +2399,12 @@ $$\text{From the Plywood Properties Tables:}$$ $$t_{nom} = 3/4"$$ $$A = 2.884 (i
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Allowable%20Stresses.mp3"
+<audio controls data-autoplay preload> <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Allowable%20Stresses.mp3"
          type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
+<p>
+Your user agent does not support the HTML5 Audio element or the files are missing.
+</p>
+<p></audio></p>
 </div>
 </div>
 </div>
@@ -2408,7 +2413,7 @@ $$\text{From the Plywood Properties Tables:}$$ $$t_{nom} = 3/4"$$ $$A = 2.884 (i
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>For plywood the only adjustment factor we use is the load duration factor $C_D$.</p>
+<p>For plywood the only adjustment factor we use is the load duration factor <span class="math">\(C_D\)</span>.</p>
 <p>So,</p>
 </div>
 </div>
@@ -2467,11 +2472,12 @@ ${}$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Stud%20Spacing%20(Plywood%20Analysis).mp3"
+<audio controls data-autoplay preload> <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Stud%20Spacing%20(Plywood%20Analysis).mp3"
          type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
+<p>
+Your user agent does not support the HTML5 Audio element or the files are missing.
+</p>
+<p></audio></p>
 </div>
 </div>
 </div><div style=display:none>
@@ -2542,7 +2548,7 @@ ${}$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>When calculating the allowable spacing for the studs you should keep in mind that the sheet of plywood is only 96&quot; long.  The spacing of the studs should evenly divide into 96&quot;, i.e. 6&quot;, 8&quot;, 12&quot;, 16&quot;, 24&quot;, ... but not 18&quot; or 36&quot;.  This insight is also true when determining the spacing of the ties.  However, when you are calculating the spacing of the wales the plywood is only 48&quot; in that direction.</p>
+<p>When calculating the allowable spacing for the studs you should keep in mind that the sheet of plywood is only 96&quot; long. The spacing of the studs should evenly divide into 96&quot;, i.e. 6&quot;, 8&quot;, 12&quot;, 16&quot;, 24&quot;, ... but not 18&quot; or 36&quot;. This insight is also true when determining the spacing of the ties. However, when you are calculating the spacing of the wales the plywood is only 48&quot; in that direction.</p>
 </div>
 </div>
 </div></section>
@@ -2564,11 +2570,12 @@ ${}$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Constructibility.mp3"
+<audio controls data-autoplay preload> <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Constructibility.mp3"
          type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
+<p>
+Your user agent does not support the HTML5 Audio element or the files are missing.
+</p>
+<p></audio></p>
 </div>
 </div>
 </div>
@@ -2577,19 +2584,19 @@ ${}$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We want the spacing such that the edges of the sheet of plywood are always supported by a stud.  To do this you should know that the standard size of sheets of plywood, and Plyforms, is 4ft by 8ft (48&quot;x96&quot;).  Since the long direction of the plywood will be perpendicular to the studs, if we <em>only</em> support the edges of the plywood with studs then the spacing would be 96&quot; on center.</p>
+<p>We want the spacing such that the edges of the sheet of plywood are always supported by a stud. To do this you should know that the standard size of sheets of plywood, and Plyforms, is 4ft by 8ft (48&quot;x96&quot;). Since the long direction of the plywood will be perpendicular to the studs, if we <em>only</em> support the edges of the plywood with studs then the spacing would be 96&quot; on center.</p>
 <p><a href = "http://i.imgur.com/Bu5KLIj.png"><img src="http://i.imgur.com/Bu5KLIj.png" alt = 'Studs at 96" on Center' Title = 'Studs at 96" on Center' style="max-width:200px; max-height:200px; border:1px solid blue; float:left; margin-right:3px;"/></a></p>
 <p>If we add another stud we can cut the spacing in half to 48&quot; on center.</p>
-<p>$\frac{96}{2} = 48"$</p>
+<p><span class="math">\(\frac{96}{2} = 48&quot;\)</span></p>
 <p>Adding another stud our spacing becomes,</p>
-<p>$\frac{96}{3} = 32"$ on center.</p>
-<p>Every time we add another stud we have a whole number in the divisor.  We use that to our advantage we determining the appropriate spacing of our supports. For instance if we take the minimum limit we found for the stud support spacing, 7.13&quot;, and divide 8 ft (96&quot;) by it.</p>
-<p>$\frac{96"}{7.13"}= 13.46 \text{ This is not a whole number.}$</p>
+<p><span class="math">\(\frac{96}{3} = 32&quot;\)</span> on center.</p>
+<p>Every time we add another stud we have a whole number in the divisor. We use that to our advantage we determining the appropriate spacing of our supports. For instance if we take the minimum limit we found for the stud support spacing, 7.13&quot;, and divide 8 ft (96&quot;) by it.</p>
+<p><span class="math">\(\frac{96&quot;}{7.13&quot;}= 13.46 \text{ This is not a whole number.}\)</span></p>
 <p><a href = "http://i.imgur.com/KLrjVl0.jpg"><img src="http://i.imgur.com/KLrjVl0.jpg" alt = "Tape Measure's Black Diamond" Title = "Tape Measure's Black Diamond" style="max-width:200px; max-height:200px; border:1px solid blue; float:right; margin-left:10px;"/></a></p>
 <p>We need a spacing that is smaller than our rolling shear limit, and divides evenly into 96&quot;, but results in the least number of studs.</p>
 <p>I happen to know that the next number larger than 13.46 that divides 96&quot; evenly is 16.</p>
-<p>$\frac{96"}{16} = 6"$ on center.</p>
-<p>The reason I didn&#39;t use 14 is that you cannot find 6.8571&quot; on any tape measure.  You need to remember that this form is gonig to be built by construction workers, and they will need to be able to not only easily find the spacing you pick on their tape measures, but also all the multiples of that spacing.  Those values that can easily be found for an 8 ft sheet of plywood are, 3&quot;, 4&quot;, 6&quot;, 8&quot;, 12&quot; (1 ft), 16&quot;, 19.2&quot;, 24&quot; (2 ft), 32&quot;, and 48&quot; (4 ft).  Why is 19.2&quot; on the list?  In the picture of the tape measure you&#39;ll see a black diamond at 19.2&quot;.  This corresponds to 96&quot;/5.  There are special indicators for every 16&quot; and 1 ft increment too.  A complete list of usable spacings can be found <a href="https://www.dropbox.com/s/pyzxpv0aipadbri/Allowable%20Spacings.pdf">here</a>.</p>
+<p><span class="math">\(\frac{96&quot;}{16} = 6&quot;\)</span> on center.</p>
+<p>The reason I didn't use 14 is that you cannot find 6.8571&quot; on any tape measure. You need to remember that this form is gonig to be built by construction workers, and they will need to be able to not only easily find the spacing you pick on their tape measures, but also all the multiples of that spacing. Those values that can easily be found for an 8 ft sheet of plywood are, 3&quot;, 4&quot;, 6&quot;, 8&quot;, 12&quot; (1 ft), 16&quot;, 19.2&quot;, 24&quot; (2 ft), 32&quot;, and 48&quot; (4 ft). Why is 19.2&quot; on the list? In the picture of the tape measure you'll see a black diamond at 19.2&quot;. This corresponds to 96&quot;/5. There are special indicators for every 16&quot; and 1 ft increment too. A complete list of usable spacings can be found <a href="https://www.dropbox.com/s/pyzxpv0aipadbri/Allowable%20Spacings.pdf">here</a>.</p>
 </div>
 </div>
 </div></section>
@@ -2611,11 +2618,12 @@ ${}$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Wale%20Spacing%20(Stud%20Analysis).mp3"
+<audio controls data-autoplay preload> <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Wale%20Spacing%20(Stud%20Analysis).mp3"
          type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
+<p>
+Your user agent does not support the HTML5 Audio element or the files are missing.
+</p>
+<p></audio></p>
 </div>
 </div>
 </div><div style=display:none>
@@ -2703,7 +2711,7 @@ E = 1.600E+06 psi
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>When using a No.2 Douglas Fir-Larch 2x4 stud, we can find the unadjusted stresses in Table 4A of the Supplement.  The adjusted allowable stresses are found by applying the adjustment factors found in Table 4.3.1 of the Timber NDS.  Doing the calculations we get, </p>
+<p>When using a No.2 Douglas Fir-Larch 2x4 stud, we can find the unadjusted stresses in Table 4A of the Supplement. The adjusted allowable stresses are found by applying the adjustment factors found in Table 4.3.1 of the Timber NDS. Doing the calculations we get,</p>
 </div>
 </div>
 </div>
@@ -2752,7 +2760,7 @@ ${}$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We apply $C_r$ to the bending stress because the studs are connected to the plywood, and are spaced less than 24&quot; apart.  The $C_M$ factor is applied to all the values, because the problem statement indicated that all the lumber was wet.</p>
+<p>We apply <span class="math">\(C_r\)</span> to the bending stress because the studs are connected to the plywood, and are spaced less than 24&quot; apart. The <span class="math">\(C_M\)</span> factor is applied to all the values, because the problem statement indicated that all the lumber was wet.</p>
 </div>
 </div>
 </div></section>
@@ -2774,11 +2782,12 @@ ${}$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Stud%20Line%20Load%20and%20Support%20Spacing.mp3"
+<audio controls data-autoplay preload> <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Stud%20Line%20Load%20and%20Support%20Spacing.mp3"
          type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
+<p>
+Your user agent does not support the HTML5 Audio element or the files are missing.
+</p>
+<p></audio></p>
 </div>
 </div>
 </div>
@@ -2894,11 +2903,12 @@ ${}$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Wale%20Bearing%20Stress%20Check.mp3"
+<audio controls data-autoplay preload> <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Wale%20Bearing%20Stress%20Check.mp3"
          type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
+<p>
+Your user agent does not support the HTML5 Audio element or the files are missing.
+</p>
+<p></audio></p>
 </div>
 </div>
 </div>
@@ -2908,12 +2918,12 @@ ${}$
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a href = "http://i.imgur.com/z279ije.png"><img src="http://i.imgur.com/z279ije.png" alt = "Bearing Area" title = "Bearing Area"style="max-width:300px; max-height:300px; border:1px solid blue; float:right; margin-left:10px;"/></a></p>
-<p>Where the studs are supported by the wales there is a lot of force being transmitted through a relatively small area.  In this case, that area is,</p>
-<p>$A_{bearing} = (1.5" \times 1.5") \times 2 = 4.5 in^2$</p>
+<p>Where the studs are supported by the wales there is a lot of force being transmitted through a relatively small area. In this case, that area is,</p>
+<p><span class="math">\(A_{bearing} = (1.5&quot; \times 1.5&quot;) \times 2 = 4.5 in^2\)</span></p>
 <p>The load that is on that area is the pressure times the tributary area, or,</p>
-<p>$\text{Bearing Load } = P_{bearing} = P \times A_{trib}$</p>
-<p>$P_{bearing} = P \times s_{stud} \times s_{wale}$</p>
-<p>$P_{bearing} = 1042 psf \times 0.5 ft \times 2 ft = 1042 lbs$</p>
+<p><span class="math">\(\text{Bearing Load } = P_{bearing} = P \times A_{trib}\)</span></p>
+<p><span class="math">\(P_{bearing} = P \times s_{stud} \times s_{wale}\)</span></p>
+<p><span class="math">\(P_{bearing} = 1042 psf \times 0.5 ft \times 2 ft = 1042 lbs\)</span></p>
 </div>
 </div>
 </div><div style=display:none>
@@ -2992,11 +3002,12 @@ ${}$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Tie%20Spacing%20(Wale%20Analysis).mp3"
+<audio controls data-autoplay preload> <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Tie%20Spacing%20(Wale%20Analysis).mp3"
          type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
+<p>
+Your user agent does not support the HTML5 Audio element or the files are missing.
+</p>
+<p></audio></p>
 </div>
 </div>
 </div><div style=display:none>
@@ -3063,17 +3074,17 @@ $$\text{Line load} = w = \text{pressure}\times\text{tributary width}$$ $$w = P \
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Since the wales are simply twice as wide of the studs, and are made of the same material, we can reuse some of the allowable stresses from the studs.  </p>
-<p>$F_v'$, and $E'$ are exactly the same.  $F_b'$ is almost the same except when we calculate it we cannot apply the adjustment factor $C_r$.  This is because the wales are not in direct contact with the plywood.  So instead of</p>
-<p>$F_{b,studs}' = F_b \times C_D \times C_F \times C_M \times C_r$ we have,</p>
-<p>$F_{b,wales}' = F_b \times C_D \times C_F \times C_M$ so,</p>
-<p>$$F_{b, wales}' = \frac{F_{b,studs}'}{C_r}$$</p>
+<p>Since the wales are simply twice as wide of the studs, and are made of the same material, we can reuse some of the allowable stresses from the studs.</p>
+<p><span class="math">\(F_v&#39;\)</span>, and <span class="math">\(E&#39;\)</span> are exactly the same. <span class="math">\(F_b&#39;\)</span> is almost the same except when we calculate it we cannot apply the adjustment factor <span class="math">\(C_r\)</span>. This is because the wales are not in direct contact with the plywood. So instead of</p>
+<p><span class="math">\(F_{b,studs}&#39; = F_b \times C_D \times C_F \times C_M \times C_r\)</span> we have,</p>
+<p><span class="math">\(F_{b,wales}&#39; = F_b \times C_D \times C_F \times C_M\)</span> so,</p>
+<p><span class="math">\[F_{b, wales}&#39; = \frac{F_{b,studs}&#39;}{C_r}\]</span></p>
 <p>or just,</p>
-<p>$F_b' = \frac{1650 psi}{1.15}= 1434 psi$</p>
-<p>The section properties will be just twice that of the studs.  This is because $b_{wale} = 2 \times b_{stud}$ and,</p>
-<p>$A = b_{wale} \times d = 2 \times A_{stud} = 10.5 in^2$</p>
-<p>$S = \frac{1}{6} b_{wale} \times d^2 = 2 \times S_{stud} = 6.125 in^3$</p>
-<p>$I = \frac{1}{12} b_{wale} \times d^3 = 2 \times I_{stud} = 10.719 in^4$</p>
+<p><span class="math">\(F_b&#39; = \frac{1650 psi}{1.15}= 1434 psi\)</span></p>
+<p>The section properties will be just twice that of the studs. This is because <span class="math">\(b_{wale} = 2 \times b_{stud}\)</span> and,</p>
+<p><span class="math">\(A = b_{wale} \times d = 2 \times A_{stud} = 10.5 in^2\)</span></p>
+<p><span class="math">\(S = \frac{1}{6} b_{wale} \times d^2 = 2 \times S_{stud} = 6.125 in^3\)</span></p>
+<p><span class="math">\(I = \frac{1}{12} b_{wale} \times d^3 = 2 \times I_{stud} = 10.719 in^4\)</span></p>
 </div>
 </div>
 </div></section>
@@ -3095,11 +3106,12 @@ $$\text{Line load} = w = \text{pressure}\times\text{tributary width}$$ $$w = P \
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Wale%20Support%20Spacing.mp3"
+<audio controls data-autoplay preload> <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Wale%20Support%20Spacing.mp3"
          type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
+<p>
+Your user agent does not support the HTML5 Audio element or the files are missing.
+</p>
+<p></audio></p>
 </div>
 </div>
 </div>
@@ -3193,11 +3205,12 @@ ${}$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Tie%20Strength.mp3"
+<audio controls data-autoplay preload> <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Tie%20Strength.mp3"
          type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
+<p>
+Your user agent does not support the HTML5 Audio element or the files are missing.
+</p>
+<p></audio></p>
 </div>
 </div>
 </div><div style=display:none>
@@ -3223,7 +3236,7 @@ In&nbsp;[44]:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>To determine the required tie strength we need to find the load that each tie must carry.  That load is equal to the pressure times the tributary area of a tie.  This tributary area is the found by multiplying the tie spacing by the wale spacing.</p>
+<p>To determine the required tie strength we need to find the load that each tie must carry. That load is equal to the pressure times the tributary area of a tie. This tributary area is the found by multiplying the tie spacing by the wale spacing.</p>
 </div>
 </div>
 </div>
@@ -3283,11 +3296,12 @@ ${}$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Summary.mp3"
+<audio controls data-autoplay preload> <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design/Summary.mp3"
          type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
+<p>
+Your user agent does not support the HTML5 Audio element or the files are missing.
+</p>
+<p></audio></p>
 </div>
 </div>
 </div>
@@ -3348,7 +3362,7 @@ ${}$
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a href="https://ufl.instructure.com/courses/308516">Class website</a> <em>(Use this link to if you are taking the course on e-learning.)</em></p>
-<p><a href="http://damontallen.github.io/Construction-Lectures/">Github.io version of course website</a> <em>(Do not use this link if you are taking this course in Summer A or B.)</em></p>
+<p><a href="http://damontallen.github.io/Construction-Lectures-Fall-2014/">Github.io version of course website</a> <em>(Do not use this link if you are taking this course in Summer A or B.)</em></p>
 <p><a href="http://ipython.org/">IPython.org</a> <em>(IPython is the opensource software used in the development of much of this course.)</em></p>
 <p><a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Resources.ipynb">Complete Software List</a></p>
 </div>

@@ -5,6 +5,7 @@ import os
 import subprocess
 import sys
 import shutil
+import datetime
 
 def main():
     """Look at:
@@ -52,6 +53,7 @@ be notified upon completion, or errors."""
         except:
             error = "Failed for %s\n\nslides = %s\nnew_path = %s"%(name,slides,new_path)
             print error
+            log_error(path,error,er)
             msgBox = QtGui.QMessageBox()
             msgBox.setText(error)
             msgBox.exec_()
@@ -65,6 +67,24 @@ be notified upon completion, or errors."""
     Path = slide_path
     msgBox.setText('Slides where moved to:\n%s\nBe sure to update github.io'%Path)
     msgBox.exec_()
+    
+def log_error(path,message,count):
+    if count == 0:
+        Date = '\n\n'+datetime.datetime.now()
+    else:
+        Date = ''
+    if path[-1] != '/':
+        file_path = path+'/'+'error.log'
+    else:
+        file_path = path+'error.log'
+    try:
+        with open(file_path,'r')as f:
+            er_text = f.read()
+    except:
+        er_text = ''
+    er_text += Date+'\n'+message
+    with open(file_path,'w')as f:
+        f.write(er_text)
     
 if __name__ == '__main__':
     main()

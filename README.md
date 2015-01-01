@@ -1,4 +1,4 @@
-Construction-Lectures-Fall-2014
+Construction-Lectures-Spring-2015
 =====================
 
 IPython Notebooks that contain lectures on Temporary Structures
@@ -28,7 +28,7 @@ Week 3
 
 Week 4
 
-* <a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%204%20-%20(Optional)%20Euler%20Buckling.ipynb">(Optional) Euler Buckling</a>
+* <a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%204%20-%20Euler%20Buckling.ipynb">Euler Buckling</a>
 * [Timber Columns](http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%204%20-%20Timber%20Column%20Lecture.ipynb)
 
 Week 5
@@ -36,12 +36,12 @@ Week 5
 * <a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%205%20-%20Braced%20Wall%20(Part%20-%201%20Compression%20Bracing).ipynb">Bracing Introduction (Part 1 - Compresion Bracing)</a>
 * <a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%205%20-%20Braced%20Wall%20(Part%20-%202%20Tension%20Bracing%20with%20Fasteners).ipynb">Bracing Introduction (Part 2 - Wall Form Tension Bracing)</a>
 * [Slab Bracing](http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%205%20-%20Slab%20Braces.ipynb)
-* <a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%205%20-%20(Optional)%20Bracing%20Stiffness%20Requirements.ipynb">(Optional) Bracing Stiffness Requirements</a>
+* <a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%205%20-%20Bracing%20Stiffness%20Requirements.ipynb">Bracing Stiffness Requirements</a>
 
 Week 6
 
 * <a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%206%20-%20Importance%20of%20Formwork%20Safety.ipynb">Importance of Formwork Safety</a>
-* <a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%206%20-%20(Optional)%20Span%20Length%20Derivations.ipynb">(Optional) Span Length Derivations</a>
+* <a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%206%20-%20Span%20Length%20Derivations.ipynb">Span Length Derivations</a>
 
 Week 7
 

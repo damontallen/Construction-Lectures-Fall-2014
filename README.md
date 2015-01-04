@@ -77,6 +77,9 @@ Week 13
 * <a href="http://nbviewer.ipython.org/urls/raw.githubusercontent.com/damontallen/Construction-Lectures-Fall-2014/master/Week%2013%20-%20Equipment.ipynb">Equipment</a>
 
 
+Additional Information
+
+* [Rubrics and Excel Help](http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Rubrics%20and%20Excel%20Help.ipynb)
 
 References
 

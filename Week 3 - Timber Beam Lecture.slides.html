@@ -1625,6 +1625,7 @@ span#checkpoint_status,span#autosave_status{font-size:small}
 .highlight .nv { color: #19177C } /* Name.Variable */
 .highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
 .highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #666666 } /* Literal.Number.Bin */
 .highlight .mf { color: #666666 } /* Literal.Number.Float */
 .highlight .mh { color: #666666 } /* Literal.Number.Hex */
 .highlight .mi { color: #666666 } /* Literal.Number.Integer */
@@ -2428,7 +2429,8 @@ In&nbsp;[7]:
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
-[&apos;Select Structural&apos;, &apos;No.1&apos;, &apos;No.2&apos;, &apos;No.3&apos;, &apos;Stud&apos;, &apos;Construction&apos;, &apos;Standard&apos;, &apos;Utility&apos;]
+For Douglas Fir-South:
+Select Structural, No.1, No.2, No.3, Stud, Construction, Standard, Utility
 
 </pre>
 </div>
@@ -2479,11 +2481,6 @@ In&nbsp;[8]:
      type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-
-<p><strong style="color:green">CHANGE THIS AUDIO</STRONG></p>
-<ul>
-<li>Check <strong>ALL</strong> page numbers</li>
-</ul>
 </div>
 </div>
 </div>
@@ -2494,9 +2491,9 @@ In&nbsp;[8]:
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We know that the species of lumber of the beam is Douglas Fir-South and the grade is No.2.  We also know that the beam is $2"$ thick so what table do you think we should look in?</p>
 <ul>
-<li>Table 4A (page 31) Reference Design Values for Visually Graded Dimension Lumber (2&quot; - 4&quot; thick)</li>
-<li>Table 4B (page 38) Reference Design Values for Visually Graded Southern Pine Dimension Lumber (2&quot; - 4&quot; thick)</li>
-<li>Table 4D (page 45) Reference Design Values for Visually Graded Timbers (5&quot; x 5&quot; and larger)</li>
+<li>Table 4A (page 32) Reference Design Values for Visually Graded Dimension Lumber (2&quot; - 4&quot; thick)</li>
+<li>Table 4B (page 39) Reference Design Values for Visually Graded Southern Pine Dimension Lumber (2&quot; - 4&quot; thick)</li>
+<li>Table 4D (page 46) Reference Design Values for Visually Graded Timbers (5&quot; x 5&quot; and larger)</li>
 </ul>
 <p><em>(Click the light blue down arrow to find out what table we need to use.)</em></p>
 </div>
@@ -2538,11 +2535,6 @@ In&nbsp;[8]:
      type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-
-<p><strong style="color:green">CHANGE THIS AUDIO</strong></p>
-<ul>
-<li><strong style="color:green">Check page number</strong></li>
-</ul>
 </div>
 </div>
 </div>
@@ -2551,7 +2543,7 @@ In&nbsp;[8]:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>On page 32 of the in the Supplement we find that,</p>
+<p>On page 34 of the in the Supplement we find that,</p>
 </div>
 </div>
 </div>
@@ -2769,12 +2761,6 @@ $${}$$
      type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-
-<p><strong style="color:green">CHANGE THIS AUDIO</strong></p>
-<ul>
-<li><strong style="color:green">Changed 2005 to 2015 - once</strong></li>
-<li><strong style="color:green">Check page number</strong></li>
-</ul>
 </div>
 </div>
 </div>
@@ -2819,7 +2805,7 @@ $${}$$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(Note that this is equation 3.3-1 on page 13 in the 2015 Timber NDS.)</em></p>
+<p><em>(Note that this is equation 3.3-1 on page 15 in the 2015 Timber NDS.)</em></p>
 </div>
 </div>
 </div></section>
@@ -2846,11 +2832,6 @@ $${}$$
      type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-
-<p><strong style="color:green">CHANGE THIS AUDIO</strong></p>
-<ul>
-<li><strong style="color:green">Check page number</strong></li>
-</ul>
 </div>
 </div>
 </div>
@@ -2861,7 +2842,7 @@ $${}$$
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We need to know what adjustment factors we have to apply to $F_b$ to get the allowable bending stress.  These are listed in the NDS Table 4.3.1.  For bending we have: $C_D$, $C_M$, $C_t$, $C_L$, $C_F$, $C_{fu}$, $C_i$, and $C_r$.  Lets look at each of them in turn.</p>
 <p>$C_D = 1.25$ as was discussed previously because this problem is for construction loading on a temporary structure.</p>
-<p>$C_M$ is found at the from of the tables where we found $F_b$.  In this case we used Table 4A and on page 30 we see that for a beam loaded in wet service conditions we have a $C_M =0.85$.  But there is the footnote *.  Based on the footnote we need to check to see if $F_b \times C_F$ is less than 1,150 psi.</p>
+<p>$C_M$ is found at the from of the tables where we found $F_b$.  In this case we used Table 4A and on page 32 we see that for a beam loaded in wet service conditions we have a $C_M =0.85$.  But there is the footnote *.  Based on the footnote we need to check to see if $F_b \times C_F$ is less than 1,150 psi.</p>
 <p>$C_F$ is found on the same page (since this is not Southern Pine).  We look at the rows with the white background because the grade is No.2; the beam is nominally 10&quot; wide, and 2&quot; thick so $C_F = 1.1$</p>
 <p>$F_b \times C_F = 850 psi \times 1.1 = 935 psi$  which is less than 1,150 psi therefore $C_M = 1.0$.</p>
 <p>Whenever one of the adjustment factors does not apply, then the value you use for it is always one.  In a hand solution you can indicate that the adjustment factor does not apply by drawing a slash through it in the symbolic form of the equation, or if it is one, (look at the example hand solution to see this).</p>
@@ -2908,8 +2889,7 @@ In&nbsp;[12]:
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>
-/home/damon/Documents/CODE/Programing/Python/IPython Notebook Folders (links)/Temp Structuctures/OnLine Class Files/Construction-Lectures-Fall-2014/Beams/Timber/Moisture.py:30: UserWarning: Warning: Becuase F_b*C_F&lt;=1150 then C_M = 1 for F_b (see note)
-  warnings.warn(er)
+Timber/Moisture.py:-1: UserWarning: Warning: Becuase F_b*C_F&lt;=1150 then C_M = 1 for F_b (see note)
 
 </pre>
 </div>
@@ -3124,12 +3104,6 @@ $${}$$
      type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-
-<p><strong style="color:green">CHANGE THIS AUDIO</strong></p>
-<ul>
-<li><strong style="color:green">Check page number</strong></li>
-<li><strong style="color:green">Also fix final comparison</strong></li>
-</ul>
 </div>
 </div>
 </div>
@@ -3141,7 +3115,7 @@ $${}$$
 <p>Again we refer to Table 4.3.1 to determine the adjustment factors we need to apply to $F_v$ to find the allowable shear stress $F_v'$.</p>
 <p>We find that we need $C_D$, $C_M$, $C_t$, and $C_i$.</p>
 <p>$C_D = 1.25$ from before.</p>
-<p>$C_M$ is found from the adjustment values for Table 4A on page 30 of the <a href="http://www.awc.org/pdf/AWC_NDS-2015-Supplement_web-viewonly_1411.pdf">Supplement</a>.  Since our beam is being used in wet service conditions, $C_M = 0.97$.   </p>
+<p>$C_M$ is found from the adjustment values for Table 4A on page 32 of the <a href="http://www.awc.org/pdf/AWC_NDS-2015-Supplement_web-viewonly_1411.pdf">Supplement</a>.  Since our beam is being used in wet service conditions, $C_M = 0.97$.   </p>
 <p>$C_t = 1$ for the same reason we previously covered in bending.</p>
 <p>$C_i$, the incising factor, is found on the same page as Table 4.3.1 of the Timber NDS.  Suffice it to say that $C_i$ is only used if the beam has been incised for pressure treating.  This is not typical and none of the beams in this course will be incised in any way; so $C_i =1$ always.</p>
 <p>Our beam&#39;s allowable shear stress $(F_v')$ is,</p>
@@ -3216,11 +3190,6 @@ $${}$$
      type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-
-<p><strong style="color:green">CHANGE THIS AUDIO</STRONG></p>
-<ul>
-<li>Check page number</li>
-</ul>
 </div>
 </div>
 </div>
@@ -3233,7 +3202,7 @@ $${}$$
 <p>Part of the reason for this is that the allowable deflection is specified by the use case and is not an intrinsic property of a beam.</p>
 <p>Anyway, the adjustment factors for the Young&#39;s modulus listed in Table 4.3.1 of the Timber NDS are, $C_M$, $C_t$, $C_i$, and $C_T$.  </p>
 <p>You will notice that $C_D$ is not listed.  The load duration does not have an effect on the initial deflection of a beam.  The effect of long term loading to a beam&#39;s deflection is called creep and is discussed in section 3.5.2 of the NDS but we do not need to concern ourselves with this.</p>
-<p>$C_M$ is found at the beginning of Table 4A (on page 30) of the <a href="http://www.awc.org/pdf/AWC_NDS-2015-Supplement_web-viewonly_1411.pdf">Supplement</a> and since our beam is being used in wet service conditions, $C_M = 0.9$ for $E$.</p>
+<p>$C_M$ is found at the beginning of Table 4A (on page 32) of the <a href="http://www.awc.org/pdf/AWC_NDS-2015-Supplement_web-viewonly_1411.pdf">Supplement</a> and since our beam is being used in wet service conditions, $C_M = 0.9$ for $E$.</p>
 <p>$C_t = 1$ as was discussed previously.</p>
 <p>$C_i = 1$ as was discussed previously.</p>
 <p><em>(Click on the blue down arrow to see the calculation for $E'$.)</em></p>
@@ -3296,7 +3265,9 @@ $${}$$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Before we can calculate the defelction we need to know the moment of inertia of the beam.  For a rectuangular section it is,</p>
 <p>$$I = \frac{1}{12} b d^3$$</p>
+<p>or we can just look it up in Table 1B of the Supplement.</p>
 </div>
 </div>
 </div>
@@ -3679,8 +3650,6 @@ $${}$$
      type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-
-<p><strong style="color:green">Changed Allowed Value! Fix Audio!</strong></p>
 </div>
 </div>
 </div>
@@ -3761,8 +3730,6 @@ $${}$$
      type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-
-<p><strong style="color:green">Changed Total Allowed Value! Fix Audio!</strong></p>
 </div>
 </div>
 </div>

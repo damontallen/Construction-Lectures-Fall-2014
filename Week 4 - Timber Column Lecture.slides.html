@@ -1625,6 +1625,7 @@ span#checkpoint_status,span#autosave_status{font-size:small}
 .highlight .nv { color: #19177C } /* Name.Variable */
 .highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
 .highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #666666 } /* Literal.Number.Bin */
 .highlight .mf { color: #666666 } /* Literal.Number.Float */
 .highlight .mh { color: #666666 } /* Literal.Number.Hex */
 .highlight .mi { color: #666666 } /* Literal.Number.Integer */
@@ -1789,8 +1790,9 @@ div.output_prompt {
 <li>Write a summary of your results and conclude if the column is adequate.</li>
 </ol>
 <p>In hand solution we will stop and pick a different section if the slenderness ratio $(SR)$ is over 50 rather than doing additional work.  You should be aware that in this course I will want you to solve all the values regardless if you find a failure mode early on.</p>
-<p>Just so you know, in section 3.7.1.4 you will see that the slenderness ratio is allowed to be up to 75 during construction.  This means prior to putting any axial load on it.  By the time the column is loaded the slenderness ratio must be <u>no more than 50</u>.</p>
+<p>Just so you know, in section 3.7.1.4 you will see that the slenderness ratio is allowed to be up to 75 during construction$^1$.  This means prior to putting any axial load on it.  By the time the column is loaded the slenderness ratio must be <u>no more than 50</u>.</p>
 <p>Let&#39;s work through an example to see the whole process.</p>
+<p><em>Footnote 1 - See C3.7.1.4 in NDS.</em></p>
 </div>
 </div>
 </div></section>
@@ -1812,12 +1814,11 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><audio controls data-autoplay preload>
+<audio controls data-autoplay preload>
  <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%204/Timber%20Column/Problem%20Statement.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-<strong style="color:green">4x6 NOW</strong></p>
 </div>
 </div>
 </div>
@@ -1875,6 +1876,15 @@ If you need to display plot you will need to used the following commmand
 Note: The atribute &apos;pick_list&apos; is now available_grades (added Jan, 6, 2014)
 
 Now using 2015 Timber code by default
+loads -- a list of load dictionaries. For example:
+    
+    loads=[{&apos;x0&apos;:5,&apos;x1&apos;:10,&apos;w&apos;:10}, #uniformly distributed load over a 5ft section (5ft - 10ft)
+           {&apos;x0&apos;:0,&apos;x1&apos;:5,&apos;w&apos;:20},
+           {&apos;x0&apos;:10,&apos;x1&apos;:15,&apos;w&apos;:20},
+           {&apos;x0&apos;:12.5,&apos;p&apos;:20}, #point load 
+           {&apos;x0&apos;:0,&apos;x1&apos;:20,&apos;arb&apos;:&apos;1/10*x&apos;}, #triangluar load function
+           {&apos;x0&apos;:10,&apos;m&apos;:20}] # a concentrated moment
+           
 
 </pre>
 </div>
@@ -1944,8 +1954,6 @@ In&nbsp;[2]:
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-
-<p><strong style="color:green">4x6 now</strong></p>
 </div>
 </div>
 </div>
@@ -1965,7 +1973,7 @@ In&nbsp;[2]:
 <ul>
 <li>$\text{Thickness }= b = 3 \frac{1}{2}"$</li>
 <li>$\text{Width }= d = 5 \frac{1}{2}"$</li>
-<li>$\text{Cross Sectional Area }=A = 12.25 in^2$</li>
+<li>$\text{Cross Sectional Area }=A = 19.25 in^2$</li>
 </ul>
 </div>
 </div>
@@ -2052,15 +2060,16 @@ In&nbsp;[4]:
 <pre>
 &apos;ALASKA CEDAR&apos;               &apos;ALASKA HEMLOCK&apos;             &apos;ALASKA SPRUCE&apos;             
 &apos;ALASKA YELLOW CEDAR&apos;        &apos;ASPEN&apos;                      &apos;BALDCYPRESS&apos;               
-&apos;BEECH-BIRCH-HICKORY&apos;        &apos;COTTONWOOD&apos;                 &apos;DOUGLAS FIR-LARCH&apos;         
-&apos;DOUGLAS FIR-LARCH (NORTH)&apos;  &apos;DOUGLAS FIR-SOUTH&apos;          &apos;EASTERN HEMLOCK-BALSAM FIR&apos;
-&apos;EASTERN HEMLOCK-TAMARACK&apos;   &apos;EASTERN SOFTWOODS&apos;          &apos;EASTERN WHITE PINE&apos;        
-&apos;HEM-FIR&apos;                    &apos;HEM-FIR (NORTH)&apos;            &apos;MIXED MAPLE&apos;               
-&apos;MIXED OAK&apos;                  &apos;NORTHERN RED OAK&apos;           &apos;NORTHERN SPECIES&apos;          
-&apos;NORTHERN WHITE CEDAR&apos;       &apos;RED MAPLE&apos;                  &apos;RED OAK&apos;                   
-&apos;REDWOOD&apos;                    &apos;SOUTHERN PINE&apos;              &apos;SPRUCE-PINE-FIR&apos;           
-&apos;SPRUCE-PINE-FIR (SOUTH)&apos;    &apos;WESTERN CEDARS&apos;             &apos;WESTERN WOODS&apos;             
-&apos;WHITE OAK&apos;                  &apos;YELLOW POPLAR&apos;              
+&apos;BEECH-BIRCH-HICKORY&apos;        &apos;COAST SITKA SPRUCE&apos;         &apos;COTTONWOOD&apos;                
+&apos;DOUGLAS FIR-LARCH&apos;          &apos;DOUGLAS FIR-LARCH (NORTH)&apos;  &apos;DOUGLAS FIR-SOUTH&apos;         
+&apos;EASTERN HEMLOCK-BALSAM FIR&apos; &apos;EASTERN HEMLOCK-TAMARACK&apos;   &apos;EASTERN SOFTWOODS&apos;         
+&apos;EASTERN WHITE PINE&apos;         &apos;HEM-FIR&apos;                    &apos;HEM-FIR (NORTH)&apos;           
+&apos;MIXED MAPLE&apos;                &apos;MIXED OAK&apos;                  &apos;NORTHERN RED OAK&apos;          
+&apos;NORTHERN SPECIES&apos;           &apos;NORTHERN WHITE CEDAR&apos;       &apos;RED MAPLE&apos;                 
+&apos;RED OAK&apos;                    &apos;REDWOOD&apos;                    &apos;SOUTHERN PINE&apos;             
+&apos;SPRUCE-PINE-FIR&apos;            &apos;SPRUCE-PINE-FIR (SOUTH)&apos;    &apos;WESTERN CEDARS&apos;            
+&apos;WESTERN WOODS&apos;              &apos;WHITE OAK&apos;                  &apos;YELLOW CEDAR&apos;              
+&apos;YELLOW POPLAR&apos;              
 </pre>
 </div>
 </div>
@@ -2082,6 +2091,22 @@ In&nbsp;[5]:
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+Setting u_c_f to 12**3 based on length in ft and d in inches, i.e ((1 ft)/(1 in))^3.
+
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -2109,8 +2134,10 @@ In&nbsp;[6]:
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
-For 5”-6” wide material
-[&apos;Dense Select Structural&apos;, &apos;Select Structural&apos;, &apos;Non-Dense Select Structural&apos;, &apos;No. 1 Dense&apos;, &apos;No. 1&apos;, &apos;No. 1 Non-Dense&apos;, &apos;No. 2 Dense&apos;, &apos;No. 2&apos;, &apos;No. 2 Non-Dense&apos;, &apos;No. 3 and Stud&apos;]
+For 5”-6” wide material in Southern Pine:
+Dense Select Structural, Select Structural, Non-Dense Select Structural,
+No. 1 Dense, No. 1, No. 1 Non-Dense, No. 2 Dense, No. 2, No. 2 Non-Dense,
+No. 3 and Stud
 
 </pre>
 </div>
@@ -2161,11 +2188,6 @@ In&nbsp;[7]:
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-
-<p><strong style="color:green">CHANGE THIS AUDIO (4x6 &amp; pg numbers)</STRONG></p>
-<ul>
-<li>Check <strong>ALL</strong> page numbers</li>
-</ul>
 </div>
 </div>
 </div>
@@ -2176,9 +2198,9 @@ In&nbsp;[7]:
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Given that the species of the column is Southern Pine, the grade is No.2 and its size is 4x6, what Table should we look up the Unmodified Allowable Stresses in?</p>
 <ul>
-<li>Table 4A (page 31) Reference Design Values for Visually Graded Dimension Lumber (2&quot; - 4&quot; thick)</li>
-<li>Table 4B (page 38) Reference Design Values for Visually Graded Southern Pine Dimension Lumber (2&quot; - 4&quot; thick)</li>
-<li>Table 4D (page 45) Reference Design Values for Visually Graded Timbers (5&quot; x 5&quot; and larger)</li>
+<li>Table 4A (page 32) Reference Design Values for Visually Graded Dimension Lumber (2&quot; - 4&quot; thick)</li>
+<li>Table 4B (page 39) Reference Design Values for Visually Graded Southern Pine Dimension Lumber (2&quot; - 4&quot; thick)</li>
+<li>Table 4D (page 46) Reference Design Values for Visually Graded Timbers (5&quot; x 5&quot; and larger)</li>
 </ul>
 <p><em>(Click on the light blue down arrow to find out what table we need to use.)</em></p>
 </div>
@@ -2219,11 +2241,6 @@ In&nbsp;[7]:
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-
-<p><strong style="color:green">CHANGE THIS AUDIO</STRONG></p>
-<ul>
-<li>Check page number</li>
-</ul>
 </div>
 </div>
 </div>
@@ -2232,7 +2249,7 @@ In&nbsp;[7]:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>On page 38 of the Supplement, under the 2&quot; - 4&quot; Size classification, we find that,</p>
+<p>On page 39 of the Supplement, under the 2&quot; - 4&quot; Size classification, we find that,</p>
 </div>
 </div>
 </div>
@@ -2259,7 +2276,7 @@ In&nbsp;[8]:
 
 
 <div class="output_latex output_subarea output_pyout">
-$$\text{The unmodified stresses for a No. 2 grade, southern pine, member are:}$$ 
+$$\text{The unmodified stresses for a No. 2 grade, Southern Pine, member are:}$$ 
 $${}$$
  $$F_b = 1000 psi\text{ - for bending}$$
 $$F_t = 600 psi\text{ - for axial tension}$$
@@ -2299,11 +2316,6 @@ $$E_{min} = 510000 psi\text{ - unadjusted Young's modulus for column loading ana
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-
-<p><strong style="color:green">CHANGE THIS AUDIO</STRONG></p>
-<ul>
-<li>Check page number</li>
-</ul>
 </div>
 </div>
 </div>
@@ -2312,10 +2324,10 @@ $$E_{min} = 510000 psi\text{ - unadjusted Young's modulus for column loading ana
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>On page 37 of the Supplement there is information about $C_F$, $C_r$, $C_{fu}$, and $C_M$. </p>
+<p>On page 38 of the Supplement there is information about $C_F$, $C_r$, $C_{fu}$, and $C_M$. </p>
 <ul>
 <li>$C_F = 1$ because &quot;Appropriate size adjustment factors have already been incorporated in the tabulated design values for most thicknesses of Southern Pine and Mixed Southern Pine dimension lumber.&quot; <ul>
-<li>(With the exception of $C_F= 1.1$ for bending members of 4&quot; thick and 8&quot; or larger, but we are not looking at bending and the column is a 4x4.)</li>
+<li>(With the exception of $C_F= 1.1$ for bending members of 4&quot; thick and 8&quot; or larger, but we are not looking at bending and the column is a 4x6.)</li>
 </ul>
 </li>
 <li>$C_r$ is for bending only. </li>
@@ -2361,11 +2373,6 @@ $$E_{min} = 510000 psi\text{ - unadjusted Young's modulus for column loading ana
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-
-<p><strong style="color:green">CHANGE THIS AUDIO</STRONG></p>
-<ul>
-<li>Changed 2005 to 2015 - once</li>
-</ul>
 </div>
 </div>
 </div>
@@ -2409,8 +2416,6 @@ $$E_{min} = 510000 psi\text{ - unadjusted Young's modulus for column loading ana
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-
-<p><strong style="color:green">Changed the first SR value for 4x6 and added numeric values</strong></p>
 </div>
 </div>
 </div>
@@ -2437,7 +2442,7 @@ $$E_{min} = 510000 psi\text{ - unadjusted Young's modulus for column loading ana
 <p>$$\frac{L_{e,x}}{d} = \frac{144"}{5.5"} = 26.18$$ </p>
 <p>$$\frac{L_{e,y}}{b} = \frac{144"}{3.5"} = 41.14\text{ }\Leftarrow \text{ Controls}$$ </p>
 <p>$$SR = 41.14$$ </p>
-<p>(Note that if these were different values, then largest would control, and would be the slenderness ratio.)</p>
+<p>(Note that its the largest of these values that controls, and is the slenderness ratio.)</p>
 </div>
 </div>
 </div><div style=display:none>
@@ -2495,12 +2500,11 @@ $${}$$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><audio controls data-autoplay preload>
+<audio controls data-autoplay preload>
  <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%204/Timber%20Column/Finding%20F_c_star.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-<strong style="color:green">Values Changed</strong></p>
 </div>
 </div>
 </div>
@@ -2570,12 +2574,11 @@ $${}$$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><audio controls data-autoplay preload>
+<audio controls data-autoplay preload>
  <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%204/Timber%20Column/Finding%20E_min_prime.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-<strong style="color:green">Values Changed</strong></p>
 </div>
 </div>
 </div>
@@ -2649,12 +2652,11 @@ $${}$$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><audio controls data-autoplay preload>
+<audio controls data-autoplay preload>
  <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%204/Timber%20Column/Finding%20F_cE.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-<strong style="color:green">Values Changed</strong></p>
 </div>
 </div>
 </div>
@@ -2724,12 +2726,11 @@ $${}$$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><audio controls data-autoplay preload>
+<audio controls data-autoplay preload>
  <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%204/Timber%20Column/What%20is%20c%20and%20Finding%20C_P.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-<strong style="color:green">4x6 NOW</strong></p>
 </div>
 </div>
 </div>
@@ -2821,12 +2822,11 @@ $${}$$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><audio controls data-autoplay preload>
+<audio controls data-autoplay preload>
  <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%204/Timber%20Column/Allowable%20Compressive%20Stress%20Parallel%20to%20Grain.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-<strong style="color:green">Values Changed</strong></p>
 </div>
 </div>
 </div>
@@ -2897,12 +2897,11 @@ $${}$$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><audio controls data-autoplay preload>
+<audio controls data-autoplay preload>
  <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%204/Timber%20Column/Actual%20Stress.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-<strong style="color:green">Values Changed</strong></p>
 </div>
 </div>
 </div>
@@ -2969,12 +2968,11 @@ $${}$$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><audio controls data-autoplay preload>
+<audio controls data-autoplay preload>
  <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%204/Timber%20Column/Summary.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-<strong style="color:green">Values Changed</strong></p>
 </div>
 </div>
 </div>
@@ -2983,7 +2981,7 @@ $${}$$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>After an analysis of the  No. 2 Southern Pine 4x4, under normal temperature and moisture conditions, and with only end point support, we find that the allowable compressive stress parallel to grain compared with the actual compressive stress is,</p>
+<p>After an analysis of the  No. 2 Southern Pine 4x6, under normal temperature and moisture conditions, and with only end point support, we find that the allowable compressive stress parallel to grain compared with the actual compressive stress is,</p>
 </div>
 </div>
 </div>
@@ -3047,12 +3045,11 @@ $$ F_c' = 240.0 psi \geq f_c = 166.2 psi$$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><audio controls data-autoplay preload>
+<audio controls data-autoplay preload>
  <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%204/Timber%20Column/Column%20Capacity.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-<strong style="color:green">Values Changed</strong></p>
 </div>
 </div>
 </div>
@@ -3065,6 +3062,54 @@ $$ F_c' = 240.0 psi \geq f_c = 166.2 psi$$
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>$P_{allowed} = F_c' \times A$</p>
+<p>$P_{allowed} = 240.0 psi \times 19.25 in^2$</p>
+<p>$P_{allowed} = 4,621 lbs$</p>
+</div>
+</div>
+</div><div style=display:none>
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[17]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="n">column</span><span class="o">.</span><span class="n">column_capacity</span><span class="o">.</span><span class="n">text</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[17]:</div>
+
+
+<div class="output_text output_subarea output_pyout">
+<pre>
+&quot;$$F_c&apos; = F_c \\times C_D \\times C_M \\times C_t \\times C_F \\times C_i \\times C_P$$ \n$${}$$\n $$F_c&apos; = 1400 psi \\times 1.25 \\times 1 \\times 1 \\times 1 \\times 1 \\times 0.1372$$ \n$${}$$\n $$F_c&apos; = 240.0 psi$$ \n$${}$$\n $$P_{allowed} = F_c&apos; \\times A$$ \n$${}$$\n $$P_{allowed} = 240.0 psi \\times 19.25 in^2$$ \n$${}$$\n $$P_{allowed} = 4621 lbs$$&quot;
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    </div><div style=display:none>
+    
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
@@ -3106,7 +3151,8 @@ $${}$$
 </div>
 </div>
 
-</div><div style=display:none>
+</div>
+    </div><div style=display:none>
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">

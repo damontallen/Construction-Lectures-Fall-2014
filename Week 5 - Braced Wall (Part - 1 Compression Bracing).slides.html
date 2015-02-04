@@ -1625,6 +1625,7 @@ span#checkpoint_status,span#autosave_status{font-size:small}
 .highlight .nv { color: #19177C } /* Name.Variable */
 .highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
 .highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #666666 } /* Literal.Number.Bin */
 .highlight .mf { color: #666666 } /* Literal.Number.Float */
 .highlight .mh { color: #666666 } /* Literal.Number.Hex */
 .highlight .mi { color: #666666 } /* Literal.Number.Integer */
@@ -1735,16 +1736,6 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="CHECK-ALL-AUDIO!"><strong style="color:green">CHECK ALL AUDIO!</strong><a class="anchor-link" href="#CHECK-ALL-AUDIO!">&#182;</a></h2>
-</div>
-</div>
-</div>
-
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <iframe width="420" height="315" src="//www.youtube.com/embed/lbKsAVzNhWw" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
@@ -1825,9 +1816,7 @@ div.output_prompt {
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[1]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">sqrt</span><span class="p">,</span> <span class="n">ceil</span>
@@ -1930,9 +1919,7 @@ $$P_{brace} = 512.4 lb$$</p>
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[2]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="o">%</span><span class="k">run</span> <span class="n">Beams</span><span class="o">/</span><span class="n">Timber_beam_v_02</span><span class="o">.</span><span class="mf">1.</span><span class="n">py</span>
@@ -1970,9 +1957,7 @@ Now using 2015 Timber code by default
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[3]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">brace</span> <span class="o">=</span> <span class="n">Timber_Beam</span><span class="p">()</span>
@@ -1982,14 +1967,36 @@ In&nbsp;[3]:
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+loads -- a list of load dictionaries. For example:
+    
+    loads=[{&apos;x0&apos;:5,&apos;x1&apos;:10,&apos;w&apos;:10}, #uniformly distributed load over a 5ft section (5ft - 10ft)
+           {&apos;x0&apos;:0,&apos;x1&apos;:5,&apos;w&apos;:20},
+           {&apos;x0&apos;:10,&apos;x1&apos;:15,&apos;w&apos;:20},
+           {&apos;x0&apos;:12.5,&apos;p&apos;:20}, #point load 
+           {&apos;x0&apos;:0,&apos;x1&apos;:20,&apos;arb&apos;:&apos;1/10*x&apos;}, #triangluar load function
+           {&apos;x0&apos;:10,&apos;m&apos;:20}] # a concentrated moment
+           
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     </div><div style=display:none>
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[4]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">brace</span><span class="o">.</span><span class="n">list_wood</span><span class="p">()</span>
@@ -2030,9 +2037,7 @@ In&nbsp;[4]:
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[5]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">brace</span><span class="o">.</span><span class="n">species</span> <span class="o">=</span> <span class="s">&#39;DOUGLAS FIR-LARCH&#39;</span>
@@ -2042,14 +2047,28 @@ In&nbsp;[5]:
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+Setting u_c_f to 12**3 based on length in ft and d in inches, i.e ((1 ft)/(1 in))^3.
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     </div><div style=display:none>
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[6]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">brace</span><span class="o">.</span><span class="n">available_grades</span>
@@ -2066,7 +2085,9 @@ In&nbsp;[6]:
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
-[&apos;Select Structural&apos;, &apos;No.1 &amp; Btr&apos;, &apos;No.1&apos;, &apos;No.2&apos;, &apos;No.3&apos;, &apos;Stud&apos;, &apos;Construction&apos;, &apos;Standard&apos;, &apos;Utility&apos;]
+For Douglas Fir-Larch:
+Select Structural, No.1 &amp; Btr, No.1, No.2, No.3, Stud, Construction, Standard,
+Utility
 
 </pre>
 </div>
@@ -2080,9 +2101,7 @@ In&nbsp;[6]:
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[7]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">brace</span><span class="o">.</span><span class="n">grade</span> <span class="o">=</span> <span class="s">&#39;No.2&#39;</span>
@@ -2137,9 +2156,7 @@ In&nbsp;[7]:
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[8]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">brace</span><span class="o">.</span><span class="n">L</span> <span class="o">=</span> <span class="mi">16</span> <span class="c">#ft</span>
@@ -2173,9 +2190,7 @@ The miniumum dimension of the brace is 3.84 in.
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[9]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="c">#Use Table 4D and assume &quot;Post and Timbers&quot;</span>
@@ -2199,9 +2214,7 @@ In&nbsp;[9]:
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[10]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">brace</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="mf">3.875</span> <span class="c">#in Rough sawn</span>
@@ -2294,9 +2307,7 @@ In&nbsp;[10]:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[11]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">brace</span><span class="o">.</span><span class="n">C_P</span><span class="o">.</span><span class="n">work</span>
@@ -2313,15 +2324,13 @@ In&nbsp;[11]:
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>
-/home/damon/Documents/CODE/Programing/Python/IPython Notebook Folders (links)/Temp Structuctures/OnLine Class Files/Construction-Lectures-Fall-2014/Beams/Timber/ColumnBuckling.py:113: UserWarning: Note: Using default value for &apos;C_P_l_e.c&apos;, (c = 0.8), for a sawn lumber column.
-  warnings.warn(er)
+Timber/ColumnBuckling.py:-1: UserWarning: Note: Using default value for &apos;C_P_l_e.c&apos;, (c = 0.8), for a sawn lumber column.
 
 </pre>
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[11]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[11]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -2393,9 +2402,7 @@ $${}$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[12]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">brace</span><span class="o">.</span><span class="n">column_capacity</span><span class="o">.</span><span class="n">work</span>
@@ -2409,8 +2416,7 @@ In&nbsp;[12]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[12]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[12]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -2470,9 +2476,7 @@ $${}$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[13]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">brace</span><span class="o">.</span><span class="n">f_c_latex</span>
@@ -2486,8 +2490,7 @@ In&nbsp;[13]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[13]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[13]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -2515,9 +2518,7 @@ $${}$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[14]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">brace</span><span class="o">.</span><span class="n">column_adequacy_check_latex</span>
@@ -2531,8 +2532,7 @@ In&nbsp;[14]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[14]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[14]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -2622,9 +2622,7 @@ $$ F_c' = 191.0 psi \geq f_c = 34.13 psi$$
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[15]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="c"># Mean wind reoccurance check</span>

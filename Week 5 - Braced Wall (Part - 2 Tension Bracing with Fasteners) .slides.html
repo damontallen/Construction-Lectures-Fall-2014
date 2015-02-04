@@ -1625,6 +1625,7 @@ span#checkpoint_status,span#autosave_status{font-size:small}
 .highlight .nv { color: #19177C } /* Name.Variable */
 .highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
 .highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #666666 } /* Literal.Number.Bin */
 .highlight .mf { color: #666666 } /* Literal.Number.Float */
 .highlight .mh { color: #666666 } /* Literal.Number.Hex */
 .highlight .mi { color: #666666 } /* Literal.Number.Integer */
@@ -1721,9 +1722,7 @@ div.output_prompt {
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[1]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="o">%</span><span class="k">run</span> <span class="n">Beams</span><span class="o">/</span><span class="n">Timber_beam_v_02</span><span class="o">.</span><span class="mf">1.</span><span class="n">py</span>
@@ -1846,9 +1845,7 @@ $$T_{brace} = 512.4 lb$$</p>
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[2]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">sqrt</span><span class="p">,</span> <span class="n">ceil</span>
@@ -1893,9 +1890,7 @@ The load is 512.41 lbs and hor = 12.49 ft
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[3]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">brace</span> <span class="o">=</span> <span class="n">Timber_Beam</span><span class="p">()</span>
@@ -1910,9 +1905,7 @@ In&nbsp;[3]:
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[4]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">brace</span><span class="o">.</span><span class="n">d</span> <span class="o">=</span> <span class="mf">3.5</span> <span class="c">#in</span>
@@ -1964,9 +1957,7 @@ In&nbsp;[4]:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[5]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">brace</span><span class="o">.</span><span class="n">geometry_latex</span>
@@ -1980,8 +1971,7 @@ In&nbsp;[5]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[5]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[5]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -1997,9 +1987,7 @@ $$b = 1.50" \text{, }d = 3.50" \text{, }A = 5.25 in^2 \text{, }S = 3.06 in^3 \te
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[6]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">brace</span><span class="o">.</span><span class="n">list_wood</span><span class="p">()</span>
@@ -2040,9 +2028,7 @@ In&nbsp;[6]:
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[7]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">brace</span><span class="o">.</span><span class="n">species</span> <span class="o">=</span> <span class="s">&#39;DOUGLAS FIR-LARCH&#39;</span> 
@@ -2074,9 +2060,7 @@ In&nbsp;[7]:
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[8]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">brace</span><span class="o">.</span><span class="n">grade</span> <span class="o">=</span> <span class="s">&#39;No.2&#39;</span>
@@ -2127,9 +2111,7 @@ In&nbsp;[8]:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[9]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">brace</span><span class="o">.</span><span class="n">F_t_latex</span>
@@ -2143,8 +2125,7 @@ In&nbsp;[9]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[9]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[9]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -2198,9 +2179,7 @@ $${}$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[10]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">brace</span><span class="o">.</span><span class="n">f_t_latex</span>
@@ -2214,8 +2193,7 @@ In&nbsp;[10]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[10]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[10]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -2245,9 +2223,7 @@ $${}$$
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[11]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;Factor of safety = </span><span class="si">%.2f</span><span class="s">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">brace</span><span class="o">.</span><span class="n">F_t_</span><span class="o">/</span><span class="n">brace</span><span class="o">.</span><span class="n">f_t</span><span class="p">))</span>
@@ -2335,11 +2311,6 @@ Factor of safety = 14.14
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
-
-<p><strong style="color:green">CHANGE THIS AUDIO</STRONG></p>
-<ul>
-<li>Check <strong>ALL</strong> page numbers</li>
-</ul>
 </div>
 </div>
 </div>
@@ -2348,8 +2319,8 @@ Factor of safety = 14.14
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The strength of nails in shear is found in your Formwork for Concrete text on page 4-29 (Table 4-8) and in Table 11N (page 97) of your NDS code book.  Shear strength is denoted using a $Z$.  The size of the nail that is now typically used is a 12d nail (AKA a 12 <em>pennyweight</em> or <em>penny</em> nail).  Using a 12d sinker nail, driven through a 1 $\frac{1}{2}$&quot; thick Douglas Fir Larch 2x4 we find:</p>
-<p>$$Z = 103 \frac{lbs}{nail} \text{ (Table 11N of Timber NDS)}$$</p>
+<p>The strength of nails in shear is found in your Formwork for Concrete text on page 4-29 (Table 4-8) and in Table 12N (page 109) of your NDS code book.  Shear strength is denoted using a $Z$.  The size of the nail that is now typically used is a 12d nail (AKA a 12 <em>pennyweight</em> or <em>penny</em> nail).  Using a 12d sinker nail, driven through a 1 $\frac{1}{2}$&quot; thick Douglas Fir Larch 2x4 we find:</p>
+<p>$$Z = 103 \frac{lbs}{nail} \text{ (Table 12N of Timber NDS)}$$</p>
 </div>
 </div>
 </div>
@@ -2358,8 +2329,8 @@ Factor of safety = 14.14
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Like with other wood properties, there is an adjustment factor table like 4.3.1 for fasteners.  In the Formwork test it is Table 4-6A, and Table 10.3.1 (page 58) in the Timber NDS.</p>
-<p>To find the allowable load on each nail in shear we see in Table 10.3.1 that:</p>
+<p>Like with other wood properties, there is an adjustment factor table like 4.3.1 for fasteners.  In the Formwork test it is Table 4-6A, and Table 11.3.1 (page 66) in the Timber NDS.</p>
+<p>To find the allowable load on each nail in shear we see in Table 11.3.1 that:</p>
 <p>$$Z' = Z \times C_D \times C_M \times C_t \times C_g \times C_{\Delta} \times C_{eg} \times C_{di} \times C_{tn}$$</p>
 <p>The first three adjustment factors are the same as before.  $C_g$ is the group adjustment factor and it does not apply to nails. $C_{\Delta}$ has to do with spacing and since nails are so small you are more likely to split the wood than have this effect anything.  $C_{eg}$ is for end grain fastening (which we are not doing here).  $C_{di}$ is the diaphragm factor used with roofs and floors, not braces.  $C_{tn}$ is used when you are fastening members using toenailing (nailing at an angle of 30$^o$ which we aren&#39;t doing).</p>
 </div>
@@ -2417,9 +2388,7 @@ Factor of safety = 14.14
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[12]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="c">#Nails</span>
@@ -2530,9 +2499,7 @@ we need 3.11 nails so use 4 nails on each end.
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[13]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="c"># Mean wind reoccurance check</span>

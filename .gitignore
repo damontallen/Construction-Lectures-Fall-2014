@@ -1,0 +1,19 @@
+# Backup files #
+################
+*.*~
+*.ipynb_checkpoints*
+
+# Libraries #
+#############
+Beams
+Wood
+Older_Classes
+
+# Editing Files #
+#################
+MarkedChanges.txt
+Warnings.txt
+
+# Original Code sources #
+#########################
+nblinkcheck

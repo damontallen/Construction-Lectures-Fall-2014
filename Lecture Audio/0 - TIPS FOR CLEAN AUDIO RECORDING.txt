@@ -1,0 +1,7 @@
+The main tip for having a good audoi recording (low background noise) is to turn 
+the volume of the microphone down and move it very close to your mouth.  The 
+procedure to use to determine the correct volume of the microphone is to place 
+it an inch away from your mouth and then adjust its volume while recording in
+Audacity.  When you are not speaking the ine should be flat.  When you do speeak 
+it shold peak out at 3/4 max.  This should let you create audio file with 
+practically no background noise and better quality that the original recordings.

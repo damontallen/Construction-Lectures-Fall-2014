@@ -17,3 +17,7 @@ Warnings.txt
 # Original Code sources #
 #########################
 nblinkcheck
+
+# HTML versions of the files #
+##############################
+*.html

@@ -2004,9 +2004,7 @@ The floor is subjected to a uniform dead load of 15 psf and live load of 75 psf.
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[1]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="o">%</span><span class="k">run</span> <span class="n">Beams</span><span class="o">/</span><span class="n">Timber_beam_v_02</span><span class="o">.</span><span class="mf">1.</span><span class="n">py</span>
@@ -2108,9 +2106,7 @@ Now using 2015 Timber code by default
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[2]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">beam</span><span class="o">.</span><span class="n">C_D</span> <span class="o">=</span> <span class="mf">1.25</span> <span class="c">#duration factor</span>
@@ -2164,9 +2160,7 @@ In&nbsp;[2]:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[3]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">beam</span><span class="o">.</span><span class="n">geometry_latex</span>
@@ -2180,8 +2174,7 @@ In&nbsp;[3]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[3]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -2292,9 +2285,7 @@ $$b = 1.50" \text{, }d = 9.25" \text{, }A = 13.88 in^2 \text{, }S = 21.39 in^3 \
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[4]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">D</span> <span class="o">=</span> <span class="mi">15</span> <span class="c">#psf - Dead Load</span>
@@ -2350,9 +2341,7 @@ w = 120 plf
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[5]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">beam</span><span class="o">.</span><span class="n">list_wood</span><span class="p">()</span>
@@ -2393,9 +2382,7 @@ In&nbsp;[5]:
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[6]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">beam</span><span class="o">.</span><span class="n">species</span> <span class="o">=</span> <span class="s">&#39;DOUGLAS FIR-SOUTH&#39;</span>
@@ -2410,9 +2397,7 @@ In&nbsp;[6]:
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[7]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">beam</span><span class="o">.</span><span class="n">available_grades</span>
@@ -2444,9 +2429,7 @@ Select Structural, No.1, No.2, No.3, Stud, Construction, Standard, Utility
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[8]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">beam</span><span class="o">.</span><span class="n">grade</span><span class="o">=</span><span class="s">&#39;No.2&#39;</span>
@@ -2549,9 +2532,7 @@ In&nbsp;[8]:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[9]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">beam</span><span class="o">.</span><span class="n">unmodified_stresses_latex</span>
@@ -2565,8 +2546,7 @@ In&nbsp;[9]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[9]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[9]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -2664,9 +2644,7 @@ $$E_{min} = 440000 psi\text{ - unadjusted Young's modulus for column loading ana
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[10]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">beam</span><span class="o">.</span><span class="n">M_latex</span> <span class="c">#in foot pounds</span>
@@ -2680,8 +2658,7 @@ In&nbsp;[10]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[10]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[10]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -2766,9 +2743,7 @@ $${}$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[11]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">beam</span><span class="o">.</span><span class="n">f_b_latex</span>
@@ -2782,8 +2757,7 @@ In&nbsp;[11]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[11]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[11]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -2870,9 +2844,7 @@ $${}$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[12]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">beam</span><span class="o">.</span><span class="n">F_b_latex</span> <span class="c">#(allowable)</span>
@@ -2895,8 +2867,7 @@ Timber/Moisture.py:-1: UserWarning: Warning: Becuase F_b*C_F&lt;=1150 then C_M =
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[12]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[12]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -2965,9 +2936,7 @@ $${}$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[13]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">beam</span><span class="o">.</span><span class="n">V_latex</span> <span class="c"># in pounds</span>
@@ -2981,8 +2950,7 @@ In&nbsp;[13]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[13]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[13]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -3038,9 +3006,7 @@ ${}$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[14]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">beam</span><span class="o">.</span><span class="n">f_v_latex</span>
@@ -3054,8 +3020,7 @@ In&nbsp;[14]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[14]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[14]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -3124,9 +3089,7 @@ $${}$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[15]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">beam</span><span class="o">.</span><span class="n">F_v_latex</span>
@@ -3140,8 +3103,7 @@ In&nbsp;[15]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[15]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[15]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -3164,6 +3126,51 @@ $${}$$
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>$F_v' = 218.2 psi \geq f_v = 68.11 psi \text{ so this beam is GOOD in shear.}$</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>(Look at the slide below to see why $C_M$ is different from before.)</em></p>
+</div>
+</div>
+</div></section><section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Reading-the-$C_M$-Table">Reading the $C_M$ Table<a class="anchor-link" href="#Reading-the-$C_M$-Table">&#182;</a></h2>
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<audio controls data-autoplay preload>
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%203/Timber%20Beam/Reading%20the%20C_M%20Table.mp3"
+     type='audio/mp3'>
+ <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
+</audio>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Reading the $C_M$ table is often confusing for students initially.  When you are looking in the Supplement to determine $C_M$ you need to realize that the table for $C_M$ is really a table.  It is a table with just one row of values, but it is really a table.  Each of the values in that single row are for the specific term listed at the top of their respective column.  </p>
+<p>For example, when you look at the table you can see that the first column is for $F_b$ and the value is 0.85*.  However the value under $F_v$ is 0.97.  When calculating the prime value like $F_b'$, $F_v'$, or for any term you will need to use the value for $C_M$ that is listed under that particular term.</p>
+<p>You will also notice that there are asterisks next to two values.  These values are conditional based on the notes listed below the table.  For the value for $C_M$ when working with $F_b$ if $F_b \times C_F \le 1,150 psi$ then $C_M \neq 0.85$ but rather $C_M = 1.0$.  </p>
+<p>There is a similar condition for $F_c$ but we are not going to cover that until we get into columns.</p>
 </div>
 </div>
 </div></section>
@@ -3225,9 +3232,7 @@ $${}$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[16]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">beam</span><span class="o">.</span><span class="n">E_latex</span>
@@ -3241,8 +3246,7 @@ In&nbsp;[16]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[16]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[16]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -3374,9 +3378,7 @@ $$\text{Deflection} = \Delta = \frac{5 \times \text{Line Load} \times \text{(Spa
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[17]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">beam</span><span class="o">.</span><span class="n">loads</span><span class="o">=</span><span class="p">[{</span><span class="s">&quot;x0&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s">&quot;x1&quot;</span><span class="p">:</span><span class="n">beam</span><span class="o">.</span><span class="n">span</span><span class="p">,</span><span class="s">&quot;w&quot;</span><span class="p">:</span><span class="n">w_live</span><span class="p">}]</span>
@@ -3399,9 +3401,7 @@ In&nbsp;[17]:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[18]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">beam</span><span class="o">.</span><span class="n">deflect_simple_latex</span>
@@ -3415,8 +3415,7 @@ In&nbsp;[18]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[18]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[18]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -3483,9 +3482,7 @@ $${}$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[19]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">beam</span><span class="o">.</span><span class="n">deflect_allow</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">360</span><span class="p">)</span>
@@ -3499,8 +3496,7 @@ In&nbsp;[19]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[19]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[19]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -3555,9 +3551,7 @@ $${}$$
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[20]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">beam</span><span class="o">.</span><span class="n">loads</span><span class="o">=</span><span class="p">[{</span><span class="s">&quot;x0&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s">&quot;x1&quot;</span><span class="p">:</span><span class="n">beam</span><span class="o">.</span><span class="n">span</span><span class="p">,</span><span class="s">&quot;w&quot;</span><span class="p">:</span><span class="n">w</span><span class="p">}]</span>
@@ -3580,9 +3574,7 @@ In&nbsp;[20]:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[21]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">beam</span><span class="o">.</span><span class="n">deflect_simple_latex</span>
@@ -3596,8 +3588,7 @@ In&nbsp;[21]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[21]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[21]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -3664,9 +3655,7 @@ $${}$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[22]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">beam</span><span class="o">.</span><span class="n">deflect_allow</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">240</span><span class="p">)</span>
@@ -3680,8 +3669,7 @@ In&nbsp;[22]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[22]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[22]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">

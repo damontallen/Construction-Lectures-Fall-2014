@@ -1379,7 +1379,7 @@ input.engine_num_input{width:60px}
 .ansiblack{color:#000}
 .ansired{color:#8b0000}
 .ansigreen{color:#006400}
-.ansiyellow{color:#a52a2a}
+.ansiyellow{color:#c4a000}
 .ansiblue{color:#00008b}
 .ansipurple{color:#9400d3}
 .ansicyan{color:#4682b4}
@@ -2112,9 +2112,7 @@ div.output_prompt {
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[1]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">Wet</span> <span class="o">=</span> <span class="bp">True</span>
@@ -2157,9 +2155,7 @@ In&nbsp;[1]:
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[2]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="o">%</span><span class="k">run</span> <span class="n">Older_Classes</span><span class="o">/</span><span class="n">Temp_struc_v_3_beta</span><span class="o">.</span><span class="n">py</span>
@@ -2177,9 +2173,7 @@ In&nbsp;[2]:
     </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[3]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">P</span><span class="o">.</span><span class="n">work</span>
@@ -2193,8 +2187,7 @@ In&nbsp;[3]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[3]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -2281,9 +2274,7 @@ ${}$
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[4]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">Plywood</span><span class="p">)</span>
@@ -2314,16 +2305,14 @@ In&nbsp;[4]:
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[5]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">ply</span> <span class="o">=</span> <span class="n">panel</span><span class="p">()</span> <span class="c">#S-2 Grade 2 (Dry)</span>
+<span class="n">ply</span><span class="o">.</span><span class="n">group</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">ply</span><span class="o">.</span><span class="n">nom_thick</span><span class="o">=</span><span class="s">&#39;3/4&#39;</span>
-<span class="n">grade</span> <span class="o">=</span> <span class="s">&#39;S-1-&#39;</span>
-<span class="n">ply</span><span class="o">.</span><span class="n">Grade</span> <span class="o">=</span> <span class="n">grade</span> <span class="o">+</span> <span class="p">(</span><span class="s">&#39;Wet&#39;</span> <span class="k">if</span> <span class="n">Wet</span> <span class="k">else</span> <span class="s">&#39;Dry&#39;</span><span class="p">)</span>
-<span class="n">ply</span><span class="o">.</span><span class="n">Group</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">ply</span><span class="o">.</span><span class="n">grade</span> <span class="o">=</span> <span class="s">&#39;S-1&#39;</span>
+<span class="n">ply</span><span class="o">.</span><span class="n">Moist</span> <span class="o">=</span> <span class="s">&#39;Wet&#39;</span> <span class="k">if</span> <span class="n">Wet</span> <span class="k">else</span> <span class="s">&#39;Dry&#39;</span>
 <span class="n">ply</span><span class="o">.</span><span class="n">C_D</span> <span class="o">=</span> <span class="mf">1.25</span>
 </pre></div>
 
@@ -2335,9 +2324,20 @@ In&nbsp;[5]:
     </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[6]:
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="c"># ply._load_allowable()</span>
+</pre></div>
+
 </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">ply</span><span class="o">.</span><span class="n">show_props</span><span class="o">.</span><span class="n">work</span>
@@ -2351,20 +2351,19 @@ In&nbsp;[6]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[6]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
-$$\text{From the Plyfrom Properties Tables:}$$ 
+$$\text{From the Plywood Properties Tables:}$$ 
 $$t_{nom} = 3/4"$$
-$$A = 9.0 (in^2/ft)$$
-$$I = 0.199 (in^4/ft)$$
-$$S = 0.455 (in^3/ft)$$
-$$Ib/Q = 7.187 (in^2/ft)$$
-$$F_b = 1930 psi$$
-$$F_s = 72 psi$$
-$$E = 1.650E+06 psi$$
+$$A = 2.884 (in^2/ft)$$
+$$I = 0.197 (in^4/ft)$$
+$$S = 0.412 (in^3/ft)$$
+$$Ib/Q = 6.762 (in^2/ft)$$
+$$F_b = 1430 psi$$
+$$F_s = 44 psi$$
+$$E = 1.500E+06 psi$$
 $$C_D = 1.250$$
 $$strong = True$$
 </div>
@@ -2425,9 +2424,7 @@ $$strong = True$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[7]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">ply</span><span class="o">.</span><span class="n">show_allowable_stress</span><span class="o">.</span><span class="n">work</span>
@@ -2441,21 +2438,20 @@ In&nbsp;[7]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[7]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[8]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
 $$F_b' = F_b \times C_D$$ 
-$$F_b' = 1930 psi \times 1.25$$ 
-$$F_b' = 2412.5 psi$$ 
+$$F_b' = 1430 psi \times 1.25$$ 
+$$F_b' = 1787.5 psi$$ 
  $${}$$ 
 $$F_s' = F_s \times C_D$$ 
-$$F_s' = 72 psi \times 1.25$$ 
-$$F_s' = 90 psi$$ 
+$$F_s' = 44 psi \times 1.25$$ 
+$$F_s' = 55 psi$$ 
  $${}$$ 
 $$E' = E$$ 
-$$E' = 1.65E+06 psi$$
+$$E' = 1.50E+06 psi$$
 </div>
 
 </div>
@@ -2493,9 +2489,7 @@ $$E' = 1.65E+06 psi$$
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[8]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">w</span> <span class="o">=</span> <span class="n">P</span><span class="o">.</span><span class="n">value</span>
@@ -2510,9 +2504,7 @@ In&nbsp;[8]:
     </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[9]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">stud_spacing</span><span class="o">.</span><span class="n">work</span>
@@ -2526,22 +2518,21 @@ In&nbsp;[9]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[9]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[10]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
 $$\text{For a pressure of }1042 psf \text{ the line load equals }  1042 plf $$ 
 ${}$
- $$L = 10.95 \sqrt{\frac{F_b' S}{w}} = 10.95 \sqrt{\frac{2412 psi  \times 0.455 in^3 }{ 1042 plf }} =11.24" \text{ (due to bending)}$$ 
+ $$L = 10.95 \sqrt{\frac{F_b' S}{w}} = 10.95 \sqrt{\frac{1788 psi  \times 0.412 in^3 }{ 1042 plf }} =9.20" \text{ (due to bending)}$$ 
 ${}$
- $$L = \frac{20 \times F_s'}{w}\times \frac{I b }{Q} =\frac{20 \times 90 psi }{ 1042 plf }\times  7.187 in^2  = 12.41" \text{ (due to rolling shear)}$$ 
+ $$L = \frac{20 \times F_s'}{w}\times \frac{I b }{Q} =\frac{20 \times 55 psi }{ 1042 plf }\times  6.762 in^2  = 7.13" \text{ (due to rolling shear)}$$ 
 ${}$
- $$L = 1.69 \sqrt[3]{\frac{E' I}{w}} =1.69 \sqrt[3]{\frac{1.65E+06 psi  \times  0.199 in^4 }{ 1042 plf }} =11.50" \text{ (for }\Delta = L/360 \text{)}$$ 
+ $$L = 1.69 \sqrt[3]{\frac{E' I}{w}} =1.69 \sqrt[3]{\frac{1.50E+06 psi  \times  0.197 in^4 }{ 1042 plf }} =11.10" \text{ (for }\Delta = L/360 \text{)}$$ 
 ${}$
- $$L = 3.23 \sqrt[4]{\frac{E' I}{w}} =3.23 \sqrt[4]{\frac{1.65E+06 psi  \times  0.199 in^4 }{ 1042 plf }} =13.61" \text{ (for }\Delta = 1/16" \text{)}$$ 
+ $$L = 3.23 \sqrt[4]{\frac{E' I}{w}} =3.23 \sqrt[4]{\frac{1.50E+06 psi  \times  0.197 in^4 }{ 1042 plf }} =13.25" \text{ (for }\Delta = 1/16" \text{)}$$ 
 ${}$
- $$\text{After rounding the smallest spacing to the nearest 1/16" and determining the maximum allowed}$$ $$\text{spacing lower than that, for the studs, the best spacing is 8"  = 0.667 feet.}$$
+ $$\text{After rounding the smallest spacing to the nearest 1/16" and determining the maximum allowed}$$ $$\text{spacing lower than that, for the studs, the best spacing is 6"  = 0.500 feet.}$$
 </div>
 
 </div>
@@ -2635,9 +2626,7 @@ ${}$
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[10]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">lumber_grade</span><span class="p">)</span>
@@ -2668,9 +2657,7 @@ No.2 Douglas Fir-Larch
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[11]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">stud</span><span class="o">=</span><span class="n">two_by_four</span><span class="p">()</span> 
@@ -2721,9 +2708,7 @@ E = 1.600E+06 psi
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[12]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">stud</span><span class="o">.</span><span class="n">reveal</span><span class="p">()</span><span class="o">.</span><span class="n">work</span>
@@ -2737,8 +2722,7 @@ In&nbsp;[12]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[12]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[13]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -2810,9 +2794,7 @@ $$E' = 1.44E+06 psi$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[13]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">w</span><span class="o">.</span><span class="n">work</span>
@@ -2826,12 +2808,11 @@ In&nbsp;[13]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[13]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[14]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
-$$\text{Line load} = w = \text{pressure}\times\text{tributary width}$$ $$w = P \times s = 1042.5 psf \times 8.0" \times \frac{1 ft}{12 in}$$$$w = 695.00 plf$$
+$$\text{Line load} = w = \text{pressure}\times\text{tributary width}$$ $$w = P \times s = 1042.5 psf \times 6.0" \times \frac{1 ft}{12 in}$$$$w = 521.25 plf$$
 </div>
 
 </div>
@@ -2851,9 +2832,7 @@ $$\text{Line load} = w = \text{pressure}\times\text{tributary width}$$ $$w = P \
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[14]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">wale_spacing</span><span class="o">.</span><span class="n">work</span>
@@ -2867,20 +2846,19 @@ In&nbsp;[14]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[14]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[15]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
-$$\text{For a line load of }w =  695 plf $$ 
+$$\text{For a line load of }w =  521 plf $$ 
 ${}$
- $$L = 10.95 \sqrt{\frac{F_b' S}{w}} = 10.95 \sqrt{\frac{1650 psi  \times 3.062 in^3 }{ 695 plf }} =29.52" \text{ (due to bending)}$$ 
+ $$L = 10.95 \sqrt{\frac{F_b' S}{w}} = 10.95 \sqrt{\frac{1650 psi  \times 3.062 in^3 }{ 521 plf }} =34.09" \text{ (due to bending)}$$ 
 ${}$
- $$L = 13.33 \times \frac{F_v' b d}{w} + 2 d = 13.33 \times \frac{218 psi \times 1.50" \times 3.50" }{ 695 plf } + 2 \times 3.50"  = 28.98"  \text{ (due to shear)} $$ 
+ $$L = 13.33 \times \frac{F_v' b d}{w} + 2 d = 13.33 \times \frac{218 psi \times 1.50" \times 3.50" }{ 521 plf } + 2 \times 3.50"  = 36.30"  \text{ (due to shear)} $$ 
 ${}$
- $$L = 1.69 \sqrt[3]{\frac{E' I}{w}} =1.69 \sqrt[3]{\frac{1.44E+06 psi  \times  5.359 in^4 }{ 695 plf }} =37.70" \text{ (for }\Delta = L/360 \text{)}$$ 
+ $$L = 1.69 \sqrt[3]{\frac{E' I}{w}} =1.69 \sqrt[3]{\frac{1.44E+06 psi  \times  5.359 in^4 }{ 521 plf }} =41.50" \text{ (for }\Delta = L/360 \text{)}$$ 
 ${}$
- $$L = 3.23 \sqrt[4]{\frac{E' I}{w}} =3.23 \sqrt[4]{\frac{1.44E+06 psi  \times  5.359 in^4 }{ 695 plf }} =33.16" \text{ (for }\Delta = 1/16" \text{)}$$ 
+ $$L = 3.23 \sqrt[4]{\frac{E' I}{w}} =3.23 \sqrt[4]{\frac{1.44E+06 psi  \times  5.359 in^4 }{ 521 plf }} =35.63" \text{ (for }\Delta = 1/16" \text{)}$$ 
 ${}$
  $$\text{After rounding the smallest spacing to the nearest 1/16" and determining the maximum allowed}$$ $$\text{spacing lower than that, using plywood with 4'  vertically, for the wales,}$$ $$\text{the best spacing is 24.0"  = 2.000 feet.}$$
 </div>
@@ -2935,9 +2913,7 @@ ${}$
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[15]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">load</span> <span class="o">=</span> <span class="n">P</span><span class="o">.</span><span class="n">value</span> <span class="o">*</span> <span class="n">stud_spacing</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">feet</span> <span class="o">*</span> <span class="n">wale_spacing</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">feet</span>
@@ -2951,9 +2927,7 @@ In&nbsp;[15]:
     </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[16]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">bearing_check</span><span class="p">(</span><span class="n">stud</span><span class="p">,</span><span class="n">load</span><span class="p">)</span><span class="o">.</span><span class="n">work</span>
@@ -2967,18 +2941,17 @@ In&nbsp;[16]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[16]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[17]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
-$$f_{c,\perp} = \frac{P_{bearing}}{A_{bearing}} = \frac{ 1390 lb }{ 4.50 in^2 }= 308.89 psi $$ 
+$$f_{c,\perp} = \frac{P_{bearing}}{A_{bearing}} = \frac{ 1042 lb }{ 4.50 in^2 }= 231.67 psi $$ 
 ${}$
  $$F_{c,\perp}' = F_{c,\perp} \times C_M =  625.00 psi \times 0.67 = 418.75 psi $$ 
 ${}$
  $$P_{bearing,allowed} = F_{c,\perp}' \times A_{bearing} =419 psi \times  4.50 in^2 = 1884 lb $$ 
 ${}$
- $$\text{Since the allowable load due to bearing is } 1884 lb \text{ the  and the actual load is } 1390 lb \text{,}$$ $$\text{the wales are good in bearing.}$$
+ $$\text{Since the allowable load due to bearing is } 1884 lb \text{ the  and the actual load is } 1042 lb \text{,}$$ $$\text{the wales are good in bearing.}$$
 </div>
 
 </div>
@@ -3016,9 +2989,7 @@ ${}$
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[17]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">w</span> <span class="o">=</span> <span class="n">line_load</span><span class="p">(</span><span class="n">P</span><span class="o">.</span><span class="n">value</span><span class="p">,</span><span class="n">wale_spacing</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">feet</span><span class="p">)</span>
@@ -3041,9 +3012,7 @@ In&nbsp;[17]:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[18]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">w</span><span class="o">.</span><span class="n">work</span>
@@ -3057,8 +3026,7 @@ In&nbsp;[18]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[18]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[19]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -3128,9 +3096,7 @@ $$\text{Line load} = w = \text{pressure}\times\text{tributary width}$$ $$w = P \
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[19]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">wale</span> <span class="o">=</span> <span class="n">stud</span><span class="o">*</span><span class="mi">2</span> <span class="c">#double 2x4</span>
@@ -3145,9 +3111,7 @@ In&nbsp;[19]:
     </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[20]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">tie_spacing</span><span class="o">.</span><span class="n">work</span>
@@ -3161,8 +3125,7 @@ In&nbsp;[20]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[20]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[21]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -3214,9 +3177,7 @@ ${}$
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[21]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">tie_strength</span> <span class="o">=</span> <span class="n">tie_check</span><span class="p">(</span><span class="n">P</span><span class="o">.</span><span class="n">value</span><span class="p">,</span><span class="n">tie_spacing</span><span class="p">,</span> <span class="n">wale_spacing</span><span class="p">)</span>
@@ -3239,9 +3200,7 @@ In&nbsp;[21]:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[22]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">tie_strength</span><span class="o">.</span><span class="n">work</span>
@@ -3255,8 +3214,7 @@ In&nbsp;[22]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[22]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[23]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -3301,9 +3259,7 @@ ${}$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[23]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">summary</span><span class="p">(</span><span class="n">ply</span><span class="p">,</span><span class="n">stud_spacing</span><span class="p">,</span><span class="n">wale_spacing</span><span class="p">,</span><span class="n">tie_spacing</span><span class="p">,</span><span class="n">tie_strength</span><span class="p">)</span><span class="o">.</span><span class="n">work</span>
@@ -3317,12 +3273,11 @@ In&nbsp;[23]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[23]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[24]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
-$$\text{With 3/4" plywood space the 2x4 studs every 8".}$$ 
+$$\text{With 3/4" plywood space the 2x4 studs every 6".}$$ 
 ${}$
  $$\text{The double 2x4 wales need to be spaced 24.0" on center.}$$ 
 ${}$
@@ -3363,9 +3318,7 @@ ${}$
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[23]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre> 

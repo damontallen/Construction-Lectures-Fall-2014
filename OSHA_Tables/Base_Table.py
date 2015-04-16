@@ -37,198 +37,198 @@ table_HTML = """<code></code></br>
         <th rowspan = 4></th>
         <th></th>
         <th style="text-align: center"></th>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
         <th style="text-align: center"></th>
-        <td><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
+        <td><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
     </tr>
     <tr>
         <th></th>
         <th style="text-align: center"></th>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
         <th style="text-align: center"></th>
-        <td><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
+        <td><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
     </tr>
     <tr>
         <th></th>
         <th style="text-align: center"></th>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
         <th style="text-align: center"></th>
-        <td><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
+        <td><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
     </tr>
     <tr>
         <th></th>
         <th style="text-align: center"></th>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
         <th style="text-align: center"></th>
-        <td><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-    </tr>
-    
-    <tr>
-        <th rowspan = 4></th>
-        <th></th>
-        <th style="text-align: center"></th>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <th style="text-align: center"></th>
-        <td><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-    </tr>
-    <tr>
-        <th></th>
-        <th style="text-align: center"></th>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <th style="text-align: center"></th>
-        <td><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-    </tr>
-    <tr>
-        <th></th>
-        <th style="text-align: center"></th>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <th style="text-align: center"></th>
-        <td><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-    </tr>
-    <tr>
-        <th></th>
-        <th style="text-align: center"></th>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <th style="text-align: center"></th>
-        <td><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
+        <td><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
     </tr>
     
     <tr>
         <th rowspan = 4></th>
         <th></th>
         <th style="text-align: center"></th>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
         <th style="text-align: center"></th>
-        <td><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
+        <td><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
     </tr>
     <tr>
         <th></th>
         <th style="text-align: center"></th>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
         <th style="text-align: center"></th>
-        <td><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
+        <td><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
     </tr>
     <tr>
         <th></th>
         <th style="text-align: center"></th>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
         <th style="text-align: center"></th>
-        <td><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
+        <td><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
     </tr>
     <tr>
         <th></th>
         <th style="text-align: center"></th>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
         <th style="text-align: center"></th>
-        <td><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
-        <td style="text-align: center"><i></i></td>
+        <td><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+    </tr>
+    
+    <tr>
+        <th rowspan = 4></th>
+        <th></th>
+        <th style="text-align: center"></th>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <th style="text-align: center"></th>
+        <td><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+    </tr>
+    <tr>
+        <th></th>
+        <th style="text-align: center"></th>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <th style="text-align: center"></th>
+        <td><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+    </tr>
+    <tr>
+        <th></th>
+        <th style="text-align: center"></th>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <th style="text-align: center"></th>
+        <td><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+    </tr>
+    <tr>
+        <th></th>
+        <th style="text-align: center"></th>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <th style="text-align: center"></th>
+        <td><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
+        <td style="text-align: center"><em></em></td>
     </tr>
 </tbody>
 <tfoot>
@@ -238,7 +238,7 @@ table_HTML = """<code></code></br>
     </tr>
 </tfoot>
 </table>
-<i><strong></strong> </i>
+<em><strong></strong> </em>
 </br>
 </br>"""
 
@@ -293,7 +293,7 @@ def shoring_table(Table_data):
     #                 print((rr,('><','>%s<'%td[RR][C])))
                     Actions.append((rr,('><','>%s<'%td[RR][C])))
                 else:
-                    Actions.append((rr,('<i></i>','<i>%s</i>'%td[RR][C])))
+                    Actions.append((rr,('<em></em>','<em>%s</em>'%td[RR][C])))
     Actions.append((236,('><','>%s<'%td[19][0])))  
     Actions.append((237,('><','>%s<'%td[19][1]))) 
     twenty = td[20][0].split('–')

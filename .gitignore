@@ -1,0 +1,7 @@
+# Backup Files #
+################
+*.*~
+
+# Checkpoints #
+###############
+.ipynb_checkpoints

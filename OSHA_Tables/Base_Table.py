@@ -1,6 +1,7 @@
+# scale: 60% does not work with HTML tables
 table_HTML = """<code></code></br>
 <strong></strong><code></code>
-<table>
+<table style="width: 100%; height: 60%; font-size:12px">
 <thead>
     <tr>
         <th rowspan = 5 style="text-align: center"></th>

@@ -1,7 +1,12 @@
 # Backup Files #
 ################
 *.*~
+backup/
 
 # Checkpoints #
 ###############
 .ipynb_checkpoints
+
+# Notebooks #
+#############
+*.ipynb

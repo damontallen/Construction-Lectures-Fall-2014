@@ -1,3 +1,6 @@
+# MUST BE RUN FROM TERMINAL!
+# python3 Search_n_Replace.py
+
 import sys
 import os
 from PySide.QtCore import SIGNAL
@@ -5,7 +8,7 @@ from PySide import QtGui
 import shutil
 
 def main():
-    """Even thoug this is a GUI application there is a fault in it that requires
+    """Even though this is a GUI application there is a fault in it that requires
     it to be run from the comand line.  As it is, if it is exicuted from 
     Nautilus it creates three files titled sys, os, and shutil (upon mouse 
     clicks) then quits.
@@ -46,7 +49,7 @@ class Form(QtGui.QDialog):
         self.search = QtGui.QLineEdit()
         self.search.setPlaceholderText("Type the text to be replaced here")
         #self.search.selectAll()
-        self.replace_label = QtGui.QLabel("Type the text to be replaced here")
+        self.replace_label = QtGui.QLabel("Type the replacement text here")
         self.replace = QtGui.QLineEdit()
         self.replace.setPlaceholderText("Type the replacement text here")
         self.buttonBox = QtGui.QDialogButtonBox()
@@ -108,6 +111,8 @@ def callback(files):
     os.chdir(path)
     parts = path.rsplit('/',1)
     back_path = path + '/backup/'
+    if not os.path.exists(back_path):
+        os.mkdir(back_path)
     er = 0
     for f in files:
         name = f.split('/')[-1]
@@ -146,7 +151,9 @@ def callback(files):
                 break
     msgBox = QtGui.QMessageBox()
     Path = back_path[:-1]
-    msgBox.setText('Files where backedup in:\n%s'%Path)
+    bak_txt = 'Files where backedup in:\n%s'%Path
+    print(bak_txt)
+    msgBox.setText(bak_txt)
     msgBox.exec_()
         
         

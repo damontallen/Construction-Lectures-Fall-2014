@@ -41,6 +41,7 @@ Week 5
 Week 6
 
 * <a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%206%20-%20Importance%20of%20Formwork%20Safety.ipynb">Importance of Formwork Safety</a>
+* <a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%206%20-%20Types%20of%20Concrete%20Form%20Work.ipynb">Types of Concrete Formwork</a>
 * <a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%206%20-%20Span%20Length%20Derivations.ipynb">Span Length Derivations</a>
 
 Week 7

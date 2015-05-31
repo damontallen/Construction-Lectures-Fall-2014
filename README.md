@@ -10,10 +10,12 @@ IPython Notebooks that contain lectures on Temporary Structures
 Week 0
 
 * [Course Introduction](http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%200%20-%20Greetings.ipynb)
+* [Course Introduction - Web only](http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%200%20-%20Greetings%20-%20Web%20only.ipynb)
                         
 Week 1
 
 * [Class Introduction](http://nbviewer.ipython.org/urls/raw.github.com/damontallen/Construction-Lectures-Fall-2014/master/Week%201%20-%20Class%20Introduction.ipynb)
+* [Class Introduction - Web only](http://nbviewer.ipython.org/urls/raw.github.com/damontallen/Construction-Lectures-Fall-2014/master/Week%201%20-%20Class%20Introduction%20-%20Web%20only.ipynb)
 * [How to Complete Team and Individual Assignments](http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%201%20-%20How%20to%20Complete%20Team%20and%20Individual%20Assignments.ipynb)
 
 Week 2
@@ -41,6 +43,7 @@ Week 5
 Week 6
 
 * <a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%206%20-%20Importance%20of%20Formwork%20Safety.ipynb">Importance of Formwork Safety</a>
+* <a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%206%20-%20Importance%20of%20Formwork%20Safety%20-%20Web%20only.ipynb">Importance of Formwork Safety - Web only version</a>
 * <a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%206%20-%20Types%20of%20Concrete%20Form%20Work.ipynb">Types of Concrete Formwork</a>
 * <a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%206%20-%20Span%20Length%20Derivations.ipynb">Span Length Derivations</a>
 

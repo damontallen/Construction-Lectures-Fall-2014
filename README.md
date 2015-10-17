@@ -28,6 +28,8 @@ If you are viewing this site and are not a member of one of my classes, please d
 me a line.  I don't get enough traffic that github tracks it and I would like to 
 just get to know who reads this aside from my students.
 
+The addition of this license information was inspired by the SciPy lecture ["Evidence Based Teaching What We Know and How to Use I EuroSciPy 2015 by Greg Wilson "](https://www.youtube.com/watch?v=kmVKGxPlTvc&index=33&list=WL).
+
 ####Static Notebooks
 
 Week 0

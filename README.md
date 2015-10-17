@@ -1,9 +1,32 @@
-Construction-Lectures-Spring-2015
+Construction-Lectures University of Florida college of Construction Management
 =====================
 
 IPython Notebooks that contain lectures on Temporary Structures
 
 [Github.io page](http://damontallen.github.io/Construction-Lectures-Fall-2014/)
+
+#### License Information
+
+As I was paid to develop the original version of this course (see [here](https://github.com/damontallen/Construction-Lectures)) the owner of the copyright of this course is in question.
+That being said, if you wish to contribute to the quality of this course, the software
+libraries I developed to automate the calculations (which I hold the copyright to) can
+be made available to you for use and development.  Those are not publicly available
+since the current iteration of this course involves a fair amount of hand work and
+some of my students could bypass the work by using the same software to answer the
+questions that was used to create them. 
+
+I am currently working on a graduate version of this course where the students
+write the software necessary to solve the problems rather than just solving the
+problem assigned.  I am in the trial and development phase of this change.  If you
+wish to collaborate on that project feel free to contact me and access to my private 
+repository can be arranged.  I would appreciate input on appropriate licensing
+on that course.  It is something that I would like to be more open but the more
+software that is added to that repo. the more closed it would have to be to prevent
+cheating.
+
+If you are viewing this site and are not a member of one of my classes, please drop
+me a line.  I don't get enough traffic that github tracks it and I would like to 
+just get to know who reads this aside from my students.
 
 ####Static Notebooks
 

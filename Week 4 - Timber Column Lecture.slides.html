@@ -236,9 +236,7 @@ div.output_prompt {
 <body>
 <div class="reveal">
 <div class="slides">
-<section>
-    <section>
-    
+<section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -253,13 +251,11 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<iframe width="420" height="315" src="//www.youtube.com/embed/m28hzlE8b_U" frameborder="0" allowfullscreen></iframe>
+<p><iframe width="420" height="315" src="//www.youtube.com/embed/m28hzlE8b_U" frameborder="0" allowfullscreen></iframe></p>
+
 </div>
 </div>
-</div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -312,10 +308,7 @@ div.output_prompt {
 
 </div>
 </div>
-</div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -351,100 +344,7 @@ conditions are the same for buckling about the $x$ and $y$ axes.</p>
 
 </div>
 </div>
-</div><div style=display:none>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Load-Timber_Beam-class">Load Timber_Beam class<a class="anchor-link" href="#Load-Timber_Beam-class">&#182;</a></h3>
-</div>
-</div>
-</div>
-    </div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="o">%</span><span class="k">run</span> Beams/Timber_beam_v_02.1.py
-<span class="n">column</span> <span class="o">=</span> <span class="n">Timber_Beam</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>In order to display plots inline in the IPython notebook you must include
-the following magic command:
-    %matplotlib inline
-If you need to display plot you will need to used the following commmand
-    %matplotlib inline
-Note: The atribute &apos;pick_list&apos; is now available_grades (added Jan, 6, 2014)
-
-Now using 2015 Timber code by default
-loads -- a list of load dictionaries. For example:
-    
-    loads=[{&apos;x0&apos;:5,&apos;x1&apos;:10,&apos;w&apos;:10}, #uniformly distributed load over a 5ft section (5ft - 10ft)
-           {&apos;x0&apos;:0,&apos;x1&apos;:5,&apos;w&apos;:20},
-           {&apos;x0&apos;:10,&apos;x1&apos;:15,&apos;w&apos;:20},
-           {&apos;x0&apos;:12.5,&apos;p&apos;:20}, #point load 
-           {&apos;x0&apos;:0,&apos;x1&apos;:20,&apos;arb&apos;:&apos;1/10*x&apos;}, #triangluar load function
-           {&apos;x0&apos;:10,&apos;m&apos;:20}] # a concentrated moment
-           
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    </div><div style=display:none>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Set-the-Basic-Attributes-of-the-Column:">Set the Basic Attributes of the Column:<a class="anchor-link" href="#Set-the-Basic-Attributes-of-the-Column:">&#182;</a></h3>
-</div>
-</div>
-</div>
-    </div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">column</span><span class="o">.</span><span class="n">C_D</span> <span class="o">=</span> <span class="mf">1.25</span> <span class="c">#duration factor</span>
-<span class="n">column</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="mf">3.5</span> <span class="c">#in </span>
-<span class="n">column</span><span class="o">.</span><span class="n">d</span> <span class="o">=</span> <span class="mf">5.5</span> <span class="c">#in</span>
-<span class="n">column</span><span class="o">.</span><span class="n">span</span> <span class="o">=</span> <span class="mi">12</span> <span class="c">#ft</span>
-<span class="n">column</span><span class="o">.</span><span class="n">C_P_l_e</span><span class="o">.</span><span class="n">le_x</span> <span class="o">=</span> <span class="n">column</span><span class="o">.</span><span class="n">span</span><span class="o">*</span><span class="mi">12</span> <span class="c">#in</span>
-<span class="n">column</span><span class="o">.</span><span class="n">C_P_l_e</span><span class="o">.</span><span class="n">le_y</span> <span class="o">=</span> <span class="n">column</span><span class="o">.</span><span class="n">span</span><span class="o">*</span><span class="mi">12</span> <span class="c">#in</span>
-<span class="n">column</span><span class="o">.</span><span class="n">C_P_l_e</span><span class="o">.</span><span class="n">c</span> <span class="o">=</span> <span class="mf">0.8</span> <span class="c">#for sawn lumber</span>
-<span class="n">column</span><span class="o">.</span><span class="n">P</span> <span class="o">=</span> <span class="mi">3200</span> <span class="c">#lbs (axial load)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-    </div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -488,178 +388,7 @@ loads -- a list of load dictionaries. For example:
 
 </div>
 </div>
-</div><div style=display:none>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Column-Geometric-Properties:">Column Geometric Properties:<a class="anchor-link" href="#Column-Geometric-Properties:">&#182;</a></h3>
-</div>
-</div>
-</div>
-    </div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">column</span><span class="o">.</span><span class="n">geometry_latex</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
-
-
-<div class="output_latex output_subarea output_execute_result">
-$$b = 3.50" \text{, }d = 5.50" \text{, }A = 19.25 in^2 \text{, }S = 17.65 in^3 \text{, }I = 48.53 in^4 \text{, }$$ $$L = 12.00'  = 144.00"$$
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    </div><div style=display:none>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Pick-the-Species-and-Grade:">Pick the Species and Grade:<a class="anchor-link" href="#Pick-the-Species-and-Grade:">&#182;</a></h3>
-</div>
-</div>
-</div>
-    </div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">column</span><span class="o">.</span><span class="n">list_wood</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>&apos;ALASKA CEDAR&apos;               &apos;ALASKA HEMLOCK&apos;             &apos;ALASKA SPRUCE&apos;             
-&apos;ALASKA YELLOW CEDAR&apos;        &apos;ASPEN&apos;                      &apos;BALDCYPRESS&apos;               
-&apos;BEECH-BIRCH-HICKORY&apos;        &apos;COAST SITKA SPRUCE&apos;         &apos;COTTONWOOD&apos;                
-&apos;DOUGLAS FIR-LARCH&apos;          &apos;DOUGLAS FIR-LARCH (NORTH)&apos;  &apos;DOUGLAS FIR-SOUTH&apos;         
-&apos;EASTERN HEMLOCK-BALSAM FIR&apos; &apos;EASTERN HEMLOCK-TAMARACK&apos;   &apos;EASTERN SOFTWOODS&apos;         
-&apos;EASTERN WHITE PINE&apos;         &apos;HEM-FIR&apos;                    &apos;HEM-FIR (NORTH)&apos;           
-&apos;MIXED MAPLE&apos;                &apos;MIXED OAK&apos;                  &apos;NORTHERN RED OAK&apos;          
-&apos;NORTHERN SPECIES&apos;           &apos;NORTHERN WHITE CEDAR&apos;       &apos;RED MAPLE&apos;                 
-&apos;RED OAK&apos;                    &apos;REDWOOD&apos;                    &apos;SOUTHERN PINE&apos;             
-&apos;SPRUCE-PINE-FIR&apos;            &apos;SPRUCE-PINE-FIR (SOUTH)&apos;    &apos;WESTERN CEDARS&apos;            
-&apos;WESTERN WOODS&apos;              &apos;WHITE OAK&apos;                  &apos;YELLOW CEDAR&apos;              
-&apos;YELLOW POPLAR&apos;              </pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    </div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">column</span><span class="o">.</span><span class="n">species</span> <span class="o">=</span> <span class="s">&#39;SOUTHERN PINE&#39;</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Setting u_c_f to 12**3 based on length in ft and d in inches, i.e ((1 ft)/(1 in))^3.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    </div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">column</span><span class="o">.</span><span class="n">available_grades</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>For 5”-6” wide material in Southern Pine:
-Dense Select Structural, Select Structural, Non-Dense Select Structural,
-No. 1 Dense, No. 1, No. 1 Non-Dense, No. 2 Dense, No. 2, No. 2 Non-Dense,
-No. 3 and Stud
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    </div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">column</span><span class="o">.</span><span class="n">grade</span><span class="o">=</span><span class="s">&#39;No. 2&#39;</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-    </div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -708,11 +437,7 @@ No. 3 and Stud
 
 </div>
 </div>
-</div>
-    </div></section>
-    </section><section>
-    <section>
-    
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -781,10 +506,7 @@ $$E_{min} = 510000 psi\text{ - unadjusted Young's modulus for column loading ana
 </div>
 </div>
 
-        </div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -826,15 +548,13 @@ $$E_{min} = 510000 psi\text{ - unadjusted Young's modulus for column loading ana
 
 </div>
 </div>
-</div>
-        </div><div style=display:none>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Axial-Capacity-Factor-$C_P$:">Axial Capacity Factor $C_P$:<a class="anchor-link" href="#Axial-Capacity-Factor-$C_P$:">&#182;</a></h3>
+<h2 id="Effective-Length">Effective Length<a class="anchor-link" href="#Effective-Length">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -919,44 +639,7 @@ $$SR = 41.14$$<p></p>
 
 </div>
 </div>
-</div>
-        </div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">column</span><span class="o">.</span><span class="n">C_P_l_e</span><span class="o">.</span><span class="n">_S_R</span><span class="o">.</span><span class="n">work</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[9]:</div>
-
-
-<div class="output_latex output_subarea output_execute_result">
-$$\frac{l_{e,x}}{d} = 26.18$$ 
-$${}$$
- $$\frac{l_{e,y}}{b} = 41.14\text{ }\Leftarrow \text{ Controls} \therefore SR = 41.14$$
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    </div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -991,44 +674,7 @@ $$F_c^* = 1750 psi$$<p></p>
 
 </div>
 </div>
-</div>
-        </div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">column</span><span class="o">.</span><span class="n">_F_c_star</span><span class="o">.</span><span class="n">work</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[10]:</div>
-
-
-<div class="output_latex output_subarea output_execute_result">
-$$F_c^* = F_c \times C_D \times C_M \times C_t \times C_F \times C_i $$ 
-$${}$$
- $$F_c^* = 1400 psi \times 1.25 \times 1 \times 1 \times 1 \times 1 = 1750 psi$$
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    </div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -1133,44 +779,7 @@ $$F_{cE} = \frac{0.822 \times E_{min}'}{(SR)^2} $$$$F_{cE} = \frac{0.822 \times 
 
 </div>
 </div>
-</div>
-        </div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">column</span><span class="o">.</span><span class="n">C_P_F_cE</span><span class="o">.</span><span class="n">work</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[12]:</div>
-
-
-<div class="output_latex output_subarea output_execute_result">
-$$F_{cE} = \frac{0.822 \times E_{min}'}{(SR)^2} = \frac{0.822 \times 510000 psi}{(41.14)^2} = 247.7 psi$$ 
-$${}$$
- 
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    </div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -1208,62 +817,7 @@ $$\frac{F_{cE}/F_c^*}{c}=\frac{0.1415}{0.8}=0.1769$$<p></p>
 $$C_P = 0.7134 -\sqrt{0.7134^2-0.1769} =0.1372$$
 </div>
 </div>
-</div>
-        </div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">column</span><span class="o">.</span><span class="n">C_P_l_e</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[13]:</div>
-
-
-<div class="output_latex output_subarea output_execute_result">
-$$\frac{l_{e,x}}{d} = 26.18$$ 
-$${}$$
- $$\frac{l_{e,y}}{b} = 41.14\text{ }\Leftarrow \text{ Controls} \therefore SR = 41.14$$ 
-$${}$$
- $$F_c^* = F_c \times C_D \times C_M \times C_t \times C_F \times C_i $$ 
-$${}$$
- $$F_c^* = 1400 psi \times 1.25 \times 1 \times 1 \times 1 \times 1 = 1750 psi$$ 
-$${}$$
- $$F_{cE} = \frac{0.822 \times E_{min}'}{(SR)^2} = \frac{0.822 \times 510000 psi}{(41.14)^2} = 247.7 psi$$ 
-$${}$$
- $$\frac{F_{cE}}{F_c^*} = 0.1415$$ 
-$${}$$
- $$c = 0.8 \text{ (from section 3.7.1.5 Timber NDS)}$$ 
-$${}$$
- $$\frac{1+F_{cE}/F_c^*}{2 \times c}=\frac{1+0.1415}{2 \times 0.8}=0.7134$$ 
-$${}$$
- $$\frac{F_{cE}/F_c^*}{c}=\frac{0.1415}{0.8}=0.1769$$ 
-$${}$$
- $$C_P = \frac{1+F_{cE}/F_c^*}{2 \times c} -\sqrt{\left(\frac{1+F_{cE}/F_c^*}{2 \times c}\right)^2-\frac{F_{cE}/F_c^*}{c}}$$ 
-$${}$$
- $$C_P = 0.7134 -\sqrt{\left(0.7134\right)^2-0.1769} =0.1372$$
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    </div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -1513,119 +1067,7 @@ $$ F_c' = 240.0 psi \geq f_c = 166.2 psi$$
 
 </div>
 </div>
-</div>
-        </div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">column</span><span class="o">.</span><span class="n">column_capacity</span><span class="o">.</span><span class="n">text</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[17]:</div>
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&quot;$$F_c&apos; = F_c \\times C_D \\times C_M \\times C_t \\times C_F \\times C_i \\times C_P$$ \n$${}$$\n $$F_c&apos; = 1400 psi \\times 1.25 \\times 1 \\times 1 \\times 1 \\times 1 \\times 0.1372$$ \n$${}$$\n $$F_c&apos; = 240.0 psi$$ \n$${}$$\n $$P_{allowed} = F_c&apos; \\times A$$ \n$${}$$\n $$P_{allowed} = 240.0 psi \\times 19.25 in^2$$ \n$${}$$\n $$P_{allowed} = 4621 lbs$$&quot;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    </div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">column</span><span class="o">.</span><span class="n">column_capacity</span><span class="o">.</span><span class="n">work</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[17]:</div>
-
-
-<div class="output_latex output_subarea output_execute_result">
-$$F_c' = F_c \times C_D \times C_M \times C_t \times C_F \times C_i \times C_P$$ 
-$${}$$
- $$F_c' = 1400 psi \times 1.25 \times 1 \times 1 \times 1 \times 1 \times 0.1372$$ 
-$${}$$
- $$F_c' = 240.0 psi$$ 
-$${}$$
- $$P_{allowed} = F_c' \times A$$ 
-$${}$$
- $$P_{allowed} = 240.0 psi \times 19.25 in^2$$ 
-$${}$$
- $$P_{allowed} = 4621 lbs$$
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    </div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">column</span><span class="o">.</span><span class="n">column_adequacy_check_loads</span><span class="o">.</span><span class="n">work</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[19]:</div>
-
-
-<div class="output_latex output_subarea output_execute_result">
-$$P_{allowed} = F_c' \times A$$ 
-$${}$$
- $$P_{allowed} = 240.0 psi \times 19.25 in^2$$ 
-$${}$$
- $$ P_{allowed} = 4621 lbs $$ $$ $$ $$P_{actual} = 3200 lbs$$ $$ $$ $$ P_{allowed} = 4621 lbs \geq P_{actual} = 3200 lbs $$ 
- $$\textbf{This column is adequate}$$
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    </div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>

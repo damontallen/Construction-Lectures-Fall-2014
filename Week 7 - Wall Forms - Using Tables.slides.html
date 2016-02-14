@@ -288,47 +288,16 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As an alternative to a strictly analytically approach, there are tables in the Formwork text that you can use.  These tables however, are limited to a smaller selection of material.  For instance, instead of plywood you will have to design using Class I Plyform if you use Table 7-2.</p>
-<p>Table 7-2 has values for 1/2" to 1", wet, Class I Plyform, with both $C_D = 1.0$ and $C_D = 1.25$, in either the strong, or weak orientation.  This is the only material used, in the Formwork text tables of pre-calculated span limits for sheathing.  There are other sheathing tables but they are for other support conditions, and we are only interested in sheathing supported over three or more spans.</p>
-<p>Tables 7-5, 7-6, and 7-7 are similar to the sheathing tables except for beams.  They are for different support conditions, and both duration factors.  There are more sizes than for the sheathing though, eight instead of four, or sixteen instead of four if you count the flat use orientations.  These beam tables are arranged such that the .1 version contains values found using $C_D = 1.0$, and the .2 version contains values using $C_D= 1.25$.  Both the .1 and .2 versions are for No.2 Douglas Fir-Larch lumber.  For example Table 7-5.2 contain pre-calculated span limits for No.2, Douglas Fir-Larch lumber, supported over three or more spans with a 1.25 load duration factor.  There are .3 and .4 versions of these tables as well.  They are just the same as the .1 and .2 versions, except that those values are found using No.1/No.2 grade Spruce Pine Fir.</p>
-<p>Tables 7-8 through 7-10 are for double wales.  In this case the .1 version uses No.2 Douglas Fir-Larch, and the .2 version uses Spruce Pine Fir.  Each individual table is broken up into a left and right side for, $C_D = 1.0$, and $C_D = 1.25$ respectively.  Each of these sub-tables contains span limits for nine different double wale sizes, ranging form double 2x4s to double 4x8s.</p>
-<p>We haven't done any shoring calculations yet, but Table 7-11 contains allowable axial loads of a variety of species, sizes, and effective lengths.  However, the values in this table are all found using a $C_D=1.0$.  This is not unreasonable since you are much more likely to reuse shores which means their capacity would have to be calculated using a $C_D=1.0$ anyway.  I do have a couple words of caution about using these values in the future.  First, there are six obvious typos in the table.  Second, these values correspond to an older version of the Timber code, and as such they don't exactly match up with the Florida Building Code.  I will say that these values are close, but they are not exact; some will be smaller and some will be larger than the actual allowed values.  We will talk more about Table 7-11 in the slab form modules.</p>
-<p>I will not be spending any time beyond now talking about the allowable bearing values found in Table 7-12.  I think you can figure it out by yourself, and I actually think it would be quicker calculating the values form the Timber code than using this Table.  Either way, be aware that you are responsible for using the correct (or newer) version of the building code.</p>
-<p><em>(Continued on the next slide.)</em></p>
+<p>As an alternative to a strictly analytically approach, there are tables in the Formwork text that you can use.  These tables however, are limited to a smaller selection of material.  For instance, instead of plywood you will have to design using Class I Plyform if you use Table 9.3.</p>
+<p>Table 9.3 has values for 1/2" to 1", wet, Class I Plyform, with both $C_D = 1.0$ and $C_D = 1.25$, in either the strong, or weak orientation.  This is the only material used, in the Formwork text tables of pre-calculated span limits for sheathing.  There are other sheathing tables but they are for other support conditions, and we are only interested in sheathing supported over three or more spans.</p>
+<p>Tables 9.6.1 through 9.8.4 are similar to the sheathing tables except for beams.  Each table contains span limit lengths for a variety of beam sizes, for a particular set of support conditions, load duration factor ($1.0$ or $1.25$), and about half a dozen different lumber species.  The table headers clearly show all of this information.</p>
+<p>Tables 9.9.1 through 9.11.2 are broken down like the single beam tables but cover double wales.</p>
+<p>We haven't done any shoring calculations yet, but Table 9.12.1 and 2 contains allowable axial loads of a variety of species, sizes, and effective lengths.  However, the values in this table are all found using a $C_D=1.0$.  This is not unreasonable since you are much more likely to reuse shores which means their capacity would have to be calculated using a $C_D=1.0$ anyway.  We will talk more about the 9.12 Tables in the slab form modules.</p>
+<p>I will not be spending any time beyond now talking about the allowable bearing values found in Table 9.13.  I think you can figure it out by yourself, and I actually think it would be quicker calculating the values form the Timber code than using this Table.  Either way, be aware that you are responsible for using the correct (or newer) version of the building code.</p>
 
 </div>
 </div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%207/Wall%20Form%20Design%20Using%20Tables/What%20Tables%20Continued.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>I'll probably mention this again, but if you look at Tables 7-5 through 7-10 you will not see where it is written that they are for particular species.  Nor will you see where the $C_D$ is written in any of the tables.  That is because it isn't.  The species and $C_D$ values I've given you are based on matching the properties listed to species in the Timber Supplement, and calculating support spacing limits using various adjustment factors.  In other words, I determined this information through a trial and error.  This is another reason why I like the Timber building codes, good documentation.</p>
-<p>If you want to quickly find what table (or portion of a table) goes with what species, and which $C_D$ value, you should label the tables based on my descriptions in the previous slide.  For this class, however, I will try to specify at least which table to use for a particular problem.  If the table is divided based on load duration factor, then just remember that the higher allowable stress indicated in the table corresponds to a $C_D=1.25$.</p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>

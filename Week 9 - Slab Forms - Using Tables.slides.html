@@ -287,10 +287,10 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In the Formwork text, many of the same tables we used for wall forms are the ones we use for slab forms, starting with the Plyform span limits found in Table 7-2.  Again, Table 7-2 has values for 1/2" to 1", wet, Class I Plyform, with both $C_D = 1.0$ and $C_D = 1.25$, in either the strong or weak orientation.  The other sheathing tables are for other support conditions.</p>
-<p>Tables 7-5, 7-6, and 7-7, are similar to the sheathing tables; they are for different support conditions, and contain values for both duration factors.  This time we will use Table 7-5 for the Joist and Stringer designs.  Keep in mind that these beam tables are arranged such that the .1 version contains values found using $C_D = 1.0$, and the .2 version contains values using $C_D= 1.25$.  Both the .1 and .2 versions are for No.2, Douglas Fir-Larch, lumber, and the versions, .3 and .4, are based on using No.1/No.2 grade, Spruce Pine Fir.</p>
-<p>There are no wales in slabs so we will not be using Tables 7-8 through 7-10.</p>
-<p>Table 7-11 contains allowable axial loads of a variety of species, sizes, and effective lengths.  The values in this table are only for a $C_D=1.0$.  This is not unreasonable since you are much more likely to reuse shores, which means their capacity would have to be calculated using a $C_D=1.0$ anyway.  As I mentioned previously there are six obvious typos in the table.   Everywhere the table should indicate a value for a 10 ft unsupported length, (between 9 ft and 11 ft) the table reads 19 ft.  You should strike that and write 10 next to it.</p>
+<p>In the Formwork text, many of the same tables we used for wall forms are the ones we use for slab forms, starting with the Plyform span limits found in Table 9.3.  Again, Table 9.3 has values for 1/2" to 1", wet, Class I Plyform, with both $C_D = 1.0$ and $C_D = 1.25$, in either the strong or weak orientation.  The other sheathing tables are for other support conditions.</p>
+<p>Tables 9.6.1 through 9.8.4, covering beams, and are similar to the sheathing tables in that they are for different support conditions, and contain values for both duration factors.  This time we will be using tables starting with 9.6 for our Joist and Stringer designs.  Keep in mind that these beam tables contain values found using $C_D = 1.0$, and $C_D= 1.25$ so it is important to verify the table's load duration factor.</p>
+<p>There are no wales in slabs so we will not be using Tables 9.9.1 through 9.11.2.</p>
+<p>Tables 9.12.1 and 2 contain allowable axial loads of a variety of species, sizes, and effective lengths.  The values in this table are only for a $C_D=1.0$.  This is not unreasonable since you are much more likely to be reusing shores, which means their capacity would have to be calculated using a $C_D=1.0$ anyway.</p>
 <p>Since the procedure for slab forms is very similar to wall forms we'll move straight to an example.</p>
 
 </div>
@@ -328,7 +328,7 @@ div.output_prompt {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Design formwork for a concrete floor slab based on the following information:</p>
 <ul>
-<li>Thickness of concrete slab = 10”</li>
+<li>Thickness of concrete slab = 9”</li>
 <li>Unbraced length for 4x6 shores = 14 ft</li>
 <li>Concrete unit weight = 150 lb/ft$^3$</li>
 <li>Deflection limited to L/360 but not greater than 1/16”</li>
@@ -418,19 +418,17 @@ div.output_prompt {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="o">%</span><span class="k">run</span> Older_Classes/Temp_struc.py
-<span class="n">t_concrete</span> <span class="o">=</span> <span class="mi">10</span> <span class="c">#in</span>
-<span class="n">DL_form_work</span> <span class="o">=</span> <span class="mf">5.5</span> <span class="c">#psf</span>
-<span class="n">LL</span> <span class="o">=</span> <span class="mi">50</span> <span class="c">#psf</span>
+<div class=" highlight hl-ipython3"><pre><span class="o">%</span><span class="k">run</span> Older_Classes/Temp_struc_v_3_beta.py
+<span class="n">t_concrete</span> <span class="o">=</span> <span class="mi">9</span> <span class="c1">#in</span>
+<span class="n">DL_form_work</span> <span class="o">=</span> <span class="mf">5.5</span> <span class="c1">#psf</span>
+<span class="n">LL</span> <span class="o">=</span> <span class="mi">50</span> <span class="c1">#psf</span>
 
 <span class="n">DL_fw</span> <span class="o">=</span> <span class="n">DL_form_work</span>
 <span class="n">LL</span> <span class="o">=</span> <span class="n">LL</span>
 <span class="n">t</span> <span class="o">=</span> <span class="n">t_concrete</span>
 <span class="n">SlabLoad</span> <span class="o">=</span> <span class="n">slab_load</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">LL</span> <span class="o">=</span> <span class="n">LL</span><span class="p">,</span> <span class="n">DL_forms</span> <span class="o">=</span> <span class="n">DL_fw</span><span class="p">)</span>
-<span class="n">p</span> <span class="o">=</span> <span class="n">SlabLoad</span><span class="p">[</span><span class="s">&#39;value&#39;</span><span class="p">]</span>
-<span class="c"># p =  DL_fw+DL_con+LL</span>
-<span class="n">P</span> <span class="o">=</span> <span class="n">p</span> <span class="c">#for later use</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;Uninform pressure = %.2f psf&quot;</span><span class="o">%</span><span class="k">p</span>)
+<span class="n">P</span> <span class="o">=</span> <span class="n">SlabLoad</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Uninform pressure = </span><span class="si">%.2f</span><span class="s2"> psf&quot;</span><span class="o">%</span><span class="k">P</span>.value)
 </pre></div>
 
 </div>
@@ -443,7 +441,7 @@ div.output_prompt {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Uninform pressure = 180.50 psf
+<pre>Uninform pressure = 168.00 psf
 </pre>
 </div>
 </div>
@@ -458,7 +456,7 @@ div.output_prompt {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">SlabLoad</span><span class="p">[</span><span class="s">&#39;work&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">SlabLoad</span><span class="o">.</span><span class="n">work</span>
 </pre></div>
 
 </div>
@@ -473,19 +471,17 @@ div.output_prompt {
 
 
 <div class="output_latex output_subarea output_execute_result">
-$$ $$ 
-${}$
- $$\text{Concrete Dead Load } = DL_{con} = \text{Slab Thickness} \times \text{Unit weight of Concrete}$$ 
+$$\text{Concrete Dead Load } = DL_{con} = \text{Slab Thickness} \times \text{Unit weight of Concrete}$$ 
 ${}$
  $$\text{Unit weight of concrete} = \gamma_{con} = 150 pcf$$ 
 ${}$
- $$\text{Slab thickness } = t_{slab} = 10"$$ 
+ $$\text{Slab thickness } = t_{slab} = 9"$$ 
 ${}$
  $$DL_{con} = t_{slab} \times \gamma_{con}$$ 
 ${}$
- $$DL_{con} = 10" \times 150 pcf \times \frac{1 ft}{12 in}$$ 
+ $$DL_{con} = 9" \times 150 pcf \times \frac{1 ft}{12 in}$$ 
 ${}$
- $$DL_{con} = 125 psf$$ 
+ $$DL_{con} = 112.5 psf$$ 
 ${}$
  $$\text{Formwork Dead Load } = DL_{forms} = 5.5 psf$$ 
 ${}$
@@ -497,9 +493,9 @@ ${}$
 ${}$
  $$p = DL_{con} + DL_{forms} + LL$$ 
 ${}$
- $$p = 125 psf + 5.5 psf + 50 psf$$ 
+ $$p = 112.5 psf + 5.5 psf + 50 psf$$ 
 ${}$
- $$p = 180.5 psf$$
+ $$p = 168 psf$$
 </div>
 
 </div>
@@ -543,15 +539,136 @@ ${}$
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">plyform</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./Wood/Plyform_1.25_strong_spans.csv&quot;</span><span class="p">,</span><span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">plyform</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">150</span><span class="p">:</span><span class="mi">200</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>1/2_in_strong</th>
+      <th>5/8_in_strong</th>
+      <th>3/4_in_strong</th>
+      <th>1_in_strong</th>
+      <th>1/2_in_weak</th>
+      <th>5/8_in_weak</th>
+      <th>3/4_in_weak</th>
+      <th>1_in_weak</th>
+    </tr>
+    <tr>
+      <th>P</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>150</th>
+      <td>17</td>
+      <td>19</td>
+      <td>22</td>
+      <td>26</td>
+      <td>12</td>
+      <td>14</td>
+      <td>18</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <th>175</th>
+      <td>16</td>
+      <td>19</td>
+      <td>21</td>
+      <td>25</td>
+      <td>11</td>
+      <td>13</td>
+      <td>17</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <th>200</th>
+      <td>16</td>
+      <td>18</td>
+      <td>20</td>
+      <td>24</td>
+      <td>11</td>
+      <td>13</td>
+      <td>17</td>
+      <td>22</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">table_P</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">plyform</span><span class="p">[</span><span class="s1">&#39;3/4_in_strong&#39;</span><span class="p">][</span><span class="n">plyform</span><span class="o">.</span><span class="n">index</span><span class="o">&gt;=</span><span class="n">P</span><span class="o">.</span><span class="n">value</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+<span class="n">joist_spacing</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">plyform</span><span class="p">[</span><span class="s1">&#39;3/4_in_strong&#39;</span><span class="p">][</span><span class="n">plyform</span><span class="o">.</span><span class="n">index</span><span class="o">==</span><span class="n">table_P</span> <span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Read down to {} psf and over to the 3/4 in column and find s = {}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">table_P</span><span class="p">,</span><span class="n">joist_spacing</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Read down to 175 psf and over to the 3/4 in column and find s = 21
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href = "http://i.imgur.com/NnwmzD3.png"><img src="http://i.imgur.com/NnwmzD3.png" alt = "Formwork for Concrete Table 7-2" title = "Formwork for Concrete Table 7-2" style="max-width:200px; max-height:200px; border:1px solid blue; float:right; margin-left:10px;"/></a></p>
-<p>Since the problem statement indicated a 7 day load duration factor for everything but shores, i.e. $C_D = 1.25$, we use the left hand side of Table 7-2.  The concrete pressure is over $175 psf$ in the left hand column, so we have to use $200 psf$.</p>
-<p>For $3/4"$ Class I Plyform, subjected to a $200 psf$ pressure load, with $C_D = 1.25$, orientating the Plyform in the strong direction (grain perpendicular to the supports), and supported over three or more spans, the maximum support spacing is $19"$.</p>
-<p>As a reminder, for the purposes of preparing you for the <a href="http://www.professionalconstructor.org/?page=AC_Certification">AIC exam</a>, use $19"$ on center.</p>
+<p><a href = "http://i.imgur.com/3wlGQhb.jpg"><img src="http://i.imgur.com/3wlGQhb.jpg" alt = "Formwork for Concrete Table 9.2" title = "Formwork for Concrete Table 9.2" style="max-width:200px; max-height:200px; border:1px solid blue; float:right; margin-left:10px;"/></a></p>
+<p>Since the problem statement indicated a 7 day load duration factor for everything but shores, i.e. $C_D = 1.25$, we use the left hand side of Table 9.2.  The concrete pressure is over $150 psf$ in the left hand column, so we have to use $175 psf$.</p>
+<p>For $3/4"$ Class I Plyform, subjected to a $175 psf$ pressure load, with $C_D = 1.25$, orientating the Plyform in the strong direction (grain perpendicular to the supports), and supported over three or more spans, the maximum support spacing is $21\text{"}$.</p>
+<p>As a reminder, for the purposes of preparing you for the <a href="http://www.professionalconstructor.org/?page=AC_Certification">AIC exam</a>, use $21\text{"}$ on center.</p>
 
 </div>
 </div>
@@ -597,8 +714,8 @@ ${}$
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">w_</span> <span class="o">=</span> <span class="n">line_load</span><span class="p">(</span><span class="n">P</span><span class="p">,</span><span class="mi">19</span><span class="o">/</span><span class="mi">12</span><span class="p">)</span>
-<span class="n">w</span><span class="o">=</span><span class="n">w_</span><span class="p">[</span><span class="s">&#39;value&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">w</span> <span class="o">=</span> <span class="n">line_load</span><span class="p">(</span><span class="n">P</span><span class="o">.</span><span class="n">value</span><span class="p">,</span><span class="n">joist_spacing</span><span class="o">/</span><span class="mi">12</span><span class="p">)</span>
+<span class="c1"># w=w_[&#39;value&#39;]</span>
 </pre></div>
 
 </div>
@@ -612,7 +729,7 @@ ${}$
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">w_</span><span class="p">[</span><span class="s">&#39;work&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">w</span><span class="o">.</span><span class="n">work</span>
 </pre></div>
 
 </div>
@@ -627,9 +744,39 @@ ${}$
 
 
 <div class="output_latex output_subarea output_execute_result">
-$$\text{Line load} = w = \text{pressure}\times\text{tributary width}$$ $$w = P \times s = 180.5 psf \times 19.0" \times \frac{1 ft}{12 in}$$$$w = 285.79 plf$$
+$$\text{Line load} = w = \text{pressure}\times\text{tributary width}$$ $$w = P \times s = 168 psf \times 21" \times \frac{1 ft}{12 in}$$$$w = 294.0 plf$$
 </div>
 
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">stringer_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./Wood/Table_9.6.2.csv&quot;</span><span class="p">,</span> <span class="n">index_col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">table_w</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">stringer_df</span><span class="p">[</span><span class="s1">r&#39;$\text{4x4 DFL}$&#39;</span><span class="p">][</span><span class="n">stringer_df</span><span class="o">.</span><span class="n">index</span><span class="o">&gt;=</span><span class="n">w</span><span class="o">.</span><span class="n">value</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+<span class="n">stringer_spacing</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">stringer_df</span><span class="p">[</span><span class="s1">r&#39;$\text{4x4 DFL}$&#39;</span><span class="p">][</span><span class="n">stringer_df</span><span class="o">.</span><span class="n">index</span><span class="o">==</span><span class="n">table_w</span> <span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Read down to {} plf and over to the 4x4 in column and find s = {} in.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">table_w</span><span class="p">,</span><span class="n">stringer_spacing</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Read down to 300 plf and over to the 4x4 in column and find s = 69 in.
+</pre>
+</div>
 </div>
 
 </div>
@@ -641,9 +788,9 @@ $$\text{Line load} = w = \text{pressure}\times\text{tributary width}$$ $$w = P \
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href = "http://i.imgur.com/BahdSNW.png"><img src="http://i.imgur.com/BahdSNW.png" alt = "Formwork for Concrete Table 7-5.*" title = "Formwork for Concrete Table 7-5.*" style="max-width:200px; max-height:200px; border:1px solid blue; float:right; margin-left:10px;"/></a></p>
-<p>Now we look up the allowable support spacings for the joists in Table 7-5, again because the joists are being supported over three or more spans.  Since, we are using Douglass Fir-Larch and $C_D=1.25$, we need to specifically use Table 7-5.2, (if we are reusing the joists again in another form, then we would look in Table 7-5.1).</p>
-<p>Reading down to $300 plf$ in the pressure column, and over to the 4x4 column, we find that the maximum support spacings for the joists is $68"$.</p>
+<p><a href = "http://i.imgur.com/kS0E7bJ.jpg"><img src="http://i.imgur.com/kS0E7bJ.jpg" alt = "Formwork for Concrete Table 9.6.2.*" title = "Formwork for Concrete Table 9.6.2.*" style="max-width:200px; max-height:200px; border:1px solid blue; float:right; margin-left:10px;"/></a></p>
+<p>Now we look up the allowable support spacings for the joists in Table 9.6, again because the joists are being supported over three or more spans.  Since, we are using Douglass Fir-Larch and $C_D=1.25$, we need to specifically use Table 9.6.2, (if we are reusing the joists again in another form, then we would look in Table 9.6.1).</p>
+<p>Reading down to $300 plf$ in the pressure column, and over to the 4x4 column, we find that the maximum support spacings for the joists is $69\text{"}$.</p>
 
 </div>
 </div>
@@ -689,8 +836,8 @@ $$\text{Line load} = w = \text{pressure}\times\text{tributary width}$$ $$w = P \
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">w_</span> <span class="o">=</span> <span class="n">line_load</span><span class="p">(</span><span class="n">P</span><span class="p">,</span><span class="mi">68</span><span class="o">/</span><span class="mi">12</span><span class="p">)</span>
-<span class="n">w</span><span class="o">=</span><span class="n">w_</span><span class="p">[</span><span class="s">&#39;value&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">w</span> <span class="o">=</span> <span class="n">line_load</span><span class="p">(</span><span class="n">P</span><span class="o">.</span><span class="n">value</span><span class="p">,</span><span class="n">stringer_spacing</span><span class="o">/</span><span class="mi">12</span><span class="p">)</span>
+<span class="c1"># w=w_[&#39;value&#39;]</span>
 </pre></div>
 
 </div>
@@ -704,7 +851,7 @@ $$\text{Line load} = w = \text{pressure}\times\text{tributary width}$$ $$w = P \
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">w_</span><span class="p">[</span><span class="s">&#39;work&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">w</span><span class="o">.</span><span class="n">work</span>
 </pre></div>
 
 </div>
@@ -719,9 +866,39 @@ $$\text{Line load} = w = \text{pressure}\times\text{tributary width}$$ $$w = P \
 
 
 <div class="output_latex output_subarea output_execute_result">
-$$\text{Line load} = w = \text{pressure}\times\text{tributary width}$$ $$w = P \times s = 180.5 psf \times 68.0" \times \frac{1 ft}{12 in}$$$$w = 1022.83 plf$$
+$$\text{Line load} = w = \text{pressure}\times\text{tributary width}$$ $$w = P \times s = 168 psf \times 69" \times \frac{1 ft}{12 in}$$$$w = 966.0 plf$$
 </div>
 
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c1"># joist_df = pd.read_csv(&quot;./Wood/Table_9.6.2.csv&quot;, index_col = 0)</span>
+<span class="n">table_w</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">stringer_df</span><span class="p">[</span><span class="s1">r&#39;$\text{4x6 DFL}$&#39;</span><span class="p">][</span><span class="n">stringer_df</span><span class="o">.</span><span class="n">index</span><span class="o">&gt;=</span><span class="n">w</span><span class="o">.</span><span class="n">value</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+<span class="n">shore_spacing</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">stringer_df</span><span class="p">[</span><span class="s1">r&#39;$\text{4x6 DFL}$&#39;</span><span class="p">][</span><span class="n">stringer_df</span><span class="o">.</span><span class="n">index</span><span class="o">==</span><span class="n">table_w</span> <span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Read down to {} plf and over to the 4x6 in column and find s = {} in.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">table_w</span><span class="p">,</span><span class="n">shore_spacing</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Read down to 1000 plf and over to the 4x6 in column and find s = 56 in.
+</pre>
+</div>
 </div>
 
 </div>
@@ -733,9 +910,9 @@ $$\text{Line load} = w = \text{pressure}\times\text{tributary width}$$ $$w = P \
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href = "http://i.imgur.com/BahdSNW.png"><img src="http://i.imgur.com/BahdSNW.png" alt = "Formwork for Concrete Table 7-5.*" title = "Formwork for Concrete Table 7-5.*" style="max-width:200px; max-height:200px; border:1px solid blue; float:right; margin-left:10px;"/></a></p>
-<p>Now we look up the allowable support spacings for the 4x6 stringers in Table 7-5.2.  We do this because the stringers, just like the joists, are also supported over three or more spans.</p>
-<p>Reading down to $1100 plf$ in the pressure column, then over to the 4x6 column, we find that the maximum support spacing for the stringers is $53"$.  We might have been able to get away with using $1,000 plf$, but the slab for will also be carrying personnel, and we should always err on the side of caution when there is a high risk of injury.</p>
+<p><a href = "http://i.imgur.com/kS0E7bJ.jpg"><img src="http://i.imgur.com/kS0E7bJ.jpg" alt = "Formwork for Concrete Table 9.6.2.*" title = "Formwork for Concrete Table 9.6.2.*" style="max-width:200px; max-height:200px; border:1px solid blue; float:right; margin-left:10px;"/></a></p>
+<p>Now we look up the allowable support spacings for the 4x6 stringers in Table 9.6.2.  We do this because the stringers, just like the joists, are also supported over three or more spans.</p>
+<p>Reading down to $1,000 plf$ in the pressure column, then over to the 4x6 column, we find that the maximum support spacing for the stringers is $56\text{"}$.  If it had been less than $940 plf$ We might have been able to get away with using $900 plf$, but the slab for will also be carrying personnel, and we should always err on the side of caution when there is a high risk of injury.</p>
 
 </div>
 </div>
@@ -771,13 +948,22 @@ $$\text{Line load} = w = \text{pressure}\times\text{tributary width}$$ $$w = P \
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">P_axial</span> <span class="o">=</span> <span class="n">shore_load</span><span class="p">(</span><span class="n">P</span><span class="p">,</span><span class="mi">68</span><span class="p">,</span><span class="mi">53</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">P_axial</span> <span class="o">=</span> <span class="n">shore_load</span><span class="p">(</span><span class="n">P</span><span class="o">.</span><span class="n">value</span><span class="p">,</span><span class="n">stringer_spacing</span><span class="p">,</span><span class="n">shore_spacing</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Stringer s = {}&quot;, Shore s = {}&quot;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">stringer_spacing</span><span class="p">,</span><span class="n">shore_spacing</span><span class="p">))</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Stringer s = 69&quot;, Shore s = 56&quot;
+</pre>
 </div>
     </div>
 <div class="cell border-box-sizing text_cell rendered">
@@ -795,7 +981,7 @@ $$\text{Line load} = w = \text{pressure}\times\text{tributary width}$$ $$w = P \
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">P_axial</span><span class="p">[</span><span class="s">&#39;work&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">P_axial</span><span class="o">.</span><span class="n">work</span>
 </pre></div>
 
 </div>
@@ -810,7 +996,7 @@ $$\text{Line load} = w = \text{pressure}\times\text{tributary width}$$ $$w = P \
 
 
 <div class="output_latex output_subarea output_execute_result">
-$$\text{Compression load } (P_{axial}) = \text{Pressure} \times \text{Tributary Area}$$ $$P_{axial} = \text{Pressure} \times \text{Stringer spacing} \times \text{Shore spacing}$$ $$P_{axial} = 180.50 psf \times 68" \times 53" \times \left(\frac{1 ft}{12 in}\right)^2$$ $$P_{axial} = 4517.51 lbs$$ 
+$$\text{Compression load } (P_{axial}) = \text{Pressure} \times \text{Tributary Area}$$ $$P_{axial} = \text{Pressure} \times \text{Stringer spacing} \times \text{Shore spacing}$$ $$P_{axial} = 168 psf \times 69" \times 56" \times \left(\frac{1 ft}{12 in}\right)^2$$ $$P_{axial} = 4,508 lbs$$ 
 </div>
 
 </div>
@@ -825,7 +1011,10 @@ $$\text{Compression load } (P_{axial}) = \text{Pressure} \times \text{Tributary 
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="mi">3894</span><span class="o">/</span><span class="n">P_axial</span><span class="p">[</span><span class="s">&#39;load&#39;</span><span class="p">]</span><span class="o">*</span><span class="mi">53</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">shore_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./Wood/Table_9.12.1_DFL.csv&quot;</span><span class="p">,</span> <span class="n">index_col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">shore_cap</span> <span class="o">=</span> <span class="n">shore_df</span><span class="p">[</span><span class="s1">r&#39;$\text{4x6 S4S}$&#39;</span><span class="p">][</span><span class="mi">14</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;4x6 S4S P_allow = {} lbs&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">shore_cap</span><span class="p">))</span>
+<span class="n">shore_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">13</span><span class="p">:</span><span class="mi">15</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -836,7 +1025,114 @@ $$\text{Compression load } (P_{axial}) = \text{Pressure} \times \text{Tributary 
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[12]:</div>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>4x6 S4S P_allow = 3860.0 lbs
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[13]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>$\text{2x4 Rough}$</th>
+      <th>$\text{2x4 S4S}$</th>
+      <th>$\text{3x4 Rough}$</th>
+      <th>$\text{3x4 S4S}$</th>
+      <th>$\text{4x4 Rough}$</th>
+      <th>$\text{4x4 S4S}$</th>
+      <th>$\text{4x6 Rough}$</th>
+      <th>$\text{4x6 S4S}$</th>
+    </tr>
+    <tr>
+      <th>$L_{effective}$</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>13</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>3260</td>
+      <td>2840</td>
+      <td>5050</td>
+      <td>4460</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2830</td>
+      <td>2460</td>
+      <td>4380</td>
+      <td>3860</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2470</td>
+      <td>NaN</td>
+      <td>3830</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="nb">print</span><span class="p">(</span><span class="n">P_axial</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">P_axial</span><span class="o">.</span><span class="n">value</span><span class="o">-</span><span class="n">shore_cap</span><span class="p">)</span>
+<span class="n">shore_cap</span><span class="o">/</span><span class="n">P_axial</span><span class="o">.</span><span class="n">value</span><span class="o">*</span><span class="n">shore_spacing</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>4508.0
+648.0
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[14]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -855,9 +1151,9 @@ $$\text{Compression load } (P_{axial}) = \text{Pressure} \times \text{Tributary 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href = "http://i.imgur.com/WNOha2v.png"><img src="http://i.imgur.com/WNOha2v.png" alt = "Formwork for Concrete Table 7-11" title = "Formwork for Concrete Table 7-11" style="max-width:200px; max-height:200px; border:1px solid blue; float:right; margin-left:10px;"/></a></p>
-<p>To determine the allowable shore load, we turn to Table 7-11, and look at Douglas Fir-Larch.  We look up our shore length of 14 ft, and S4S 4x6s.  This is the column on the right, and it reads $3,894 lbs$.  This puts over by $624 lbs$.  If we had adjusted for constructibility all along then our actual load would have been reduced to a point where we would have been OK. However, as our design stands we need to reduce the shore spacing to make it work.</p>
-
+<p><a href = "http://i.imgur.com/e2Zfaxa.jpg"><img src="http://i.imgur.com/e2Zfaxa.jpg" alt = "Formwork for Concrete Table 9.12.1" title = "Formwork for Concrete Table 9.12.1" style="max-width:200px; max-height:200px; border:1px solid blue; float:right; margin-left:10px;"/></a></p>
+<p>To determine the allowable shore load, we turn to Table 9.12.1, and look at Douglas Fir-Larch.  We look up our shore length of 14 ft, and S4S 4x6s.  This is the column on the right, and it reads $3,860 lbs$.  This puts over by $650 lbs$.  If we had adjusted for constructibility all along then our actual load would have been reduced to a point where we would have been OK. However, as our design stands we need to reduce the shore spacing to make it work.</p>
+$$\frac{s_{allow}}{P_{allow}} = \frac{s_{shore}}{P_{actual}}$$$$s_{allow} = \frac{s_{shore}}{P_{actual}}\times P_{allow}$$$$s_{allow} = \frac{56"}{4,508 lbs}\times 3,860 lbs$$$$s_{allow} = 47 \frac{15}{16}"$$
 </div>
 </div>
 </div></section>
@@ -886,14 +1182,41 @@ $$\text{Compression load } (P_{axial}) = \text{Pressure} \times \text{Tributary 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="nb">print</span><span class="p">(</span><span class="n">joist_spacing</span><span class="p">,</span><span class="n">stringer_spacing</span><span class="p">,</span><span class="n">shore_spacing</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>21 69 56
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>$\text{With }3/4"\text{ Class I Plyform, space the 4x4 joists every }19"\text{.}$</p>
-<p>$\text{The 4x6 stringers, used to support the 4x4 joists, cannot be spaced more than }68"\text{ on center.}$</p>
-<p>$\text{The 4x6 shores need to be spaced less than }53"\text{ on center. (Actually closer to }45"\text{on center.)}$</p>
+<p>$\text{With }3/4"\text{ Class I Plyform, space the 4x4 joists every }21"\text{.}$</p>
+<p>$\text{The 4x6 stringers, used to support the 4x4 joists, cannot be spaced more than }69"\text{ on center.}$</p>
+<p>$\text{The 4x6 shores need to be spaced less than }56"\text{ on center. (Actually around to }48"\text{on center.)}$</p>
 <p>Again, the reason we are covering this, is that this material will show up on the <a href="http://www.professionalconstructor.org/?page=AC_Certification">AIC exam</a>, and you might end up going to work for someone that believes this is the fastest way to work.  Either way, you need to be able to use these tables.</p>
 
 </div>

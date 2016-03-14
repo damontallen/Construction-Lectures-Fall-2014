@@ -411,46 +411,7 @@ div.output_prompt {
 </audio>
 </div>
 </div>
-</div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="o">%</span><span class="k">run</span> Older_Classes/Temp_struc_v_3_beta.py
-<span class="n">t_concrete</span> <span class="o">=</span> <span class="mi">9</span> <span class="c1">#in</span>
-<span class="n">DL_form_work</span> <span class="o">=</span> <span class="mf">5.5</span> <span class="c1">#psf</span>
-<span class="n">LL</span> <span class="o">=</span> <span class="mi">50</span> <span class="c1">#psf</span>
-
-<span class="n">DL_fw</span> <span class="o">=</span> <span class="n">DL_form_work</span>
-<span class="n">LL</span> <span class="o">=</span> <span class="n">LL</span>
-<span class="n">t</span> <span class="o">=</span> <span class="n">t_concrete</span>
-<span class="n">SlabLoad</span> <span class="o">=</span> <span class="n">slab_load</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">LL</span> <span class="o">=</span> <span class="n">LL</span><span class="p">,</span> <span class="n">DL_forms</span> <span class="o">=</span> <span class="n">DL_fw</span><span class="p">)</span>
-<span class="n">P</span> <span class="o">=</span> <span class="n">SlabLoad</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Uninform pressure = </span><span class="si">%.2f</span><span class="s2"> psf&quot;</span><span class="o">%</span><span class="k">P</span>.value)
-</pre></div>
-
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Uninform pressure = 168.00 psf
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
@@ -537,127 +498,6 @@ ${}$
 </audio>
 </div>
 </div>
-</div><div style=display:none>    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="n">plyform</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./Wood/Plyform_1.25_strong_spans.csv&quot;</span><span class="p">,</span><span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">plyform</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">150</span><span class="p">:</span><span class="mi">200</span><span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>1/2_in_strong</th>
-      <th>5/8_in_strong</th>
-      <th>3/4_in_strong</th>
-      <th>1_in_strong</th>
-      <th>1/2_in_weak</th>
-      <th>5/8_in_weak</th>
-      <th>3/4_in_weak</th>
-      <th>1_in_weak</th>
-    </tr>
-    <tr>
-      <th>P</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>150</th>
-      <td>17</td>
-      <td>19</td>
-      <td>22</td>
-      <td>26</td>
-      <td>12</td>
-      <td>14</td>
-      <td>18</td>
-      <td>23</td>
-    </tr>
-    <tr>
-      <th>175</th>
-      <td>16</td>
-      <td>19</td>
-      <td>21</td>
-      <td>25</td>
-      <td>11</td>
-      <td>13</td>
-      <td>17</td>
-      <td>22</td>
-    </tr>
-    <tr>
-      <th>200</th>
-      <td>16</td>
-      <td>18</td>
-      <td>20</td>
-      <td>24</td>
-      <td>11</td>
-      <td>13</td>
-      <td>17</td>
-      <td>22</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">table_P</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">plyform</span><span class="p">[</span><span class="s1">&#39;3/4_in_strong&#39;</span><span class="p">][</span><span class="n">plyform</span><span class="o">.</span><span class="n">index</span><span class="o">&gt;=</span><span class="n">P</span><span class="o">.</span><span class="n">value</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
-<span class="n">joist_spacing</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">plyform</span><span class="p">[</span><span class="s1">&#39;3/4_in_strong&#39;</span><span class="p">][</span><span class="n">plyform</span><span class="o">.</span><span class="n">index</span><span class="o">==</span><span class="n">table_P</span> <span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Read down to {} psf and over to the 3/4 in column and find s = {}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">table_P</span><span class="p">,</span><span class="n">joist_spacing</span><span class="p">))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Read down to 175 psf and over to the 3/4 in column and find s = 21
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -706,23 +546,7 @@ ${}$
 
 </div>
 </div>
-</div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">w</span> <span class="o">=</span> <span class="n">line_load</span><span class="p">(</span><span class="n">P</span><span class="o">.</span><span class="n">value</span><span class="p">,</span><span class="n">joist_spacing</span><span class="o">/</span><span class="mi">12</span><span class="p">)</span>
-<span class="c1"># w=w_[&#39;value&#39;]</span>
-</pre></div>
-
 </div>
-</div>
-</div>
-
-</div>
-    </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
@@ -751,36 +575,6 @@ $$\text{Line load} = w = \text{pressure}\times\text{tributary width}$$ $$w = P \
 </div>
 </div>
 
-</div><div style=display:none>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">stringer_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./Wood/Table_9.6.2.csv&quot;</span><span class="p">,</span> <span class="n">index_col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
-<span class="n">table_w</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">stringer_df</span><span class="p">[</span><span class="s1">r&#39;$\text{4x4 DFL}$&#39;</span><span class="p">][</span><span class="n">stringer_df</span><span class="o">.</span><span class="n">index</span><span class="o">&gt;=</span><span class="n">w</span><span class="o">.</span><span class="n">value</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
-<span class="n">stringer_spacing</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">stringer_df</span><span class="p">[</span><span class="s1">r&#39;$\text{4x4 DFL}$&#39;</span><span class="p">][</span><span class="n">stringer_df</span><span class="o">.</span><span class="n">index</span><span class="o">==</span><span class="n">table_w</span> <span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Read down to {} plf and over to the 4x4 in column and find s = {} in.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">table_w</span><span class="p">,</span><span class="n">stringer_spacing</span><span class="p">))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Read down to 300 plf and over to the 4x4 in column and find s = 69 in.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -828,23 +622,7 @@ $$\text{Line load} = w = \text{pressure}\times\text{tributary width}$$ $$w = P \
 
 </div>
 </div>
-</div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">w</span> <span class="o">=</span> <span class="n">line_load</span><span class="p">(</span><span class="n">P</span><span class="o">.</span><span class="n">value</span><span class="p">,</span><span class="n">stringer_spacing</span><span class="o">/</span><span class="mi">12</span><span class="p">)</span>
-<span class="c1"># w=w_[&#39;value&#39;]</span>
-</pre></div>
-
 </div>
-</div>
-</div>
-
-</div>
-    </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
@@ -873,36 +651,6 @@ $$\text{Line load} = w = \text{pressure}\times\text{tributary width}$$ $$w = P \
 </div>
 </div>
 
-</div><div style=display:none>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c1"># joist_df = pd.read_csv(&quot;./Wood/Table_9.6.2.csv&quot;, index_col = 0)</span>
-<span class="n">table_w</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">stringer_df</span><span class="p">[</span><span class="s1">r&#39;$\text{4x6 DFL}$&#39;</span><span class="p">][</span><span class="n">stringer_df</span><span class="o">.</span><span class="n">index</span><span class="o">&gt;=</span><span class="n">w</span><span class="o">.</span><span class="n">value</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
-<span class="n">shore_spacing</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">stringer_df</span><span class="p">[</span><span class="s1">r&#39;$\text{4x6 DFL}$&#39;</span><span class="p">][</span><span class="n">stringer_df</span><span class="o">.</span><span class="n">index</span><span class="o">==</span><span class="n">table_w</span> <span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Read down to {} plf and over to the 4x6 in column and find s = {} in.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">table_w</span><span class="p">,</span><span class="n">shore_spacing</span><span class="p">))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Read down to 1000 plf and over to the 4x6 in column and find s = 56 in.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -940,31 +688,7 @@ $$\text{Line load} = w = \text{pressure}\times\text{tributary width}$$ $$w = P \
 </audio>
 </div>
 </div>
-</div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">P_axial</span> <span class="o">=</span> <span class="n">shore_load</span><span class="p">(</span><span class="n">P</span><span class="o">.</span><span class="n">value</span><span class="p">,</span><span class="n">stringer_spacing</span><span class="p">,</span><span class="n">shore_spacing</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Stringer s = {}&quot;, Shore s = {}&quot;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">stringer_spacing</span><span class="p">,</span><span class="n">shore_spacing</span><span class="p">))</span>
-</pre></div>
-
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Stringer s = 69&quot;, Shore s = 56&quot;
-</pre>
-</div>
-    </div></div></div></div></div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -1001,23 +725,6 @@ $$\text{Compression load } (P_{axial}) = \text{Pressure} \times \text{Tributary 
 </div>
 
 </div>
-
-
-</div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">shore_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./Wood/Table_9.12.1_DFL.csv&quot;</span><span class="p">,</span> <span class="n">index_col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
-<span class="n">shore_cap</span> <span class="o">=</span> <span class="n">shore_df</span><span class="p">[</span><span class="s1">r&#39;$\text{4x6 S4S}$&#39;</span><span class="p">][</span><span class="mi">14</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;4x6 S4S P_allow = {} lbs&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">shore_cap</span><span class="p">))</span>
-<span class="n">shore_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">13</span><span class="p">:</span><span class="mi">15</span><span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
 </div>
 
 <div class="output_wrapper">
@@ -1029,122 +736,6 @@ $$\text{Compression load } (P_{axial}) = \text{Pressure} \times \text{Tributary 
 <pre>4x6 S4S P_allow = 3860.0 lbs
 </pre>
 </div>
-</div>
-
-<div class="output_area"><div class="prompt output_prompt">Out[13]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>$\text{2x4 Rough}$</th>
-      <th>$\text{2x4 S4S}$</th>
-      <th>$\text{3x4 Rough}$</th>
-      <th>$\text{3x4 S4S}$</th>
-      <th>$\text{4x4 Rough}$</th>
-      <th>$\text{4x4 S4S}$</th>
-      <th>$\text{4x6 Rough}$</th>
-      <th>$\text{4x6 S4S}$</th>
-    </tr>
-    <tr>
-      <th>$L_{effective}$</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>13</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>3260</td>
-      <td>2840</td>
-      <td>5050</td>
-      <td>4460</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2830</td>
-      <td>2460</td>
-      <td>4380</td>
-      <td>3860</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2470</td>
-      <td>NaN</td>
-      <td>3830</td>
-      <td>NaN</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="nb">print</span><span class="p">(</span><span class="n">P_axial</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">P_axial</span><span class="o">.</span><span class="n">value</span><span class="o">-</span><span class="n">shore_cap</span><span class="p">)</span>
-<span class="n">shore_cap</span><span class="o">/</span><span class="n">P_axial</span><span class="o">.</span><span class="n">value</span><span class="o">*</span><span class="n">shore_spacing</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>4508.0
-648.0
-</pre>
-</div>
-</div>
-
-<div class="output_area"><div class="prompt output_prompt">Out[14]:</div>
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>45.6848623105752</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -1180,42 +771,15 @@ $$\frac{s_{allow}}{P_{allow}} = \frac{s_{shore}}{P_{actual}}$$$$s_{allow} = \fra
 </audio>
 </div>
 </div>
-</div><div style=display:none>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="nb">print</span><span class="p">(</span><span class="n">joist_spacing</span><span class="p">,</span><span class="n">stringer_spacing</span><span class="p">,</span><span class="n">shore_spacing</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>21 69 56
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>With $3/4"$ Class I Plyform, space the 4x4 joists every $21"$.</p>
-<p>The 4x6 stringers, used to support the 4x4 joists, cannot be spaced more than 69" on center.</p>
-<p>$\text{The 4x6 shores need to be spaced less than }56"\text{ on center. (Actually around to }48"\text{on center.)}$</p>
+<p>With $3/4\text{"}$ Class I Plyform, space the 4x4 joists every $21\text{"}$.</p>
+<p>The 4x6 stringers, used to support the 4x4 joists, cannot be spaced more than $69\text{"}$ on center.</p>
+<p>The 4x6 shores need to be spaced less than $56\text{"}$ on center. (Actually around to $48\text{"}$ on center.)</p>
 <p>Again, the reason we are covering this, is that this material will show up on the <a href="http://www.professionalconstructor.org/?page=AC_Certification">AIC exam</a>, and you might end up going to work for someone that believes this is the fastest way to work.  Either way, you need to be able to use these tables.</p>
 
 </div>

@@ -300,8 +300,7 @@ up by that formwork. That load is supported by the shores, which, in turn, are s
 floor slab. The first floor slab is already carrying its own self weight, and now this relatively green slab is
 being called upon to carry all this additional load. If the slab was designed to carry all this additional
 load in its currently weakened state, then no problem. However, if not you will need to help it out.</p>
-<p>Because the first floor slab will start to sag before it fails, you just need to support the sag to prevent the slab's failure. The question now is, how much support will you need to provide? Perhaps it might be better to look at a
-simplified example first.</p>
+<p>Because the first floor slab will start to sag before it fails, you just need to support the sag to prevent the slab's failure.</p>
 
 </div>
 </div>
@@ -314,7 +313,7 @@ simplified example first.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Simple-Model">Simple Model<a class="anchor-link" href="#Simple-Model">&#182;</a></h2>
+<h2 id="Why-not-just-Shores?">Why not just Shores?<a class="anchor-link" href="#Why-not-just-Shores?">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -324,7 +323,7 @@ simplified example first.</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Simple%20Model.mp3"
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Why-not-just-Shores.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
@@ -336,11 +335,9 @@ simplified example first.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's start by examining the deflection equation for a <a href = "http://en.wikipedia.org/wiki/Deflection_(engineering)#Center_loaded_beam">beam with a center point load</a>.</p>
-$$\Delta = \frac{P L^3}{48 E I} = P \left(\frac{L^3}{48 E I}\right)$$$$ \text{(or)}$$$$\Delta = P \times k_{eq}$$<p>In this equation we can see that the deflection is proportional to the load.  This behavior is just the same as the behavior observed in <a href="http://en.wikipedia.org/wiki/Hooke's_law#For_linear_springs">springs</a>.  Additionally, this proportionality holds true for all structural objects that behave in a linear elastic manor.  And since new floor slabs behave this way, we can model a slab as a spring.</p>
-<p><a href = "http://i.imgur.com/xkmedp2.png"><img src="http://i.imgur.com/xkmedp2.png" alt = "Compressed Supports" title = "Compressed Supports" style="max-width:300px; max-height:300px; border:1px solid blue; float:right; margin-left:10px;"/></a></p>
-<p><a href = "http://i.imgur.com/p6j8R6s.png"><img src="http://i.imgur.com/p6j8R6s.png" alt = "Uncompressed Supports" title = "Uncompressed Supports"style="max-width:300px; max-height:300px; border:1px solid blue; float:right; margin-left:3px;"/></a></p>
-<p>Because the deflection of a slab will be orders of magnitude greater than the axial compression of the supporting reshores, we can treat those reshores as a single rigid object.  This also implies that what ever deflection that the top slab undergoes will be the same for all the slabs supporting it.  Finally, since the deflection of a slab is proportional to the load placed upon it, we can model the slab-reshore system as springs connected in parallel.</p>
+<p><a href = "http://imgur.com/a/BFErN"> <img src="http://i.imgur.com/Mhfupuy.jpg" alt = "Second floor slab" Title="Second Floor"  style="max-width:200px; max-height:200px; border:1px solid blue; float:right; margin-left:10px;"/></a>
+It is clear that some support should be used when pouring multiple stories, but it is also important to see why reshores are used rather than just leaving the formwork and shores in-place.  Beside the obvious reason that it would require a lot more formwork material, it is also important to not cause a collapse by overloading the shores.  Let's look at what would happen to the shores in a four story building if they were left in-place.</p>
+<p>When we form up and pour the second floor of a building the slab dead load is supported by the shores and the slab itself does not carry any load ($0D$).  The shores also support the formwork, but that is small in comparison to the slab load ($\approx 10\%$) so we will neglect it for now.  That means the shores initially carry the dead load from a single slab ($1D$).</p>
 
 </div>
 </div>
@@ -353,7 +350,7 @@ $$\Delta = \frac{P L^3}{48 E I} = P \left(\frac{L^3}{48 E I}\right)$$$$ \text{(o
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Simple-Model:-Continued">Simple Model: Continued<a class="anchor-link" href="#Simple-Model:-Continued">&#182;</a></h2>
+<h2 id="Third-Floor-Shoring">Third Floor Shoring<a class="anchor-link" href="#Third-Floor-Shoring">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -363,7 +360,7 @@ $$\Delta = \frac{P L^3}{48 E I} = P \left(\frac{L^3}{48 E I}\right)$$$$ \text{(o
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Simple%20Model:%20Continued.mp3"
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Third-Floor-Shoring.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
@@ -375,10 +372,9 @@ $$\Delta = \frac{P L^3}{48 E I} = P \left(\frac{L^3}{48 E I}\right)$$$$ \text{(o
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href = "http://i.imgur.com/JVjGbhf.png"><img src="http://i.imgur.com/JVjGbhf.png" alt = "Compressed Supports" title = "Compressed Supports" style="max-width:300px; max-height:300px; border:1px solid blue; float:right; margin-left:10px;"/></a></p>
-<p>The system shown here is the equivalent to formwork being supported by three slabs with reshores seperating them.  Since each of the slabs are of equal stiffness, and are deflecting the same amount, they will each carry the same load, $F$.  If we just look at the top bar, we see that there is a load $P$ on the top, and $3 F$ on the bottom.  Because the bar isn't moving, these loads must be equal and oppisite, $3 F = P$ or $F = \frac{1}{3} P$.</p>
-<p>By supporting the load on the top slab with two layers of reshores the reaction loads are cut
-into thirds. It is a little more complicated in a real structure but at least you can begin to see the idea.</p>
+<p><a href = "http://imgur.com/a/BFErN"> <img src="http://i.imgur.com/vEbslTL.jpg" alt = "Third floor slab" Title="Third Floor"  style="max-width:200px; max-height:200px; border:1px solid blue; float:right; margin-left:10px;"/></a>
+When the third floor slab is poured it does not support any loads ($0D$) and must be supported by the shores on the second floor.  By neglecting formwork again we can assume these shores just support the dead load from one slab ($1D$).</p>
+<p>As I indicated previously, a slab needs to deflect to be able to carry a load, and as the second floor is held in place by the first floor shores, the second floor slab does not carry any load ($0D$).  This means no load is transfer to the concrete supports.  As a result the first floor shores now must support the load of the third floor slab in addition to the the dead load from the second floor slab ($2D$).</p>
 
 </div>
 </div>
@@ -391,7 +387,7 @@ into thirds. It is a little more complicated in a real structure but at least yo
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Real-Reshoring">Real Reshoring<a class="anchor-link" href="#Real-Reshoring">&#182;</a></h2>
+<h2 id="Adding-the-Fourth-Floor">Adding the Fourth Floor<a class="anchor-link" href="#Adding-the-Fourth-Floor">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -401,7 +397,7 @@ into thirds. It is a little more complicated in a real structure but at least yo
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Real%20Reshoring.mp3"
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Adding-the-Fourth-Floor.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
@@ -413,14 +409,10 @@ into thirds. It is a little more complicated in a real structure but at least yo
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In a real structure, the self-weight of each supporting slab will be about the same as
-the new slab load. In the simplified example, the load due to a new slab would be superimposed with the load due to each slab's self-weight.  The reactions would actually be $1 \frac{1}{3} P = \left(\text{self-weight} + \frac{1}{3} \text{of the new slab weight}\right)$.</p>
-<p>Additionally, due to the need to leave formwork implace while a slab gains strength, you might have to leave the shores, and formwork, in place while you are pouring the next slab. That would mean that the still shored slab is being completely
-supported by lower level slabs, and it would not be carrying it own self-weight.</p>
-<p>It turns out, that the sequence that you shore, and reshore, will have a
-dramatic effect on how much load a particular slab has to carry, and how much load will be carried by a particular set of shores.  By leaving shores in place, the shores will carry their original load plus some fraction of the new load. This gets even more complicated if you have multiple layers of reshores, and you leave some of them in place from one pour
-to the next. Let’s look at the loads on some slabs, shores, and reshores, as a multiple story building is being
-built.</p>
+<p><a href = "http://imgur.com/a/BFErN"> <img src="http://i.imgur.com/fDI0dir.jpg" alt = "Fourth floor slab" Title="Fourth Floor"  style="max-width:200px; max-height:200px; border:1px solid blue; float:right; margin-left:10px;"/></a>
+As before when the fourth floor is poured it does not carry any load ($0D$) and the supporting shores on the third floor carry the dead load of one slab ($1D$).  Again any slab that cannot deflect does not carry a load, which is the case for the third floor slab ($0D$).  The additional slab load from the fourth floor must be carried by the shores supporting the third floor ($2D$).  The second floor slab carries no load ($0D$) making the shores supporting it now carry all three slab dead loads ($3D$).</p>
+<p>In the slab formwork assignments you saw how close to the maximum allowable capacity shores can get.  It is highly unlikely the shores on the first floor have the capacity to support threes times their original load.  In this situation the shores would likely fail and the building could collapse depending on the capacity of the slabs.</p>
+<p>Now let's look at the use of reshores and how they could be used to prevent shore overloading.</p>
 
 </div>
 </div>
@@ -433,7 +425,7 @@ built.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Multistory-Building">Multistory Building<a class="anchor-link" href="#Multistory-Building">&#182;</a></h2>
+<h2 id="Reshoring">Reshoring<a class="anchor-link" href="#Reshoring">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -457,7 +449,7 @@ built.</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a href = "http://i.imgur.com/xb94twq.png"><img src="http://i.imgur.com/xb94twq.png" alt = "First Floor with Sides Stripped" title = "First Floor with Sides Stripped" style="max-width:300px; max-height:300px; border:1px solid blue; float:right; margin-left:10px;"/></a></p>
 <p>To start with let's look at a constructions sequence.  First, we have our ground floor slab poured, and the structural columns in place.  These concrete columns do not carry any load during the pouring of the first floor, because they still have to be cast into the new slab.</p>
-<p>What carries the load of the first floor slab initially is the timber shores.  While those shores are in place the slab cannot sag.  This is a subtle but important point.  If a structural member is carrying a load it must deform in some way, but the corollary of that is also true; a stuctural member must deform in order to carry a load. This means that the slab will not carry any load while those shores are in place.</p>
+<p>What carries the load of the first floor slab initially is the timber shores.  While those shores are in place the slab cannot sag.  This is a subtle but important point.  If a structural member is carrying a load it must deform in some way, but the corollary of that is also true; a structural member must deform in order to carry a load. This means that the slab will not carry any load while those shores are in place.</p>
 
 </div>
 </div>
@@ -468,8 +460,8 @@ built.</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a href = "http://i.imgur.com/7lV4nLg.png"><img src="http://i.imgur.com/7lV4nLg.png" alt = "First Floor with Forms Stripped" title = "First Floor with Forms Stripped" style="max-width:300px; max-height:300px; border:1px solid blue; float:right; margin-left:10px;"/></a></p>
-<p>For convienence of discussion let's say that the load due to the weight of a slab is equal to $(1 \times D)$, (for dead load).  It is also important to note that relative to the slab's weight, the formwork self-weight is rather small.  To keep things simple we are going to neglect the weight of the formwork.  This load is always easy to add to back into our calculations later.  Simularly the construction live load can also be added back in to our calculations when we need to account for it.</p>
-<p>In summary, we will only be concerened with the dead load due to the slabs' self-weights for the time being.  With that assumption, we can see that the total load being carried by the shores, holding up the form work, is equal to $D$ (the slab's self-weight).</p>
+<p>For convenience of discussion let's say that the load due to the weight of a slab is equal to $(1 \times D)$, (for dead load).  It is also important to note that relative to the slab's weight, the formwork self-weight is rather small.  To keep things simple we are going to neglect the weight of the formwork.  This load is always easy to add to back into our calculations later.  Similarly the construction live load can also be added back in to our calculations when we need to account for it.</p>
+<p>In summary, we will only be concerned with the dead load due to the slabs' self-weights for the time being.  With that assumption, we can see that the total load being carried by the shores, holding up the form work, is equal to $D$ (the slab's self-weight).</p>
 
 </div>
 </div>
@@ -495,7 +487,7 @@ built.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Multistory-Building:-Continued">Multistory Building: Continued<a class="anchor-link" href="#Multistory-Building:-Continued">&#182;</a></h2>
+<h2 id="Reshoring:-Continued">Reshoring: Continued<a class="anchor-link" href="#Reshoring:-Continued">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -561,119 +553,9 @@ built.</p>
 <tr><td>Shored Slab</td><td><a href = "http://i.imgur.com/W6Tqme1.png"><img src="http://i.imgur.com/W6Tqme1.png" alt = "Shored Slab" title = "Shored Slab"style="max-width:50px; max-height:50px;  float:left; margin-right:3px;"/></a></td></tr>
 <tr><td>Unshored Slab</td><td><a href = "http://i.imgur.com/f9HJsu6.png"><img src="http://i.imgur.com/f9HJsu6.png" alt = "Unshored Slab" title = "Unshored Slab"style="max-width:50px; max-height:50px;  float:left; margin-right:3px;"/></a></td></tr>
 <tr><td>Reshored Slab</td><td><a href = "http://i.imgur.com/vMgiW58.png"><img src="http://i.imgur.com/vMgiW58.png" alt = "Reshored Slab" title = "Reshored Slab"style="max-width:50px; max-height:50px;  float:left; margin-right:3px;"/></a></td></tr>
-</table>
-
-<p>These are quick and easy to draw by hand and they are very similar to the images you will see in Table 5-2 of your Formwork textbook.  Since the load on the shores is no different for a fresh slab verse a cured slab, I am not going to make a distinction in the symbols.  In your work you are welcome to use the symbols shown in Table 5-2 if you think it will add clarity.</p>
-<p>Next we need to keep track of the loads.  There are basically two procedures we are doing that affect the loads in this process: removing shores (or reshores), and pouring a new slab.  In both of these cases we distribute loads to the supporting slabs, and their structural columns.  We are not concerned with the loads in the structural columns because those were accounted for in the building design.  However, we will need to look at the loads being supported by the slabs, because what isn't supported by a slab needs to be supported by a shore, or reshore.  To organize all this information in some usable format, we will need to keep track of it in a table like the one on the next slide.</p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Bookkeeping-System:-Continued">Bookkeeping System: Continued<a class="anchor-link" href="#Bookkeeping-System:-Continued">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Bookkeeping%20System:%20Continued.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Reshore Level 2</strong></p>
-<table>
-<tr><th>Level</th><th>Item</th><th>Starting Loads</th><th>Load to be Distributed</th><th>New Slab Reactions</th><th style="text-align: right;">New Shore Reactions</th><th>Ending Loads</th><th>Symbols</th></tr>
-<tr><th colspan = '2' style="text-align: right;">Variables $\Rightarrow$</th>
-        <th><center>$P_0$</center></th>
-        <th><center>$\Delta P$</center></th>
-        <th><center>$R_s$</center></th>
-        <th><center>$P_{sh}$</center></th>
-        <th><center>$P_1$</center></th>
-        <th><center></center></th>
-    </tr>
-
-<tr><th rowspan = '2'>3</th><th>Slab</th>
-    <td><center>0.5</center></td>
-    <td></td>
-    <td><center>0.5</center></td>
-    <td></td>
-    <td><center>0.5</center></td>
-    <td rowspan='2'> 
-        <img src="http://i.imgur.com/W6Tqme1.png" alt = "Shored Slab" title = "Shored Slab"style="max-width:50px; max-height:50px;   margin-right:3px;"/> 
-        </td>
-</tr>
-<tr><th>Shores</th>
-    <td><center>0.5</center></td>
-    <td></td>
-    <td></td>
-    <td><center>0.5</center></td>
-    <td><center>0.5</center></td>
-</tr>
-<tr><th rowspan = '2'>2</th><th>Slab</th>
-    <td><center>1.5</center></td>
-    <td></td>
-    <td><center>1.5</center></td>
-    <td></td>
-    <td><center>1.5</center></td>
-    <td rowspan='2'> 
-        <img src="http://i.imgur.com/vMgiW58.png" alt = "Reshored Slab" title = "Reshored Slab"style="max-width:50px; max-height:50px;   margin-right:3px;"/> 
-        </td>
-</tr>
-<tr><th>Reshores</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td><center>0</center></td>
-    <td><center>0</center></td>
-</tr>
-<tr><th rowspan = '2'>1</th><th>Slab</th>
-    <td><center>1</center></td>
-    <td></td>
-    <td><center>1</center></td>
-    <td></td>
-    <td><center>1</center></td>
-    <td rowspan='2'> 
-        <img src="http://i.imgur.com/f9HJsu6.png" alt = "Unshored Slab" title = "Unshored Slab"style="max-width:50px; max-height:50px;   margin-right:3px;"/>
-        </td>
-</tr>
-<tr><th>Empty</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>To start with let's look at the general format of this table.  You'll notice that a level consists of a space between floors and the slab above.  This is a little different than thinking about floors where you have the space between floors and the slab below, but for bookkeeping purposes this is the best way to think about it.  You can also think about levels as the construction space to build the next floor (if that helps).</p>
-<p>The item in the "Item" column is what the loads on that particular row of the table belong to.  For instance the "Starting Loads", for the level 3 slab, is $0.5 \times \text{a single slab dead load}$, and the "Ending Loads" is also $0.5 \times \text{a single slab dead load}$.  The reason there is no change in the load is that all is happening here is the addition of reshores, which, as previously indicated, does not add any loads relative to the slab dead loads.</p>
-<p><em>(Continued on the next slide.)</em></p>
+</table><p>These are quick and easy to draw by hand and they are very similar to the images you will see in Examples 6.1 - 6.7 in your Formwork textbook.   Since the load on the shores is no different for a fresh slab verse a cured slab, I am not going to make a distinction in the symbols.  In your work you are welcome to use the symbols shown in the examples if you think it will add clarity.  The examples are based on the use of <a href="https://www.concrete.org/store/productdetail.aspx?ItemID=SP4AUTOR">ACI's AutoReshore Spreadsheet</a>.  I'm not going to be covering it since it is simply a collection of pre-calculated values based on a small selection of procedures.</p>
+<p>The AutoReshore Spreadsheet is a useful tool as long as you stick to their procedures and I encourage you to download it and get familiar with it.  However, I want you to be ready to deal with a more general situation just in case.</p>
+<p>There are basically two procedures we are doing that affect the loads in this process: removing shores (or reshores), and pouring a new slab.  In both of these cases we distribute loads to the supporting slabs, and their structural columns.  We are not concerned with the loads in the structural columns because those were accounted for in the building design.  However, we will need to look at the loads being supported by the slabs, because what isn't supported by a slab needs to be supported by a shore, or reshore.  To organize all this information in some usable format, we will need to keep track of it in a table like the one on the next slide.</p>
 
 </div>
 </div>
@@ -686,7 +568,7 @@ built.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&quot;Load-to-be-Distributed&quot;">"Load to be Distributed"<a class="anchor-link" href="#&quot;Load-to-be-Distributed&quot;">&#182;</a></h2>
+<h2 id="Filling-out-the-Table">Filling out the Table<a class="anchor-link" href="#Filling-out-the-Table">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -696,7 +578,7 @@ built.</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Load%20to%20be%20Distributed.mp3"
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Filling%20out%20the%20Table.mp3"
          type='audio/mp3'>
  <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
 </audio>
@@ -708,12 +590,22 @@ built.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Remove Level 3 Reshore</strong></p>
+<p>To start with we have shoring in place just holding up the formwork for a slab.  Initially the slab has not been poured so the starting load for the slab is $0 D$, and since the formwork is such a small load the shores will effectively have a $0 D$ load on them as well.  To emphasize the important values I will leave zeros out of the table, and instead have a dash as a placeholder.  So we place a dash in the Starting Loads column for the Slab and we place a dash in the Starting Loads column for the Shores.</p>
+<p>For now, I'll mark each new additional information added to the table with a green dot.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Starting Condition</strong></p>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th rowspan = 2>Level</th>
-      <th rowspan = 2>Item</th>
+      <th rowspan = 2>Level</th><th rowspan = 2>Item</th>
       <th rowspan = 2>Starting Loads</th>
       <th rowspan = 2>Load to be Distributed</th>
       <th rowspan = 2>New Slab Reactions</th>
@@ -723,7 +615,8 @@ built.</p>
     </tr>
   </thead>
   <tbody>
-  <tr></tr>
+    <tr></tr>
+
     <tr><th colspan = '2' style="text-align: right;">Variables $\Rightarrow$</th>
         <th><center>$P_0$</center></th>
         <th><center>$\Delta P$</center></th>
@@ -732,59 +625,488 @@ built.</p>
         <th><center>$P_1$</center></th>
         <th><center></center></th>
     </tr>
+
     <tr>
-      <th rowspan="2" valign="top">3</th>
-      <th>Slab</th>
-      <td><center> 0.3333333</center></td>
-      <td>          </td>
-      <td><center> 1</center></td>
-      <td>  </td>
-      <td><center> 1</center></td>
-      <td rowspan=2><img src="http://i.imgur.com/f9HJsu6.png" alt = "Unshored Slab" title = "Unshored Slab"style="max-width:50px; max-height:50px;  float:left; margin-right:3px;"/> </td>
+<th rowspan="2">1</th>
+      <td>Slab</td>
+      <td> <center>
+              <div style = "width:20px;
+                    height:20px;
+                    border-radius:10px;
+                    color:#fff;
+                    line-height:20px;
+                    text-align:center;
+                    background:#090">
+                    <b>-</b>
+              </div>
+           </center></td>
+      <td> <center>
+
+           </center></td>
+      <td> <center></center></td>
+      <td> <center></center></td>
+      <td> <center></center></td>
+      <td rowspan=2></td>
     </tr>
     <tr>
-      <th>Empty</th>
-      <td><center> 0.6666667</center></td>
-      <td><center> 0.6666667</center></td>
-      <td>  </td>
-      <td>  </td>
-      <td>  </td>
+
+      <td>Shores</td>
+      <td> <center>
+              <div style = "width:20px;
+                    height:20px;
+                    border-radius:10px;
+                    color:#fff;
+                    line-height:20px;
+                    text-align:center;
+                    background:#090">
+                    <b>-</b>
+              </div>
+              </center></td>
+      <td> <center></center></td>
+      <td> <center></center></td>
+      <td> <center></center></td>
+      <td> <center></center></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Filling-out-the-Table---Loads-to-be-Distributed">Filling out the Table - Loads to be Distributed<a class="anchor-link" href="#Filling-out-the-Table---Loads-to-be-Distributed">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<audio controls data-autoplay preload>
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Filling%20out%20the%20Table%20-%20Loads%20to%20be%20Distributed.mp3"
+         type='audio/mp3'>
+ <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
+</audio>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The next step in construction is to pour the slab.  This will add a load on the building's system of formwork of one slab dead load $(1 D)$.  Since we are adding a slab at the top of the formwork of level 1, we need to distribute that new load.  We record the load in the Load to be Distributed column in the slab row of level 1.  Since the shores are not contributing to the change in load of the building's system of formwork, just reacting to it, they do not contribute to the Load to be Distributed.  To mark that this has been accounted for, we'll put a dash in row for the Shores in the Load to be Distributed column.</p>
+<p>To keep track of what is going on in the table, we'll draw the symbol for a shored slab in the Symbol column at level 1.</p>
+
+</div>
+</div>
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Action taken: Pour a Slab</strong></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th rowspan = 2>Level</th><th rowspan = 2>Item</th>
+      <th rowspan = 2>Starting Loads</th>
+      <th rowspan = 2>Load to be Distributed</th>
+      <th rowspan = 2>New Slab Reactions</th>
+      <th  rowspan = 2 style="text-align: right;">New Shore Reactions</th>
+      <th rowspan = 2>Ending Loads</th>
+      <th rowspan = 2>Symbol</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr></tr>
+
+    <tr><th colspan = '2' style="text-align: right;">Variables $\Rightarrow$</th>
+        <th><center>$P_0$</center></th>
+        <th><center>$\Delta P$</center></th>
+        <th><center>$R_s$</center></th>
+        <th><center>$P_{sh}$</center></th>
+        <th><center>$P_1$</center></th>
+        <th><center></center></th>
+    </tr>
+
+    <tr>
+<th rowspan="2">1</th>
+      <td>Slab</td>
+      <td> <center>-</center></td>
+      <td> <center>
+              <div style = "width:20px;
+                    height:20px;
+                    border-radius:10px;
+                    color:#fff;
+                    line-height:20px;
+                    text-align:center;
+                    background:#090">
+                    <b>1</b>
+              </div>
+           </center></td>
+      <td> <center></center></td>
+      <td> <center></center></td>
+      <td> <center></center></td>
+      <td rowspan=2><img src="http://i.imgur.com/W6Tqme1.png" alt = "Shored Slab" title = "Shored Slab"style="max-width:50px; max-height:50px;  float:left; margin-right:3px;"/></td>
     </tr>
     <tr>
-      <th rowspan="2" valign="top">2</th>
-      <th>Slab</th>
-      <td><center>  1.333333</center></td>
-      <td>          </td>
-      <td><center> 1</center></td>
-      <td>  </td>
-      <td><center> 1</center></td>
-      <td rowspan=2><img src="http://i.imgur.com/vMgiW58.png" alt = "Reshored Slab" title = "Reshored Slab"style="max-width:50px; max-height:50px;  float:left; margin-right:3px;"/> </td>
+
+      <td>Shores</td>
+      <td> <center>-</center></td>
+      <td> <center>
+              <div style = "width:20px;
+                    height:20px;
+                    border-radius:10px;
+                    color:#fff;
+                    line-height:20px;
+                    text-align:center;
+                    background:#090">
+                    <b>-</b>
+              </div>
+           </center></td>
+      <td> <center></center></td>
+      <td> <center></center></td>
+      <td> <center></center></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Filling-out-the-Table---New-Slab-Reactions">Filling out the Table - New Slab Reactions<a class="anchor-link" href="#Filling-out-the-Table---New-Slab-Reactions">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<audio controls data-autoplay preload>
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Filling%20out%20the%20Table%20-%20New%20Slab%20Reactions.mp3"
+         type='audio/mp3'>
+ <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
+</audio>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To have a reaction a slab must meet three conditions:</p>
+<ol>
+<li>The slab must be loaded in some way, e.g. gravity load due to self weight, and/or a load applied to the the slab by the reshores or shores it's supporting.</li>
+<li>The slab must be able to deflect to generate a reaction.</li>
+<li>The slab must be strong enough to carry that load.</li>
+</ol>
+<p>A freshly poured slab is always loaded with its own self weight, in some cases (cases where the shoring does not reach all the way to the ground) a freshly poured slab could be able to deflect, however, wet concrete does not have any strength.  Because we only are dealing with one slab above ground at this point, there are no New Slab Reactions to record.  We'll put a dash for the slab at level 1 under the New Slab Reaction column.</p>
+<ul>
+<li>Note that if the slab had been able to generate a reaction by satisfying the three conditions above, then the New Slab Reactions of that slab would just be, the summation of both the part of the Load to be Distributed that that slab has to carry, and the Starting Load reaction of the slab at that level.</li>
+</ul>
+<p>Since shores are not slabs, there will never be a new slab reaction for a shore on any level.  The way to remember this is to recall that the New Slab Reactions column is just for calculating slab reactions.  We'll put a dash for the shores row of level 1 in the New Slab Reactions column, rather than leave it blank.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Action taken: Pour a Slab</strong></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th rowspan = 2>Level</th><th rowspan = 2>Item</th>
+      <th rowspan = 2>Starting Loads</th>
+      <th rowspan = 2>Load to be Distributed</th>
+      <th rowspan = 2>New Slab Reactions</th>
+      <th  rowspan = 2 style="text-align: right;">New Shore Reactions</th>
+      <th rowspan = 2>Ending Loads</th>
+      <th rowspan = 2>Symbol</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr></tr>
+
+    <tr><th colspan = '2' style="text-align: right;">Variables $\Rightarrow$</th>
+        <th><center>$P_0$</center></th>
+        <th><center>$\Delta P$</center></th>
+        <th><center>$R_s$</center></th>
+        <th><center>$P_{sh}$</center></th>
+        <th><center>$P_1$</center></th>
+        <th><center></center></th>
+    </tr>
+
+    <tr>
+<th rowspan="2">1</th>
+      <td>Slab</td>
+      <td> <center>-</center></td>
+      <td> <center>1</center></td>
+      <td> <center>
+              <div style = "width:20px;
+                    height:20px;
+                    border-radius:10px;
+                    color:#fff;
+                    line-height:20px;
+                    text-align:center;
+                    background:#090">
+                    <b>-</b>
+              </div>
+              </center></td>
+      <td> <center></center></td>
+      <td> <center></center></td>
+      <td rowspan=2><img src="http://i.imgur.com/W6Tqme1.png" alt = "Shored Slab" title = "Shored Slab"style="max-width:50px; max-height:50px;  float:left; margin-right:3px;"/></td>
     </tr>
     <tr>
-      <th>Reshores</th>
-      <td><center> 0.3333333</center></td>
-      <td>          </td>
-      <td>  </td>
-      <td><center> 0</center></td>
-      <td><center> 0</center></td>
+
+      <td>Shores</td>
+      <td> <center>-</center></td>
+      <td> <center>-</center></td>
+      <td> <center>
+              <div style = "width:20px;
+                    height:20px;
+                    border-radius:10px;
+                    color:#fff;
+                    line-height:20px;
+                    text-align:center;
+                    background:#090">
+                    <b>-</b>
+              </div>
+              </center></td>
+      <td> <center></center></td>
+      <td> <center></center></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Filling-out-the-Table---New-Shore-Reactions">Filling out the Table - New Shore Reactions<a class="anchor-link" href="#Filling-out-the-Table---New-Shore-Reactions">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<audio controls data-autoplay preload>
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Filling%20out%20the%20Table%20-%20New%20Shore%20Reactions.mp3"
+         type='audio/mp3'>
+ <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
+</audio>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Much like the New Slab Reactions column is only for slab reactions, the New Shore Reactions column is only for shore reactions.  In other words there will never be a value for slabs on this column.  That being said we will place dashes at every slab row, of every level, in the New Shore Reactions column.  In this case, that means we put a dash in the slab row of level 1.</p>
+<p>Next we calculate the value for the shores rows.  At level 1 there is a slab above the level 1 shores, but there are no slab reactions above the shores.  To find the value in the New Shore Reactions column for the level 1 shores, we take the load due to the number of slabs above the level 1 shores $(1 \times 1 D)$ and subtract the sum of all the slab reactions above the shores of level 1 $(0 D)$.  The final calculation is just $1 D - 0 D = 1 D$.  We put $1$ in the shores row of level 1 under the New Shore Reactions column.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Action taken: Pour a Slab</strong></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th rowspan = 2>Level</th><th rowspan = 2>Item</th>
+      <th rowspan = 2>Starting Loads</th>
+      <th rowspan = 2>Load to be Distributed</th>
+      <th rowspan = 2>New Slab Reactions</th>
+      <th  rowspan = 2 style="text-align: right;">New Shore Reactions</th>
+      <th rowspan = 2>Ending Loads</th>
+      <th rowspan = 2>Symbol</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr></tr>
+
+    <tr><th colspan = '2' style="text-align: right;">Variables $\Rightarrow$</th>
+        <th><center>$P_0$</center></th>
+        <th><center>$\Delta P$</center></th>
+        <th><center>$R_s$</center></th>
+        <th><center>$P_{sh}$</center></th>
+        <th><center>$P_1$</center></th>
+        <th><center></center></th>
+    </tr>
+
+    <tr>
+<th rowspan="2">1</th>
+      <td>Slab</td>
+      <td> <center>-</center></td>
+      <td> <center>1</center></td>
+      <td> <center>-</center></td>
+      <td> <center>
+              <div style = "width:20px;
+                    height:20px;
+                    border-radius:10px;
+                    color:#fff;
+                    line-height:20px;
+                    text-align:center;
+                    background:#090">
+                    <b>-</b>
+              </div>
+              </center></td>
+      <td> <center></center></td>
+      <td rowspan=2><img src="http://i.imgur.com/W6Tqme1.png" alt = "Shored Slab" title = "Shored Slab"style="max-width:50px; max-height:50px;  float:left; margin-right:3px;"/></td>
     </tr>
     <tr>
-      <th rowspan="2" valign="top">1</th>
-      <th>Slab</th>
-      <td><center>  1.333333</center></td>
-      <td>          </td>
-      <td><center> 1</center></td>
-      <td>  </td>
-      <td><center> 1 </center></td>
-      <td rowspan=2><img src="http://i.imgur.com/f9HJsu6.png" alt = "Unshored Slab" title = "Unshored Slab"style="max-width:50px; max-height:50px;  float:left; margin-right:3px;"/> </td>
+
+      <td>Shores</td>
+      <td> <center>-</center></td>
+      <td> <center>-</center></td>
+      <td> <center>-</center></td>
+      <td> <center>
+              <div style = "width:20px;
+                    height:20px;
+                    border-radius:10px;
+                    color:#fff;
+                    line-height:20px;
+                    text-align:center;
+                    background:#090">
+                    <b>1</b>
+              </div>
+              </center></td>
+      <td> <center></center></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Filling-out-the-Table---Ending-Loads">Filling out the Table - Ending Loads<a class="anchor-link" href="#Filling-out-the-Table---Ending-Loads">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<audio controls data-autoplay preload>
+ <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Filling%20out%20the%20Table%20-%20Ending%20Loads.mp3"
+         type='audio/mp3'>
+ <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
+</audio>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can now fill in the Ending Loads column. The ending load for the slab on level 1 is just the New Slab Reaction of the slab on level 1, $0 D$.  Remember that we are using dashes as place holders for the value of zero dead load.  Since this new zero is important, being in part of the final calculations in the Ending Loads column, we will write the zero instead of putting a dash there.  The Ending Loads on the shores of level 1 is the just New Shore Reactions, $(1 D)$, so we write $1$ in the Ending Loads column for the level 1 shores.</p>
+<p>To reiterate, the value for the slab row, in the Ending Loads column, is just the value in the New Slab Reactions column, and the value in the shores row in the Ending Loads column, is just the value in the New Shore Reactions.</p>
+<p>We have now completed the calculations for the action of pouring a slab on level 1.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Action taken: Pour a Slab</strong></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th rowspan = 2>Level</th><th rowspan = 2>Item</th>
+      <th rowspan = 2>Starting Loads</th>
+      <th rowspan = 2>Load to be Distributed</th>
+      <th rowspan = 2>New Slab Reactions</th>
+      <th  rowspan = 2 style="text-align: right;">New Shore Reactions</th>
+      <th rowspan = 2>Ending Loads</th>
+      <th rowspan = 2>Symbol</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr></tr>
+
+    <tr><th colspan = '2' style="text-align: right;">Variables $\Rightarrow$</th>
+        <th><center>$P_0$</center></th>
+        <th><center>$\Delta P$</center></th>
+        <th><center>$R_s$</center></th>
+        <th><center>$P_{sh}$</center></th>
+        <th><center>$P_1$</center></th>
+        <th><center></center></th>
+    </tr>
+
+    <tr>
+<th rowspan="2">1</th>
+      <td>Slab</td>
+      <td> <center>-</center></td>
+      <td> <center>1</center></td>
+      <td> <center>-</center></td>
+      <td> <center>-</center></td>
+      <td> <center>
+              <div style = "width:20px;
+                    height:20px;
+                    border-radius:10px;
+                    color:#fff;
+                    line-height:20px;
+                    text-align:center;
+                    background:#090">
+                    <b>0</b>
+              </div>
+              </center></td>
+      <td rowspan=2><img src="http://i.imgur.com/W6Tqme1.png" alt = "Shored Slab" title = "Shored Slab"style="max-width:50px; max-height:50px;  float:left; margin-right:3px;"/></td>
     </tr>
     <tr>
-      <th>Empty</th>
-      <td>          </td>
-      <td>          </td>
-      <td>  </td>
-      <td>  </td>
-      <td>  </td>
+
+      <td>Shores</td>
+      <td> <center>-</center></td>
+      <td> <center>-</center></td>
+      <td> <center>-</center></td>
+      <td> <center>1</center></td>
+      <td> <center>
+              <div style = "width:20px;
+                    height:20px;
+                    border-radius:10px;
+                    color:#fff;
+                    line-height:20px;
+                    text-align:center;
+                    background:#090">
+                    <b>1</b>
+              </div>
+              </center></td>
     </tr>
   </tbody>
 </table>
@@ -796,9 +1118,18 @@ built.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The "Load to be Distributed" column will have one value in it.  This value is comes from the change that is occurring in the structure, in this case a reshore was removed.  (This example is a little contrived but I'm trying to illustrate a point.)</p>
-<p>The "New Slab Reactions" column will contain the values of the slab reactions after you distribute the load to the supporting slabs.  The "New Shore Reactions" column will take a little explaining, but it is where you determine the loads on the shores and reshores.  Again, this will make more sense with some examples.  Finally, the "Symbols" column is where you draw a sketch of the level.  This is more documentation, than is necessary, but this can be very useful when trying to visualize what is going on.</p>
-<p>One last thing about this table, it can have more or less rows depending on how many levels have shoring and reshoring.  Let's look at the table in terms of the column variables before we move on.</p>
+<p>Using the table is really just that simple.  Filling out each column completely working from left to right.</p>
+<ol>
+<li>Fill out the Starting Loads either with the Ending Loads of the previous action (or dashes if there were no previous actions have been taken on that level).  </li>
+<li>Fill out the Load to be Distributed column based on the action that is to be taken (put a value of 1 for the slab at the top level of the building when pouring a new slab, or put the value from the Starting Loads of the shores (or reshores) that are to be removed into the shore or reshore row).  <ul>
+<li>Note that this should only be a single load.</li>
+</ul>
+</li>
+<li>Fill out the New Slab Reactions column by dividing the load, in the Load to be Distributed column, by the number of slabs that can react to the load, then adding the result to the starting load, of each reacting slab. (Or for non-reacting slabs, just recopy the Starting Loads value.)</li>
+<li>Calculate the shores reactions, just the number of slabs above the level in question minus the sum of the slab reactions above, and record them in the New Shore Reactions column.</li>
+<li>Write the ending loads for the slab, shores and reshores into the Ending Loads column, at every level.</li>
+</ol>
+<p>For a more mathematical view of filling out the table, let's look at the equation version of these steps using a table for a building that is further along.</p>
 
 </div>
 </div>
@@ -1071,7 +1402,11 @@ $$\Delta P = 0.3333 D$$<p>Note, in order to obtain the correct values, there mus
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Next, this change, $\Delta P$, must be distributed to all of the slabs.</p>
-$$\Delta P_{L} = \frac{\Delta P}{L_{max} - L_{n} + 1}\tag{2}$$$$R_{s,L}  = \left\{\begin{array}{rl} P_{0,L} + \Delta P_{L} & \text{if }L> L_n,\\ 1 & \text{if }L\leq L_n, \\P_{0,L} & \text{if } L_n=0. \end{array} \right. \tag{3}$$<p>Where:</p>
+$$\Delta P_{L} = \frac{\Delta P}{L_{max} - L_{n} + 1}\tag{2}$$\begin{equation*}
+R_{s,L}  = \left\{\begin{array}{rl} P_{0,L} + \Delta P_{L} & \text{if }L> L_n,\\ 
+1 & \text{if }L\leq L_n, \textit{ (Slabs only carrying self weight)}\\
+P_{0,L} & \text{if } L_n=0. \textit{ (Shoring or reshoring all the way down)} \end{array} \right. \tag{3}
+\end{equation*}<p>Where:</p>
 <ul>
 <li>$\Delta P_{L}$ - The fractional change in the load at level $L$</li>
 <li>$L$ - The level of the building being considered in the current calculation</li>
@@ -1093,11 +1428,11 @@ $$\Delta P_{L} = \frac{\Delta P}{L_{max} - L_{n} + 1}\tag{2}$$$$R_{s,L}  = \left
 <p>In our case $L_n = 2$ and $L_{max} = 3$ so equation 2 becomes,</p>
 <p>$\Delta P_{L} = \frac{0.3333 D}{3 - 2 + 1} = \frac{0.3333 D}{2}$</p>
 <p>$\Delta P_{L} = 0.16667 D$</p>
-<p>From equation 3 we find that the reaction of the slab at level 3 is,</p>
+<p>From equation 3 we find that the reaction of the slab at level 3 is, <em>($L=3 > L_n = 2$)</em></p>
 <p>$R_{s,3} = 0.3333 D + 0.16667 D = 0.5 D$</p>
-<p>for level 2,</p>
+<p>for level 2, <em>($L=2 \le L_n = 2$)</em></p>
 <p>$R_{s,2} = 1.3333 D + 0.16667 D = 1.5 D$</p>
-<p>and since $L_n$ is at level 1 we use the second case in equation 3,</p>
+<p>and since $L_n$ is at level 1 we use the second case in equation 3, <em>($L=1  \le L_n = 2$)</em></p>
 <p>$R_{s,1} = 1 D$</p>
 
 </div>
@@ -1381,7 +1716,7 @@ $$P_{sh,L} = (L_{max} - L + 1)\times 1 D - \sum_{i=L}^{L_{max}} R_{s,i}\tag{4}$$
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Finally, then ending loads $(P_1)$ are just equal to, $R_s$ for the slabs at every level and $P_{sh}$ for everything that is not a slab.  It should be noted that the values listed under $P_1$ will be used for $P_0$ when calculating the results of the next action.</p>
-$$P_{1,L,I} = \left\{\begin{array} \\R_{s,L} & \text{if }I = \text{Slab},\\ P_{sh,L} & \text{if }I = \text{Shore or Reshore}, \\ 0 & \text{if } I = \text{Empty.} \end{array} \right.\tag{5}$$<p>Where:</p>
+$$P_{1,L,I} = \left\{\begin{array} \\R_{s,L} & \text{if }Item = \text{Slab},\\ P_{sh,L} & \text{if }Item = \text{Shore or Reshore}, \\ 0 & \text{if } Item = \text{Empty.} \end{array} \right.\tag{5}$$<p>Where:</p>
 <ul>
 <li>$I$ - Item at level L</li>
 <li>$P_{sh,L}$ - Shore load on level L</li>
@@ -1505,612 +1840,7 @@ $$\Delta P = \left\{\begin{array}{rl}1 & \text{if pouring a new slab},\\P_{0,sh}
 
 </div>
 </div>
-</div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="o">%</span><span class="k">run</span> Older_Classes/Reshore.py #note &quot;undo&quot; is available for one change
-<span class="n">struct</span> <span class="o">=</span> <span class="n">building</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-    </div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Filling-out-the-Table">Filling out the Table<a class="anchor-link" href="#Filling-out-the-Table">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Filling%20out%20the%20Table.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>To start with we have shoring in place just holding up the formwork for a slab.  Initially the slab has not been poured so the starting load for the slab is $0 D$, and since the formwork is such a small load the shores will effectively have a $0 D$ load on them as well.  To emphasize the important values I will leave zeros out of the table, and instead have a dash as a placeholder.  So we place a dash in the Starting Loads column for the Slab and we place a dash in the Starting Loads column for the Shores.</p>
-<p>For now, I'll mark each new additional information added to the table with a green dot.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Starting Condition</strong></p>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th rowspan = 2>Level</th><th rowspan = 2>Item</th>
-      <th rowspan = 2>Starting Loads</th>
-      <th rowspan = 2>Load to be Distributed</th>
-      <th rowspan = 2>New Slab Reactions</th>
-      <th  rowspan = 2 style="text-align: right;">New Shore Reactions</th>
-      <th rowspan = 2>Ending Loads</th>
-      <th rowspan = 2>Symbol</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr></tr>
-
-    <tr><th colspan = '2' style="text-align: right;">Variables $\Rightarrow$</th>
-        <th><center>$P_0$</center></th>
-        <th><center>$\Delta P$</center></th>
-        <th><center>$R_s$</center></th>
-        <th><center>$P_{sh}$</center></th>
-        <th><center>$P_1$</center></th>
-        <th><center></center></th>
-    </tr>
-
-    <tr>
-<th rowspan="2">1</th>
-      <td>Slab</td>
-      <td> <center>
-              <div style = "width:20px;
-                    height:20px;
-                    border-radius:10px;
-                    color:#fff;
-                    line-height:20px;
-                    text-align:center;
-                    background:#090">
-                    <b>-</b>
-              </div>
-           </center></td>
-      <td> <center>
-
-           </center></td>
-      <td> <center></center></td>
-      <td> <center></center></td>
-      <td> <center></center></td>
-      <td rowspan=2></td>
-    </tr>
-    <tr>
-
-      <td>Shores</td>
-      <td> <center>
-              <div style = "width:20px;
-                    height:20px;
-                    border-radius:10px;
-                    color:#fff;
-                    line-height:20px;
-                    text-align:center;
-                    background:#090">
-                    <b>-</b>
-              </div>
-              </center></td>
-      <td> <center></center></td>
-      <td> <center></center></td>
-      <td> <center></center></td>
-      <td> <center></center></td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Filling-out-the-Table---Loads-to-be-Distributed">Filling out the Table - Loads to be Distributed<a class="anchor-link" href="#Filling-out-the-Table---Loads-to-be-Distributed">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Filling%20out%20the%20Table%20-%20Loads%20to%20be%20Distributed.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The next step in construction is to pour the slab.  This will add a load on the building's system of formwork of one slab dead load $(1 D)$.  Since we are adding a slab at the top of the formwork of level 1, we need to distribute that new load.  We record the load in the Load to be Distributed column in the slab row of level 1.  Since the shores are not contributing to the change in load of the building's system of formwork, just reacting to it, they do not contribute to the Load to be Distributed.  To mark that this has been accounted for, we'll put a dash in row for the Shores in the Load to be Distributed column.</p>
-<p>To keep track of what is going on in the table, we'll draw the symbol for a shored slab in the Symbol column at level 1.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Action taken: Pour a Slab</strong></p>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th rowspan = 2>Level</th><th rowspan = 2>Item</th>
-      <th rowspan = 2>Starting Loads</th>
-      <th rowspan = 2>Load to be Distributed</th>
-      <th rowspan = 2>New Slab Reactions</th>
-      <th  rowspan = 2 style="text-align: right;">New Shore Reactions</th>
-      <th rowspan = 2>Ending Loads</th>
-      <th rowspan = 2>Symbol</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr></tr>
-
-    <tr><th colspan = '2' style="text-align: right;">Variables $\Rightarrow$</th>
-        <th><center>$P_0$</center></th>
-        <th><center>$\Delta P$</center></th>
-        <th><center>$R_s$</center></th>
-        <th><center>$P_{sh}$</center></th>
-        <th><center>$P_1$</center></th>
-        <th><center></center></th>
-    </tr>
-
-    <tr>
-<th rowspan="2">1</th>
-      <td>Slab</td>
-      <td> <center>-</center></td>
-      <td> <center>
-              <div style = "width:20px;
-                    height:20px;
-                    border-radius:10px;
-                    color:#fff;
-                    line-height:20px;
-                    text-align:center;
-                    background:#090">
-                    <b>1</b>
-              </div>
-           </center></td>
-      <td> <center></center></td>
-      <td> <center></center></td>
-      <td> <center></center></td>
-      <td rowspan=2><img src="http://i.imgur.com/W6Tqme1.png" alt = "Shored Slab" title = "Shored Slab"style="max-width:50px; max-height:50px;  float:left; margin-right:3px;"/></td>
-    </tr>
-    <tr>
-
-      <td>Shores</td>
-      <td> <center>-</center></td>
-      <td> <center>
-              <div style = "width:20px;
-                    height:20px;
-                    border-radius:10px;
-                    color:#fff;
-                    line-height:20px;
-                    text-align:center;
-                    background:#090">
-                    <b>-</b>
-              </div>
-           </center></td>
-      <td> <center></center></td>
-      <td> <center></center></td>
-      <td> <center></center></td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Filling-out-the-Table---New-Slab-Reactions">Filling out the Table - New Slab Reactions<a class="anchor-link" href="#Filling-out-the-Table---New-Slab-Reactions">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Filling%20out%20the%20Table%20-%20New%20Slab%20Reactions.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>To have a reaction a slab must meet three conditions:</p>
-<ol>
-<li>The slab must be loaded in some way, e.g. gravity load due to self weight, and/or a load applied to the the slab by the reshores or shores it's supporting.</li>
-<li>The slab must be able to deflect to generate a reaction.</li>
-<li>The slab must be strong enough to carry that load.</li>
-</ol>
-<p>A freshly poured slab is always loaded with its own self weight, in some cases (cases where the shoring does not reach all the way to the ground) a freshly poured slab could be able to deflect, however, wet concrete does not have any strength.  Because we only are dealing with one slab above ground at this point, there are no New Slab Reactions to record.  We'll put a dash for the slab at level 1 under the New Slab Reaction column.</p>
-<ul>
-<li>Note that if the slab had been able to generate a reaction by satisfying the three conditions above, then the New Slab Reactions of that slab would just be, the summation of both the part of the Load to be Distributed that that slab has to carry, and the Starting Load reaction of the slab at that level.</li>
-</ul>
-<p>Since shores are not slabs, there will never be a new slab reaction for a shore on any level.  The way to remember this is to recall that the New Slab Reactions column is just for calculating slab reactions.  We'll put a dash for the shores row of level 1 in the New Slab Reactions column, rather than leave it blank.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Action taken: Pour a Slab</strong></p>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th rowspan = 2>Level</th><th rowspan = 2>Item</th>
-      <th rowspan = 2>Starting Loads</th>
-      <th rowspan = 2>Load to be Distributed</th>
-      <th rowspan = 2>New Slab Reactions</th>
-      <th  rowspan = 2 style="text-align: right;">New Shore Reactions</th>
-      <th rowspan = 2>Ending Loads</th>
-      <th rowspan = 2>Symbol</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr></tr>
-
-    <tr><th colspan = '2' style="text-align: right;">Variables $\Rightarrow$</th>
-        <th><center>$P_0$</center></th>
-        <th><center>$\Delta P$</center></th>
-        <th><center>$R_s$</center></th>
-        <th><center>$P_{sh}$</center></th>
-        <th><center>$P_1$</center></th>
-        <th><center></center></th>
-    </tr>
-
-    <tr>
-<th rowspan="2">1</th>
-      <td>Slab</td>
-      <td> <center>-</center></td>
-      <td> <center>1</center></td>
-      <td> <center>
-              <div style = "width:20px;
-                    height:20px;
-                    border-radius:10px;
-                    color:#fff;
-                    line-height:20px;
-                    text-align:center;
-                    background:#090">
-                    <b>-</b>
-              </div>
-              </center></td>
-      <td> <center></center></td>
-      <td> <center></center></td>
-      <td rowspan=2><img src="http://i.imgur.com/W6Tqme1.png" alt = "Shored Slab" title = "Shored Slab"style="max-width:50px; max-height:50px;  float:left; margin-right:3px;"/></td>
-    </tr>
-    <tr>
-
-      <td>Shores</td>
-      <td> <center>-</center></td>
-      <td> <center>-</center></td>
-      <td> <center>
-              <div style = "width:20px;
-                    height:20px;
-                    border-radius:10px;
-                    color:#fff;
-                    line-height:20px;
-                    text-align:center;
-                    background:#090">
-                    <b>-</b>
-              </div>
-              </center></td>
-      <td> <center></center></td>
-      <td> <center></center></td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Filling-out-the-Table---New-Shore-Reactions">Filling out the Table - New Shore Reactions<a class="anchor-link" href="#Filling-out-the-Table---New-Shore-Reactions">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Filling%20out%20the%20Table%20-%20New%20Shore%20Reactions.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Much like the New Slab Reactions column is only for slab reactions, the New Shore Reactions column is only for shore reactions.  In other words there will never be a value for slabs on this column.  That being said we will place dashs at every slab row, of every level, in the New Shore Reactions column.  In this case, that means we put a dash in the slab row of level 1.</p>
-<p>Next we calculate the value for the shores rows.  At level 1 there is a slab above the level 1 shores, but there are no slab reactions above the shores.  To find the value in the New Shore Reactions column for the level 1 shores, we take the load due to the number of slabs above the level 1 shores $(1 \times 1 D)$ and subtract the sum of all the slab reactions above the shores of level 1 $(0 D)$.  The final calculation is just $1 D - 0 D = 1 D$.  We put $1$ in the shores row of level 1 under the New Shore Reactions column.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Action taken: Pour a Slab</strong></p>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th rowspan = 2>Level</th><th rowspan = 2>Item</th>
-      <th rowspan = 2>Starting Loads</th>
-      <th rowspan = 2>Load to be Distributed</th>
-      <th rowspan = 2>New Slab Reactions</th>
-      <th  rowspan = 2 style="text-align: right;">New Shore Reactions</th>
-      <th rowspan = 2>Ending Loads</th>
-      <th rowspan = 2>Symbol</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr></tr>
-
-    <tr><th colspan = '2' style="text-align: right;">Variables $\Rightarrow$</th>
-        <th><center>$P_0$</center></th>
-        <th><center>$\Delta P$</center></th>
-        <th><center>$R_s$</center></th>
-        <th><center>$P_{sh}$</center></th>
-        <th><center>$P_1$</center></th>
-        <th><center></center></th>
-    </tr>
-
-    <tr>
-<th rowspan="2">1</th>
-      <td>Slab</td>
-      <td> <center>-</center></td>
-      <td> <center>1</center></td>
-      <td> <center>-</center></td>
-      <td> <center>
-              <div style = "width:20px;
-                    height:20px;
-                    border-radius:10px;
-                    color:#fff;
-                    line-height:20px;
-                    text-align:center;
-                    background:#090">
-                    <b>-</b>
-              </div>
-              </center></td>
-      <td> <center></center></td>
-      <td rowspan=2><img src="http://i.imgur.com/W6Tqme1.png" alt = "Shored Slab" title = "Shored Slab"style="max-width:50px; max-height:50px;  float:left; margin-right:3px;"/></td>
-    </tr>
-    <tr>
-
-      <td>Shores</td>
-      <td> <center>-</center></td>
-      <td> <center>-</center></td>
-      <td> <center>-</center></td>
-      <td> <center>
-              <div style = "width:20px;
-                    height:20px;
-                    border-radius:10px;
-                    color:#fff;
-                    line-height:20px;
-                    text-align:center;
-                    background:#090">
-                    <b>1</b>
-              </div>
-              </center></td>
-      <td> <center></center></td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Filling-out-the-Table---Ending-Loads">Filling out the Table - Ending Loads<a class="anchor-link" href="#Filling-out-the-Table---Ending-Loads">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<audio controls data-autoplay preload>
- <source src="https://github.com/damontallen/Construction-Lectures-Fall-2014/raw/master/Lecture%20Audio/Week%2010/Reshoring%20Slabs/Filling%20out%20the%20Table%20-%20Ending%20Loads.mp3"
-         type='audio/mp3'>
- <p>Your user agent does not support the HTML5 Audio element or the files are missing.</p>
-</audio>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>We can now fill in the Ending Loads column. The ending load for the slab on level 1 is just the New Slab Reaction of the slab on level 1, $0 D$.  Remember that we are using dashes as place holders for the value of zero dead load.  Since this new zero is important, being in part of the final calculations in the Ending Loads column, we will write the zero instead of putting a dash there.  The Ending Loads on the shores of level 1 is the just New Shore Reactions, $(1 D)$, so we write $1$ in the Ending Loads column for the level 1 shores.</p>
-<p>To reiterate, the value for the slab row, in the Ending Loads column, is just the value in the New Slab Reactions column, and the value in the shores row in the Ending Loads column, is just the value in the New Shore Reactions.</p>
-<p>We have now completed the calculations for the action of pouring a slab on level 1.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Action taken: Pour a Slab</strong></p>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th rowspan = 2>Level</th><th rowspan = 2>Item</th>
-      <th rowspan = 2>Starting Loads</th>
-      <th rowspan = 2>Load to be Distributed</th>
-      <th rowspan = 2>New Slab Reactions</th>
-      <th  rowspan = 2 style="text-align: right;">New Shore Reactions</th>
-      <th rowspan = 2>Ending Loads</th>
-      <th rowspan = 2>Symbol</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr></tr>
-
-    <tr><th colspan = '2' style="text-align: right;">Variables $\Rightarrow$</th>
-        <th><center>$P_0$</center></th>
-        <th><center>$\Delta P$</center></th>
-        <th><center>$R_s$</center></th>
-        <th><center>$P_{sh}$</center></th>
-        <th><center>$P_1$</center></th>
-        <th><center></center></th>
-    </tr>
-
-    <tr>
-<th rowspan="2">1</th>
-      <td>Slab</td>
-      <td> <center>-</center></td>
-      <td> <center>1</center></td>
-      <td> <center>-</center></td>
-      <td> <center>-</center></td>
-      <td> <center>
-              <div style = "width:20px;
-                    height:20px;
-                    border-radius:10px;
-                    color:#fff;
-                    line-height:20px;
-                    text-align:center;
-                    background:#090">
-                    <b>0</b>
-              </div>
-              </center></td>
-      <td rowspan=2><img src="http://i.imgur.com/W6Tqme1.png" alt = "Shored Slab" title = "Shored Slab"style="max-width:50px; max-height:50px;  float:left; margin-right:3px;"/></td>
-    </tr>
-    <tr>
-
-      <td>Shores</td>
-      <td> <center>-</center></td>
-      <td> <center>-</center></td>
-      <td> <center>-</center></td>
-      <td> <center>1</center></td>
-      <td> <center>
-              <div style = "width:20px;
-                    height:20px;
-                    border-radius:10px;
-                    color:#fff;
-                    line-height:20px;
-                    text-align:center;
-                    background:#090">
-                    <b>1</b>
-              </div>
-              </center></td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Using the table is really just that simple.  Filling out each column completely working from left to right.</p>
-<ol>
-<li>Fill out the Starting Loads either with the Ending Loads of the previous action (or dashes if there were no previous actions have been taken on that level).  </li>
-<li>Fill out the Load to be Distributed column based on the action that is to be taken (put a value of 1 for the slab at the top level of the building when pouring a new slab, or put the value from the Starting Loads of the shores (or reshores) that are to be removed into the shore or reshore row).  <ul>
-<li>Note that this should only be a single load.</li>
-</ul>
-</li>
-<li>Fill out the New Slab Reactions column by dividing the load, in the Load to be Distributed column, by the number of slabs that can react to the load, then adding the result to the starting load, of each reacting slab. (Or for non-reacting slabs, just recopy the Starting Loads value.)<ul>
-<li>If this is confusing just remember to look back at equation 3.</li>
-</ul>
-</li>
-<li>Calculate the shores reactions, just the number of slabs above the level in question minus the sum of the slab reactions above, and record them in the New Shore Reactions column.</li>
-<li>Write the ending loads for the slab, shores and reshores into the Ending Loads column, at every level.</li>
-</ol>
-<p>Now that you know how to fill out the table, we'll look at tracking the loads during the process of building an eight story building.</p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -2320,7 +2050,7 @@ $$\Delta P = \left\{\begin{array}{rl}1 & \text{if pouring a new slab},\\P_{0,sh}
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As for the table approach, we start with one slab load being carried by the level 1 shores, (this comes from the previous ending loads).  When we add a new slab, we must distribute 1 slab dead load through the supports.  This is a little unusual in this method since the slabs cannot move to react, so no loads can be carried by the slabs.  Next, we get to the shore loads.  At level 2, there is one slab above, and it is not carying any load so the shore must carry 1 slab dead load.  At level 1, there are two slabs above those shores, but neither slab is carrying any load, the shores must carry 2 slab dead loads.  This process will become a little clearer when we are up a couple levels above the gound.</p>
+<p>As for the table approach, we start with one slab load being carried by the level 1 shores, (this comes from the previous ending loads).  When we add a new slab, we must distribute 1 slab dead load through the supports.  This is a little unusual in this method since the slabs cannot move to react, so no loads can be carried by the slabs.  Next, we get to the shore loads.  At level 2, there is one slab above, and it is not carrying any load so the shore must carry 1 slab dead load.  At level 1, there are two slabs above those shores, but neither slab is carrying any load, the shores must carry 2 slab dead loads.  This process will become a little clearer when we are up a couple levels above the ground.</p>
 
 </div>
 </div>
@@ -2466,39 +2196,7 @@ $$\Delta P = \left\{\begin{array}{rl}1 & \text{if pouring a new slab},\\P_{0,sh}
 
 </div>
 </div>
-</div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">struct</span><span class="o">.</span><span class="n">reshore</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Reshore does not affect loads.  To show the reshore step set show_reshore to True
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    </div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -2809,124 +2507,7 @@ $$\Delta P = \left\{\begin{array}{rl}1 & \text{if pouring a new slab},\\P_{0,sh}
 
 </div>
 </div>
-</div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c">#print(struct._show_all())</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-    </div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">struct</span><span class="o">.</span><span class="n">remove_shore</span> <span class="c">#use show all</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[9]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<strong>Action taken: Remove Shores at Level 2</strong>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th rowspan = 2>Level</th><th rowspan = 2>Item</th>
-      <th rowspan = 2>Starting Loads</th>
-      <th rowspan = 2>Load to be Distributed</th>
-      <th rowspan = 2>New Slab Reactions</th>
-      <th rowspan = 2>New Shore Reactions</th>
-      <th rowspan = 2>Ending Loads</th>
-      <th rowspan = 2>Symbol</th>
-    </tr>
-
-  </thead>
-  <tbody>
-    <tr></tr>
-    
-    <tr><th colspan = '2' style="text-align: right;">Variables $\Rightarrow$</th>
-        <th><center>$P_0$</center></th>
-        <th><center>$\Delta P$</center></th>
-        <th><center>$R_s$</center></th>
-        <th><center>$P_{sh}$</center></th>
-        <th><center>$P_1$</center></th>
-        <th><center></center></th>
-    </tr>
-
-    <tr>
-      <th rowspan="2">3</th>
-      <td>Slab</td>
-      <td> <center>0.3333</center></td>
-      <td>         <center>-</center></td>
-      <td> <center>0.5</center></td>
-      <td>   <center>-</center></td>
-      <td> <center>0.5</center></td>
-      <td rowspan=2><img src="http://i.imgur.com/W6Tqme1.png" alt = "Shored Slab" title = "Shored Slab"style="max-width:50px; max-height:50px;  margin-right:3px;"/></td>
-    </tr>
-
-    <tr>
-      <td>Shores</td>
-      <td> <center>0.6667</center></td>
-      <td>         <center>-</center></td>
-      <td>   <center>-</center></td>
-      <td> <center>0.5</center></td>
-      <td> <center>0.5</center></td>
-    </tr>
-
-    <tr>
-      <th rowspan="2">2</th>
-      <td>Slab</td>
-      <td>  <center>1.3333</center></td>
-      <td>         <center>-</center></td>
-      <td> <center>1.5</center></td>
-      <td>   <center>-</center></td>
-      <td> <center>1.5</center></td>
-      <td rowspan=2><img src="http://i.imgur.com/f9HJsu6.png" alt = "Unshored Slab" title = "Unshored Slab"style="max-width:50px; max-height:50px;  margin-right:3px;"/></td>
-    </tr>
-
-    <tr>
-
-      <td>Empty</td>
-      <td> <center>0.3333</center></td>
-      <td> <center>0.3333</center></td>
-      <td>   <center>-</center></td>
-      <td>   <center>-</center></td>
-      <td>   <center>-</center></td>
-    </tr>
-
-  </tbody>
-</table>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    </div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -3088,39 +2669,7 @@ $$0.3333333+1.333333+ 1.333333 = 3$$$$0.5 +1.5 + 1 = 3$$<p>To finish calculating
 
 </div>
 </div>
-</div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">struct</span><span class="o">.</span><span class="n">reshore</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Reshore does not affect loads.  To show the reshore step set show_reshore to True
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    </div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -3486,39 +3035,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 </div>
 </div>
-</div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">struct</span><span class="o">.</span><span class="n">reshore</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Reshore does not affect loads.  To show the reshore step set show_reshore to True
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    </div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -3549,7 +3066,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 <p>What I am showing here, is the table from the previous slide.  From here on out, the results from, adding slabs, removing shores, and reshores, will just follow the same processes as we've already seen.  To be clear, this example is more for teaching you how to calculate these ending loads, than an appropriate reshoring sequence.  The sequence <em>you</em> will have to follow, will depend on how much time you need to keep the slab forms in place, and how much time you have your schedule for each pour.  As a general rule of thumb, the more levels of slabs that are poured before stripping, the greater the strength of the the formwork needs to be.  This is especially true for the shores.  Another idea you should take away from this, is that the more levels of reshores you have in place, the more slabs will be carrying the load from a fresh pour, and the less likely any particular slab will fail.</p>
 <p>The rest of this example building sequence will be on slides below.</p>
 <p>I am going to indicate what actions will be on the next slide, and what I want you to do is to take some notebook paper, and calculate what you think will be the new ending loads will be.  The next slide below will be for reshoring level 3, and pouring level 5's slab.</p>
-<p>As you procede down, from one ation to the next, you should get to a point where you repeatedly get the right results.  Once you are confident that you can calculate the loads, resulting from a specific action, given the current condition of the building, then continue to the right.</p>
+<p>As you proceed down, from one action to the next, you should get to a point where you repeatedly get the right results.  Once you are confident that you can calculate the loads, resulting from a specific action, given the current condition of the building, then continue to the right.</p>
 <p>FYI: I will not be talking in the slides below, so you need to read the results, and next action in each slide.</p>
 
 </div>
@@ -4498,37 +4015,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 </div>
 </div>
-</div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">struct</span><span class="o">.</span><span class="n">reshore</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Reshore does not affect loads.  To show the reshore step set show_reshore to True
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    </div></section><section>
-    
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
@@ -4972,37 +4459,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 </div>
 </div>
-</div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">struct</span><span class="o">.</span><span class="n">reshore</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Reshore does not affect loads.  To show the reshore step set show_reshore to True
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    </div></section><section>
-    
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[26]:</div>
@@ -5554,87 +5011,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 </div>
 </div>
-</div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">struct</span><span class="o">.</span><span class="n">remove_shore</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[30]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<strong>Action taken: Remove Shores at Level 8</strong>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th rowspan = 2>Level</th><th rowspan = 2>Item</th>
-      <th rowspan = 2>Starting Loads</th>
-      <th rowspan = 2>Load to be Distributed</th>
-      <th rowspan = 2>New Slab Reactions</th>
-      <th rowspan = 2>New Shore Reactions</th>
-      <th rowspan = 2>Ending Loads</th>
-      <th rowspan = 2>Symbol</th>
-    </tr>
-
-  </thead>
-  <tbody>
-    <tr></tr>
-    
-    <tr><th colspan = '2' style="text-align: right;">Variables $\Rightarrow$</th>
-        <th><center>$P_0$</center></th>
-        <th><center>$\Delta P$</center></th>
-        <th><center>$R_s$</center></th>
-        <th><center>$P_{sh}$</center></th>
-        <th><center>$P_1$</center></th>
-        <th><center></center></th>
-    </tr>
-
-    <tr>
-      <th rowspan="2">8</th>
-      <td>Slab</td>
-      <td> <center>0.6880</center></td>
-      <td>        <center>-</center></td>
-      <td> <center>1</center></td>
-      <td> <center>-</center></td>
-      <td> <center>1</center></td>
-      <td rowspan=2><img src="http://i.imgur.com/f9HJsu6.png" alt = "Unshored Slab" title = "Unshored Slab"style="max-width:50px; max-height:50px;  margin-right:3px;"/></td>
-    </tr>
-
-    <tr>
-
-      <td>Empty</td>
-      <td> <center>0.3120</center></td>
-      <td> <center>0.3120</center></td>
-      <td> <center>-</center></td>
-      <td> <center>-</center></td>
-      <td> <center>-</center></td>
-    </tr>
-
-  </tbody>
-</table>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    </div></section><section>
-    
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[31]:</div>
@@ -5894,23 +5271,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 </div>
 </div>
-</div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">Lowest_Loads</span> <span class="o">=</span> <span class="n">building</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-    </div></section><section>
-    
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[33]:</div>
@@ -6064,37 +5425,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 </div>
 </div>
 
-</div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">Lowest_Loads</span><span class="o">.</span><span class="n">reshore</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Reshore does not affect loads.  To show the reshore step set show_reshore to True
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    </div></section><section>
-    
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[36]:</div>
@@ -6290,37 +5621,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 </div>
 </div>
 
-</div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">Lowest_Loads</span><span class="o">.</span><span class="n">reshore</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Reshore does not affect loads.  To show the reshore step set show_reshore to True
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    </div></section><section>
-    
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[39]:</div>
@@ -6460,6 +5761,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 <p><a href="http://damontallen.github.io/Construction-Lectures-Fall-2014/">Github.io version of course website</a> <em>(Do not use this link if you are taking this course in Summer A or B.)</em></p>
 <p><a href="http://ipython.org/">IPython.org</a> <em>(IPython is the opensource software used in the development of much of this course.)</em></p>
 <p><a href="http://nbviewer.ipython.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Resources.ipynb">Complete Software List</a></p>
+<p><a href="https://www.concrete.org/store/productdetail.aspx?ItemID=SP4AUTOR">AutoReshore Spreadsheet from ACI</a> <em>This provides a limited set of precalculated solutions</em></p>
 
 </div>
 </div>

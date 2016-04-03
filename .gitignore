@@ -22,3 +22,9 @@ nblinkcheck
 # HTML versions of the files #
 ##############################
 *.html
+
+# LeTeX versions and pdfs #
+###########################
+*.tex
+*.swp
+*.pdf

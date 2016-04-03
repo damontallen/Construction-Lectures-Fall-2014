@@ -3,7 +3,7 @@ SOIL TYPE B  P(a) = 45 X H + 72 psf (2 ft Surcharge),,,,,,,,,,,,,,
 Depth of Trench  (Feet),"Size (actual, not nominal) and Spacing of Members **",,,,,,,,,,,,,
 ,Cross Braces,,,,,,,Wales,,Uprights,,,,
 ,Horizontal Spacing (Feet),Vertical Spacing (Feet),Width of Trench (Feet),,,,,Vertical Spacing (Feet),Size  (Inches),Maximum Allowable Horizontal Spacing (Feet),,,,
-,,,UP TO 4,UP TO 6,UP TO 9,UP TO 12,UP TO 15,,,CLOSE,4,5,6,8
+,,,UP TO 4,UP TO 6,UP TO 9,UP TO 12,UP TO 15,,,CLOSE,2,3,4,6
 ,,,,,,,,,,,,,,
 5 TO 10,UP TO 6,5,4X6,4X6,4X6,6X6,6X6,5,6X8,,,3X12 or 4X8,,4X12
 ,UP TO 8,5,4X6,4X6,6X6,6X6,6X6,5,8X8,,3X8,,4X8,

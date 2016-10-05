@@ -24,6 +24,7 @@ nblinkcheck
 # HTML versions of the files #
 ##############################
 *.html
+!Nail*.html
 
 # LeTeX versions and pdfs #
 ###########################

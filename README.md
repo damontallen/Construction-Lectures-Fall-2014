@@ -64,6 +64,7 @@ Week 5
 * <a href="http://nbviewer.jupyter.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%205%20-%20Braced%20Wall%20(Part%20-%202%20Tension%20Bracing%20with%20Fasteners)%20.ipynb">Bracing Introduction (Part 2 - Wall Form Tension Bracing)</a>
 * [Slab Bracing](http://nbviewer.jupyter.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%205%20-%20Slab%20Braces.ipynb)
 * <a href="http://nbviewer.jupyter.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Week%205%20-%20Bracing%20Stiffness%20Requirements.ipynb">Bracing Stiffness Requirements</a>
+* <a href="http://nbviewer.jupyter.org/github/damontallen/Construction-Lectures-Fall-2014/blob/master/Nail%20Shear%20Extrapolation.ipynb">Nail Shear Extrapolation</a>
 
 Week 6
 

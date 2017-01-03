@@ -1400,8 +1400,8 @@ $$\Delta P = 0.3333 D$$<p>Note, in order to obtain the correct values, there mus
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Next, this change, $\Delta P$, must be distributed to all of the slabs.</p>
 $$\Delta P_{L} = \frac{\Delta P}{L_{max} - L_{n} + 1}\tag{2}$$\begin{equation*}
-R_{s,L}  = \left\{\begin{array}{rl} P_{0,L} + \Delta P_{L} & \text{if }L> L_n,\\
-1 & \text{if }L\leq L_n, \textit{ (Slabs only carrying self weight)}\\
+R_{s,L}  = \left\{\begin{array}{rl} P_{0,L} + \Delta P_{L} & \text{if }L\geq L_n,\\ 
+1 & \text{if }L< L_n, \textit{ (Slabs only carrying self weight)}\\
 P_{0,L} & \text{if } L_n=0. \textit{ (Shoring or reshoring all the way down)} \end{array} \right. \tag{3}
 \end{equation*}<p>Where:</p>
 <ul>
@@ -1425,11 +1425,11 @@ P_{0,L} & \text{if } L_n=0. \textit{ (Shoring or reshoring all the way down)} \e
 <p>In our case $L_n = 2$ and $L_{max} = 3$ so equation 2 becomes,</p>
 <p>$\Delta P_{L} = \frac{0.3333 D}{3 - 2 + 1} = \frac{0.3333 D}{2}$</p>
 <p>$\Delta P_{L} = 0.16667 D$</p>
-<p>From equation 3 we find that the reaction of the slab at level 3 is, <em>($L=3 > L_n = 2$)</em></p>
+<p>From equation 3 we find that the reaction of the slab at level 3 is, <em>($L=3 \ge L_n = 2$)</em></p>
 <p>$R_{s,3} = 0.3333 D + 0.16667 D = 0.5 D$</p>
-<p>for level 2, <em>($L=2 \le L_n = 2$)</em></p>
+<p>for level 2, <em>($L=2 \ge L_n = 2$)</em></p>
 <p>$R_{s,2} = 1.3333 D + 0.16667 D = 1.5 D$</p>
-<p>and since $L_n$ is at level 1 we use the second case in equation 3, <em>($L=1  \le L_n = 2$)</em></p>
+<p>and since $L_n$ is at level 1 we use the second case in equation 3, <em>($L=1  < L_n = 2$)</em></p>
 <p>$R_{s,1} = 1 D$</p>
 
 </div>

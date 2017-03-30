@@ -1399,12 +1399,16 @@ $$\Delta P = 0.3333 D$$<p>Note, in order to obtain the correct values, there mus
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Next, this change, $\Delta P$, must be distributed to all of the slabs.</p>
-$$\Delta P_{L} = \frac{\Delta P}{L_{max} - L_{n} + 1}\tag{2}$$\begin{equation*}
+\begin{equation*}
+N_s = \left\{\begin{array}{rl} L_{max} - L_{n} & \textit{ (When adding a new slab)}\\
+L_{max} - L_{n} + 1 & \textit{ (When removing shores or reshores)}\end{array}\right.\tag{2}
+\end{equation*}$$\Delta P_{L} = \frac{\Delta P}{N_s}\tag{3}$$\begin{equation*}
 R_{s,L}  = \left\{\begin{array}{rl} P_{0,L} + \Delta P_{L} & \text{if }L\geq L_n,\\ 
 1 & \text{if }L< L_n, \textit{ (Slabs only carrying self weight)}\\
-P_{0,L} & \text{if } L_n=0. \textit{ (Shoring or reshoring all the way down)} \end{array} \right. \tag{3}
+P_{0,L} & \text{if } L_n=0. \textit{ (Shoring or reshoring all the way down)} \end{array} \right. \tag{4}
 \end{equation*}<p>Where:</p>
 <ul>
+<li>$N_s$ - The number of slabs supporting $\Delta P$</li>
 <li>$\Delta P_{L}$ - The fractional change in the load at level $L$</li>
 <li>$L$ - The level of the building being considered in the current calculation</li>
 <li>$L_{max}$ - Current maximum level in the building</li>
@@ -1423,13 +1427,15 @@ P_{0,L} & \text{if } L_n=0. \textit{ (Shoring or reshoring all the way down)} \e
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>$L_n = 0$ if all levels have either shores or reshores.  Since all levels either have shores or reshores, then the ending loads on the slabs will be the same as when they started.</p>
 <p>In our case $L_n = 2$ and $L_{max} = 3$ so equation 2 becomes,</p>
-<p>$\Delta P_{L} = \frac{0.3333 D}{3 - 2 + 1} = \frac{0.3333 D}{2}$</p>
+<p>$N_s = 3 - 2 + 1 = 2$</p>
+<p>so $\Delta P_L$ (equation 3) becomes,</p>
+<p>$\Delta P_{L} = \frac{0.3333 D}{2}$</p>
 <p>$\Delta P_{L} = 0.16667 D$</p>
-<p>From equation 3 we find that the reaction of the slab at level 3 is, <em>($L=3 \ge L_n = 2$)</em></p>
+<p>From equation 4 we find that the reaction of the slab at level 3 is, <em>($L=3 \ge L_n = 2$)</em></p>
 <p>$R_{s,3} = 0.3333 D + 0.16667 D = 0.5 D$</p>
 <p>for level 2, <em>($L=2 \ge L_n = 2$)</em></p>
 <p>$R_{s,2} = 1.3333 D + 0.16667 D = 1.5 D$</p>
-<p>and since $L_n$ is at level 1 we use the second case in equation 3, <em>($L=1  < L_n = 2$)</em></p>
+<p>and since $L_n$ is at level 1 we use the second case in equation 4, <em>($L=1  < L_n = 2$)</em></p>
 <p>$R_{s,1} = 1 D$</p>
 
 </div>
@@ -1564,7 +1570,7 @@ P_{0,L} & \text{if } L_n=0. \textit{ (Shoring or reshoring all the way down)} \e
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>For the new shore loads $(P_{sh})$ the values can be expressed in the following manor.</p>
-$$P_{sh,L} = (L_{max} - L + 1)\times 1 D - \sum_{i=L}^{L_{max}} R_{s,i}\tag{4}$$<p>Where:</p>
+$$P_{sh,L} = (L_{max} - L + 1)\times 1 D - \sum_{i=L}^{L_{max}} R_{s,i}\tag{5}$$<p>Where:</p>
 <ul>
 <li>$P_{sh,L}$ - Shore load on level L</li>
 <li>$L$ - The level of the building being considered in the current calculation</li>
@@ -1713,7 +1719,9 @@ $$P_{sh,L} = (L_{max} - L + 1)\times 1 D - \sum_{i=L}^{L_{max}} R_{s,i}\tag{4}$$
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Finally, then ending loads $(P_1)$ are just equal to, $R_s$ for the slabs at every level and $P_{sh}$ for everything that is not a slab.  It should be noted that the values listed under $P_1$ will be used for $P_0$ when calculating the results of the next action.</p>
-$$P_{1,L,I} = \left\{\begin{array} \\R_{s,L} & \text{if }Item = \text{Slab},\\ P_{sh,L} & \text{if }Item = \text{Shore or Reshore}, \\ 0 & \text{if } Item = \text{Empty.} \end{array} \right.\tag{5}$$<p>Where:</p>
+$$P_{1,L,I} = \left\{\begin{array} \\R_{s,L} & \text{if }Item = \text{Slab},\\ 
+                                     P_{sh,L} & \text{if }Item = \text{Shore or Reshore}, \\ 
+                                     0 & \text{if } Item = \text{Empty.} \end{array} \right.\tag{6}$$<p>Where:</p>
 <ul>
 <li>$I$ - Item at level L</li>
 <li>$P_{sh,L}$ - Shore load on level L</li>
@@ -1809,7 +1817,10 @@ $$P_{1,L,I} = \left\{\begin{array} \\R_{s,L} & \text{if }Item = \text{Slab},\\ P
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Note, in order to obtain the correct values, there must only be one level of action at a time.  This means that only one value should appear in the $\Delta P$ column for any given action, and it should be written next to the item changing at the level of action.</p>
-$$\Delta P = \left\{\begin{array}{rl}1 & \text{if pouring a new slab},\\P_{0,sh} & \text{if a shore or reshore is removed}.\end{array} \right.\tag{1}$$$$\Delta P_{L} = \frac{\Delta P}{L_{max} - L_{n} + 1}\tag{2}$$$$R_{s,L}  = \left\{\begin{array}{rl} P_{0,L} + \Delta P_{L} & \text{if }L> L_n,\\ 1 & \text{if }L\leq L_n, \\P_{0,L} & \text{if } L_n=0. \end{array} \right. \tag{3}$$$$P_{sh,L} = (L_{max} - L + 1)\times 1 D - \sum_{i=L}^{L_{max}} R_{s,i}\tag{4}$$$$P_{1,L,I} = \left\{\begin{array} \\R_{s,L} & \text{if }I = \text{Slab},\\ P_{sh,L} & \text{if }I = \text{Shore or Reshore}, \\ 0 & \text{if } I = \text{Empty.} \end{array} \right.\tag{5}$$
+$$\Delta P = \left\{\begin{array}{rl}1 & \text{if pouring a new slab},\\P_{0,sh} & \text{if a shore or reshore is removed}.\end{array} \right.\tag{1}$$\begin{equation*}
+N_s = \left\{\begin{array}{rl} L_{max} - L_{n} & \text{ if pouring a new slab,}\\
+L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right.\tag{2}
+\end{equation*}$$\Delta P_{L} = \frac{\Delta P}{N_s}\tag{3}$$$$R_{s,L}  = \left\{\begin{array}{rl} P_{0,L} + \Delta P_{L} & \text{if }L\geq L_n,\\ 1 & \text{if }L < L_n, \\P_{0,L} & \text{if } L_n=0. \end{array} \right. \tag{4}$$$$P_{sh,L} = (L_{max} - L + 1)\times 1 D - \sum_{i=L}^{L_{max}} R_{s,i}\tag{5}$$$$P_{1,L,I} = \left\{\begin{array} \\R_{s,L} & \text{if }I = \text{Slab},\\ P_{sh,L} & \text{if }I = \text{Shore or Reshore}, \\ 0 & \text{if } I = \text{Empty.} \end{array} \right.\tag{6}$$
 </div>
 </div>
 </div>
@@ -1820,17 +1831,19 @@ $$\Delta P = \left\{\begin{array}{rl}1 & \text{if pouring a new slab},\\P_{0,sh}
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Where:</p>
 <ul>
-<li>$\Delta P$ - The load change in the structure that needs to be distributed to other supporting elements</li>
-<li>$\Delta P_{L}$ - The fractional change in the load at level $L$</li>
-<li>$L$ - The level of the building in the current calculation</li>
+<li>$\Delta P$ - Load change in the structure that needs to be distributed to other supporting elements</li>
+<li>$\Delta P_{L}$ - Fractional change in the load at level $L$</li>
+<li>$D$ - Dead load of a single slab</li>
+<li>$L$ - Level of the building in the current calculation</li>
 <li>$L_{max}$ - Current maximum level in the building</li>
-<li>$L_n$ - The highest level that contains no shoring or reshoring at the end of the action.</li>
+<li>$L_n$ - Highest level that contains no shoring or reshoring at the end of the action.</li>
+<li>$N_s$ - Number of slabs supporting $\Delta P$</li>
 <li>$P_{0,L}$ - Starting slab load at level $L$</li>
-<li>$P_{0,sh}$ - The starting load of the shore or reshore at the level of action</li>
-<li>$P_{1,L,I}$ - The final load for item $I$ on level $L$</li>
+<li>$P_{0,sh}$ - Starting load of the shore or reshore at the level of action</li>
+<li>$P_{1,L,I}$ - Final load for item $I$ on level $L$</li>
 <li>$P_{sh,L}$ - Shore load on level $L$</li>
 <li>$R_{s,i}$ - Reaction of slab on level $i$</li>
-<li>$R_{s,L}$ - The slab reaction at level $L$</li>
+<li>$R_{s,L}$ - Slab reaction at level $L$</li>
 </ul>
 <p>Remember that the values listed under $P_1$ will be used for $P_0$ when calculating the results for the next action.</p>
 <p>One last thing, it will be easier to follow along later slides if you have these equations written down where you can reference them.  I will be talking about filling out the table from here on, and most of the time I will not explicitly be referencing to a particular equation.</p>

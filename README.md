@@ -30,7 +30,7 @@ just get to know who reads this aside from my students.
 
 The addition of this license information was inspired by the SciPy lecture ["Evidence Based Teaching What We Know and How to Use I EuroSciPy 2015 by Greg Wilson "](https://www.youtube.com/watch?v=kmVKGxPlTvc&index=33&list=WL).
 
-####Static Notebooks
+#### Static Notebooks
 
 Week 0
 
